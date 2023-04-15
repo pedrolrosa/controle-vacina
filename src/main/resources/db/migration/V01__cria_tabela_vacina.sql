@@ -4,4 +4,4 @@ CREATE TABLE public.vacina
     nome text,
     descricao text,
     PRIMARY KEY (codigo)
-);
+); 
