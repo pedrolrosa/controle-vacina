@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html
+  lang="pt-BR"
+  layout:decorate="~{layout/layoutpadrao}"
+  xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.thymeleaf.org"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Página Principal</title>
+  </head>
+  <body>
+    <div layout:fragment="conteudo">
+      <div th:replace="~{layout/fragments/sidebar :: sidebar(opcao='')}"></div>
+
+      <!-- conteudo principal -->
+      <main class="mt-5 p-4 pt-5">
+        <div class="container-fluid">
+          <form th:action="@{/vacinas/pesquisar}" method="POST">
+            <label for="codigo" class="form-label">Código</label>
+            <input id="codigo" class="form-control" name="codigo" type="number" />
+            
+            <label for="nome" class="form-label">Nome</label>
+            <input id="nome" class="form-control" name="nome" type="text" />
+            
+            <label for="descricao" class="form-label">Nome</label>
+            <input id="descricao" class="form-control" name="descricao" type="text" />
+
+            <input class="btn btn-primary mt-3" type="submit" value="Buscar" />
+          </form>
+        </div>
+      </main>
+      <!-- !conteudo principal -->
+    </div>
+
+    <!-- Nao usamos
+	<th:block layout:fragment="scripts">
+		<script src="../static/js/index.js" th:src="@{/js/index.js}"></script>
+	</th:block> -->
+  </body>
+</html>

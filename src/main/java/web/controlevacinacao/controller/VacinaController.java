@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import web.controlevacinacao.model.Vacina;
+import web.controlevacinacao.model.filter.VacinaFilter;
 import web.controlevacinacao.repository.VacinaRepository;
 
 @Controller
@@ -69,14 +70,14 @@ public class VacinaController {
     @PostMapping("/buscarnome")
     public String buscarPeloNome(String nome, Model model) {
 
-        if (nome != null) {
+        if (!nome.isEmpty()) {
             List<Vacina> vacinas = vacinaRepository.findByNomeContainingIgnoreCase(nome);
             if(!vacinas.isEmpty()){
                 model.addAttribute("vacinas", vacinas);
                 return "vacinas/vacinas";
             } else {
                 model.addAttribute("mensagem", "Nenhuma vacina com este nome");
-            return "mostrarmensagem";
+                return "mostrarmensagem";
             }
         } else {
             model.addAttribute("mensagem", "Informe o nome");
@@ -85,4 +86,20 @@ public class VacinaController {
 
     }
 
-}
+    @GetMapping("/abrirpesquisar")
+    public String abrirPesquisar(){
+        return "vacinas/pesquisar";
+    }
+
+    @PostMapping("/pesquisar")
+    public String pesquisar(VacinaFilter filtro, Model model){
+        
+        List<Vacina> vacinas = vacinaRepository.buscarComFiltro(filtro);
+        if(!vacinas.isEmpty()){
+            model.addAttribute("vacinas", vacinas);
+            return "vacinas/vacinas";
+        } else {
+            model.addAttribute("mensagem", "Nenhuma vacina com estas informações");
+            return "mostrarmensagem";
+        }
+    }}
