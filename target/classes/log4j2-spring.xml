@@ -42,9 +42,13 @@
 			<AppenderRef ref="Console" />
 			<AppenderRef ref="File" />
 		</AsyncRoot>
+
 		<!-- Log SQL statements -->
 		<AsyncLogger name="org.hibernate.SQL" level="debug" additivity="false">
 			<AppenderRef ref="Console"/>
 		</AsyncLogger>
+		<!-- <AsyncLogger name="org.hibernate.type.descriptor.sql" level="trace" additivity="false">
+			<AppenderRef ref="Console"/>
+		</AsyncLogger> -->
 	</Loggers>
 </Configuration>

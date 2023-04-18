@@ -61,4 +61,28 @@ public class VacinaController {
 
     }
 
+    @GetMapping("/buscarnome")
+    public String abrirEntradaNome() {
+        return "vacinas/entradanome";
+    }
+
+    @PostMapping("/buscarnome")
+    public String buscarPeloNome(String nome, Model model) {
+
+        if (nome != null) {
+            List<Vacina> vacinas = vacinaRepository.findByNomeContainingIgnoreCase(nome);
+            if(!vacinas.isEmpty()){
+                model.addAttribute("vacinas", vacinas);
+                return "vacinas/vacinas";
+            } else {
+                model.addAttribute("mensagem", "Nenhuma vacina com este nome");
+            return "mostrarmensagem";
+            }
+        } else {
+            model.addAttribute("mensagem", "Informe o nome");
+            return "mostrarmensagem";
+        }
+
+    }
+
 }
