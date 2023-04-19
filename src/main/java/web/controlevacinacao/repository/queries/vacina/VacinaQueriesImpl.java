@@ -5,9 +5,7 @@ import java.util.List;
 import web.controlevacinacao.model.Vacina;
 import web.controlevacinacao.model.filter.VacinaFilter;
 
-import java.math.BigDecimal;
 import java.util.ArrayList;
-import java.util.List;
 
 import org.springframework.util.StringUtils;
 
@@ -18,8 +16,6 @@ import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.persistence.criteria.CriteriaQuery;
 import jakarta.persistence.criteria.Predicate;
 import jakarta.persistence.criteria.Root;
-import web.controlevacinacao.model.Vacina;
-import web.controlevacinacao.model.filter.VacinaFilter;
 
 public class VacinaQueriesImpl implements VacinaQueries{
 

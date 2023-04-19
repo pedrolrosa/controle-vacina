@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import web.controlevacinacao.model.Vacina;
 import web.controlevacinacao.model.filter.VacinaFilter;
 import web.controlevacinacao.repository.VacinaRepository;
+import web.controlevacinacao.service.VacinaService;
 
 @Controller
 @RequestMapping("/vacinas")
@@ -24,6 +25,9 @@ public class VacinaController {
 
     @Autowired
     private VacinaRepository vacinaRepository;
+
+    @Autowired
+    private VacinaService vacinaService;
 
     @GetMapping("/todas")
     public String mostrarTodas(Model model) {
@@ -102,4 +106,23 @@ public class VacinaController {
             model.addAttribute("mensagem", "Nenhuma vacina com estas informações");
             return "mostrarmensagem";
         }
-    }}
+    }
+
+    @GetMapping("/cadastrar")
+    public String abrirCadastrar(Vacina vacina) {
+        return "vacinas/cadastrar";
+    }
+
+    @PostMapping("/cadastrar")
+    public String cadastrar(Vacina vacina, Model model) {
+
+        vacinaService.salvar(vacina);
+
+        model.addAttribute("mensagem", "Salvo com sucesso");
+
+        return "mostrarmensagem";
+    }
+
+}
+
+    
