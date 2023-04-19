@@ -150,8 +150,22 @@ public class VacinaController {
         return "mostrarmensagem";
     }
 
+    @PostMapping("/abrirremover")
+    public String abrirRemover(Vacina vacina){
+        return "vacinas/confirmarremocao";
+    }
     
-    
+    @PostMapping("/remover")
+    public String remover(Long codigo){
+        vacinaService.remover(codigo);
+        return "redirect:/vacinas/remocaook";
+    }
+
+    @GetMapping("/remocaook")
+    public String mostrarMensagemRemocaoOK(Model model) {
+        model.addAttribute("mensagem", "Vacina removida com sucesso");
+        return "mostrarmensagem";
+    }
 
 }
 

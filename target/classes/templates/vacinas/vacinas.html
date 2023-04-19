@@ -26,7 +26,7 @@
                 <th>Código</th>
                 <th>Nome</th>
                 <th>Descricao</th>
-                <th>Operação</th>
+                <th colspan="2">Operação</th>
               </tr>
             </thead>
 			<tbody>
@@ -41,6 +41,16 @@
               <input type="hidden" name="descricao" th:value="${vacina.descricao}">
               <button type="submit" class="btn btn-primary">
                 <i class="bi bi-pencil-fill"></i>
+              </button>
+            </form>
+          </td>
+          <td>
+            <form th:action="@{/vacinas/abrirremover}" method="POST">
+              <input type="hidden" name="codigo" th:value="${vacina.codigo}">
+              <input type="hidden" name="nome" th:value="${vacina.nome}">
+              <input type="hidden" name="descricao" th:value="${vacina.descricao}">
+              <button type="submit" class="btn btn-danger">
+                <i class="bi bi-trash-fill"></i>
               </button>
             </form>
           </td>

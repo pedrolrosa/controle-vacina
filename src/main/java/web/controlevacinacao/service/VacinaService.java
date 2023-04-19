@@ -18,4 +18,9 @@ public class VacinaService {
         repository.save(vacina);
     }
 
+    @Transactional
+    public void remover(Long id){
+        repository.deleteById(id);
+    }
+
 }
