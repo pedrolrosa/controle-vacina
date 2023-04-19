@@ -16,6 +16,8 @@ import web.controlevacinacao.model.Vacina;
 import web.controlevacinacao.model.filter.VacinaFilter;
 import web.controlevacinacao.repository.VacinaRepository;
 import web.controlevacinacao.service.VacinaService;
+import org.springframework.web.bind.annotation.RequestBody;
+
 
 @Controller
 @RequestMapping("/vacinas")
@@ -109,19 +111,47 @@ public class VacinaController {
     }
 
     @GetMapping("/cadastrar")
-    public String abrirCadastrar(Vacina vacina) {
+    public String abrirCadastrar(Vacina vacina, Model model) {
+        model.addAttribute("titulo","Cadastrar Vacina");
+        model.addAttribute("url", "/vacinas/cadastrar");
+        model.addAttribute("textoBotao","Cadastrar");
         return "vacinas/cadastrar";
     }
 
     @PostMapping("/cadastrar")
-    public String cadastrar(Vacina vacina, Model model) {
-
+    public String cadastrar(Vacina vacina) {
         vacinaService.salvar(vacina);
+        return"redirect:/vacinas/cadastrook";
+    }
 
+    @GetMapping("/cadastrook")
+    public String mostrarMensagemCadastroOK(Model model){
         model.addAttribute("mensagem", "Salvo com sucesso");
-
         return "mostrarmensagem";
     }
+
+    @PostMapping("/abriralterar")
+    public String abrirAlterar(Vacina vacina, Model model) {
+        model.addAttribute("titulo", "Alterar Vacina");
+        model.addAttribute("url", "/vacinas/alterar");
+        model.addAttribute("textoBotao", "Alterar");
+        return "vacinas/cadastrar";
+    }
+
+    @PostMapping("/alterar")
+    public String alterar(Vacina vacina) {
+        vacinaService.salvar(vacina);
+        return "redirect:/vacinas/alteracaook";
+    }
+
+    @GetMapping("/alteracaook")
+    public String mostrarMensagemAlteracaoOK(Model model) {
+        model.addAttribute("mensagem", "Vacina alterada com sucesso");
+        return "mostrarmensagem";
+    }
+
+    
+    
 
 }
 

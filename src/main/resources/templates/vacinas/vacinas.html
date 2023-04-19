@@ -15,7 +15,7 @@
   </head>
   <body>
     <div layout:fragment="conteudo">
-      <div th:replace="~{layout/fragments/sidebar :: sidebar(opcao='')}"></div>
+      <div th:replace="~{layout/fragments/sidebar :: sidebar(opcao='vacinas')}"></div>
 
       <!-- conteudo principal -->
       <main class="mt-5 p-4 pt-5">
@@ -26,6 +26,7 @@
                 <th>Código</th>
                 <th>Nome</th>
                 <th>Descricao</th>
+                <th>Operação</th>
               </tr>
             </thead>
 			<tbody>
@@ -33,6 +34,16 @@
 					<td th:text="${vacina.codigo}"></td>
 					<td th:text="${vacina.nome}"></td>
 					<td th:text="${vacina.descricao}"></td>
+          <td>
+            <form th:action="@{/vacinas/abriralterar}" method="POST">
+              <input type="hidden" name="codigo" th:value="${vacina.codigo}">
+              <input type="hidden" name="nome" th:value="${vacina.nome}">
+              <input type="hidden" name="descricao" th:value="${vacina.descricao}">
+              <button type="submit" class="btn btn-primary">
+                <i class="bi bi-pencil-fill"></i>
+              </button>
+            </form>
+          </td>
 				</tr>
 			</tbody>
           </table>

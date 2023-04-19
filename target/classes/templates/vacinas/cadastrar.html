@@ -11,24 +11,26 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
-    <title>Página Principal</title>
+    <title th:text="${titulo}"></title>
   </head>
   <body>
     <div layout:fragment="conteudo">
-      <div th:replace="~{layout/fragments/sidebar :: sidebar(opcao='')}"></div>
+      <div th:replace="~{layout/fragments/sidebar :: sidebar(opcao='vacinas')}"></div>
 
       <!-- conteudo principal -->
       <main class="mt-5 p-4 pt-5">
         <div class="container-fluid">
-          <form th:action="@{/vacinas/cadastrar}" method="POST">
+          <form th:action="@{${url}}" method="POST">
             
+            <input type="hidden" th:field="${vacina.codigo}">
+
             <label for="nome" class="form-label">Nome</label>
             <input th:field="${vacina.nome}" class="form-control" type="text" />
             
             <label for="descricao" class="form-label">Descrição</label>
             <input th:field="${vacina.descricao}" class="form-control" type="text" />
 
-            <input class="btn btn-primary mt-3" type="submit" value="Cadastrar" />
+            <input th:value="${textoBotao}" class="btn btn-primary mt-3" type="submit" />
           </form>
         </div>
       </main>
