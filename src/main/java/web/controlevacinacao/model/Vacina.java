@@ -3,6 +3,8 @@ package web.controlevacinacao.model;
 import java.io.Serializable;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -21,6 +23,8 @@ public class Vacina implements Serializable {
 	private Long codigo;
 	private String nome;
 	private String descricao;
+	@Enumerated(EnumType.STRING)
+	private Status status;
 
 	public Long getCodigo() {
 		return codigo;
@@ -44,6 +48,14 @@ public class Vacina implements Serializable {
 
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
+	}
+
+	public Status getStatus() {
+		return status;
+	}
+
+	public void setStatus(Status status) {
+		this.status = status;
 	}
 
 	@Override
@@ -73,7 +85,7 @@ public class Vacina implements Serializable {
 
 	@Override
 	public String toString() {
-		return "codigo: " + codigo + "\nnome: " + nome + "\ndescricao: " + descricao;
+		return "Vacina [codigo=" + codigo + ", nome=" + nome + ", descricao=" + descricao + ", status=" + status + "]";
 	}
 
 }

@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import web.controlevacinacao.model.Status;
 import web.controlevacinacao.model.Vacina;
 import web.controlevacinacao.model.filter.VacinaFilter;
 import web.controlevacinacao.repository.VacinaRepository;
@@ -156,9 +157,20 @@ public class VacinaController {
     }
     
     @PostMapping("/remover")
-    public String remover(Long codigo){
-        vacinaService.remover(codigo);
-        return "redirect:/vacinas/remocaook";
+    public String remover(Long codigo, Model model){
+        Optional<Vacina> optVacina = vacinaRepository.findById(codigo);
+        if(optVacina.isPresent()){
+            Vacina vacina = optVacina.get();
+            vacina.setStatus(Status.INATIVO);
+            vacinaService.salvar(vacina);
+
+            return "redirect:/vacinas/remocaook";
+        } else {
+            model.addAttribute("mensagem", "nenhuma vacina foi encontrada com este codigo");
+            return "mostrarmensagem";
+        }
+
+        
     }
 
     @GetMapping("/remocaook")
