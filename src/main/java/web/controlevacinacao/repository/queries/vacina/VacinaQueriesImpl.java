@@ -1,11 +1,7 @@
 package web.controlevacinacao.repository.queries.vacina;
 
-import java.util.List;
-
-import web.controlevacinacao.model.Vacina;
-import web.controlevacinacao.model.filter.VacinaFilter;
-
 import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.util.StringUtils;
 
@@ -16,6 +12,9 @@ import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.persistence.criteria.CriteriaQuery;
 import jakarta.persistence.criteria.Predicate;
 import jakarta.persistence.criteria.Root;
+import web.controlevacinacao.model.Vacina;
+import web.controlevacinacao.model.Status;
+import web.controlevacinacao.model.filter.VacinaFilter;
 
 public class VacinaQueriesImpl implements VacinaQueries{
 
@@ -44,6 +43,8 @@ public class VacinaQueriesImpl implements VacinaQueries{
                     builder.lower(v.<String>get("descricao")),
                     "%" + filtro.getDescricao().toLowerCase() + "%"));
         }
+
+        predicateList.add(builder.equal(v.<Status>get("status"), Status.ATIVO));
 
         Predicate[] predArray = new Predicate[predicateList.size()];
         predicateList.toArray(predArray);

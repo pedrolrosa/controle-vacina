@@ -32,7 +32,7 @@ public class VacinaController {
     @Autowired
     private VacinaService vacinaService;
 
-    @GetMapping("/todas")
+    /*@GetMapping("/todas")
     public String mostrarTodas(Model model) {
 
         List<Vacina> vacinas = vacinaRepository.findAll();
@@ -91,7 +91,7 @@ public class VacinaController {
             return "mostrarmensagem";
         }
 
-    }
+    }*/
 
     @GetMapping("/abrirpesquisar")
     public String abrirPesquisar(){

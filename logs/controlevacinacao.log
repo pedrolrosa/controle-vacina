@@ -24015,3 +24015,931 @@ descricao: bolivia]
 2023-04-25T19:43:03.451-03:00  INFO 10292 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-04-25T19:43:03.451-03:00  INFO 10292 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-39 - Shutdown initiated...
 2023-04-25T19:43:03.453-03:00  INFO 10292 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-39 - Shutdown completed.
+2023-04-25T19:51:42.384-03:00  INFO 19325 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 19325 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T19:51:42.387-03:00 DEBUG 19325 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T19:51:42.388-03:00  INFO 19325 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T19:51:42.532-03:00  INFO 19325 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-25T19:51:42.532-03:00  INFO 19325 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-25T19:51:43.071-03:00  INFO 19325 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T19:51:43.103-03:00  INFO 19325 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interfaces.
+2023-04-25T19:51:43.549-03:00  INFO 19325 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T19:51:43.553-03:00  INFO 19325 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T19:51:43.554-03:00  INFO 19325 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T19:51:43.581-03:00  INFO 19325 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T19:51:43.582-03:00  INFO 19325 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1049 ms
+2023-04-25T19:51:43.811-03:00  INFO 19325 --- [restartedMain] o.f.c.i.l.VersionPrinter                 : Flyway Community Edition 9.5.1 by Redgate
+2023-04-25T19:51:43.811-03:00  INFO 19325 --- [restartedMain] o.f.c.i.l.VersionPrinter                 : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
+2023-04-25T19:51:43.811-03:00  INFO 19325 --- [restartedMain] o.f.c.i.l.VersionPrinter                 : 
+2023-04-25T19:51:43.821-03:00  INFO 19325 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-04-25T19:51:43.913-03:00  INFO 19325 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2c46065a
+2023-04-25T19:51:43.915-03:00  INFO 19325 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-04-25T19:51:43.926-03:00  INFO 19325 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T19:51:43.956-03:00  INFO 19325 --- [restartedMain] o.f.c.i.c.DbValidate                     : Successfully validated 2 migrations (execution time 00:00.016s)
+2023-04-25T19:51:43.981-03:00  INFO 19325 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Current version of schema "public": 02
+2023-04-25T19:51:43.982-03:00  INFO 19325 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2023-04-25T19:51:44.054-03:00  INFO 19325 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-25T19:51:44.083-03:00  INFO 19325 --- [restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-25T19:51:44.247-03:00  INFO 19325 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-04-25T19:51:44.615-03:00  INFO 19325 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-25T19:51:44.621-03:00  INFO 19325 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T19:51:45.075-03:00  INFO 19325 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-04-25T19:51:45.497-03:00  INFO 19325 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-25T19:51:45.505-03:00  INFO 19325 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-25T19:51:45.560-03:00  INFO 19325 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-25T19:51:45.571-03:00  INFO 19325 --- [restartedMain] w.c.Application                          : Started Application in 3.496 seconds (process running for 3.946)
+2023-04-25T19:51:48.471-03:00  INFO 19325 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-25T19:51:48.471-03:00  INFO 19325 --- [RMI TCP Connection(2)-127.0.0.1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-04-25T19:51:48.473-03:00  INFO 19325 --- [RMI TCP Connection(2)-127.0.0.1] o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2023-04-25T19:51:51.136-03:00 TRACE 19325 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.mostrarTodas
+2023-04-25T19:51:51.136-03:00 DEBUG 19325 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T19:51:51.136-03:00 DEBUG 19325 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : 	model: {}
+2023-04-25T19:51:51.192-03:00  INFO 19325 --- [http-nio-8080-exec-1] w.c.c.VacinaController                   : Vacinas buscadas no BD: [Vacina [codigo=2, nome=Hepatite B, descricao=Hepatite B, status=ATIVO], Vacina [codigo=3, nome=Pólio, descricao=Poliomielite (paralisia Infantil), status=ATIVO], Vacina [codigo=4, nome=Tetravalente, descricao=Difteria, tétano, coqueluche, meningite e outras infecções por Haemophilus influenzae tipo B, status=ATIVO], Vacina [codigo=5, nome=Rotavírus Humano, descricao=Doenças diarréicas por Rotavírus, status=ATIVO], Vacina [codigo=6, nome=Pneumococos, descricao=Otite, sinusite, pneumonias, meningite causadas pelo Streptococcus pneumoniae, status=ATIVO], Vacina [codigo=7, nome=Meningococo C, descricao=Doença invasiva causada por Neisseria meningitidis do Sorogrupo C, status=ATIVO], Vacina [codigo=8, nome=Febre amarela, descricao=Febre amarela, status=ATIVO], Vacina [codigo=9, nome=Tríplice Viral, descricao=Sarampo, Rubéola e Caxumba, status=ATIVO], Vacina [codigo=10, nome=Tríplice Bacteriana, descricao=Difteria, tétano, coqueluche, status=ATIVO], Vacina [codigo=11, nome=Dupla Adulto, descricao=Difteria e Tétano, status=ATIVO], Vacina [codigo=12, nome=Influenza, descricao=Influenza ou Gripe, status=ATIVO], Vacina [codigo=14, nome=baianos, descricao=veio de araxa, status=ATIVO], Vacina [codigo=16, nome=, descricao=, status=ATIVO], Vacina [codigo=1, nome=BCG-ID, descricao=bolivia, status=ATIVO], Vacina [codigo=13, nome=Sarampo,Veio das planices do volta grande, descricao=null, status=INATIVO]]
+2023-04-25T19:51:51.192-03:00 TRACE 19325 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/vacinas
+2023-04-25T19:52:12.561-03:00  INFO 19325 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T19:52:12.565-03:00  INFO 19325 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-04-25T19:52:12.568-03:00  INFO 19325 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2023-04-25T19:52:15.324-03:00  INFO 19712 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 19712 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T19:52:15.328-03:00 DEBUG 19712 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T19:52:15.329-03:00  INFO 19712 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T19:52:15.477-03:00  INFO 19712 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-25T19:52:15.477-03:00  INFO 19712 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-25T19:52:15.978-03:00  INFO 19712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T19:52:16.006-03:00  INFO 19712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interfaces.
+2023-04-25T19:52:16.443-03:00  INFO 19712 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T19:52:16.448-03:00  INFO 19712 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T19:52:16.449-03:00  INFO 19712 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T19:52:16.476-03:00  INFO 19712 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T19:52:16.476-03:00  INFO 19712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 998 ms
+2023-04-25T19:52:16.698-03:00  INFO 19712 --- [restartedMain] o.f.c.i.l.VersionPrinter                 : Flyway Community Edition 9.5.1 by Redgate
+2023-04-25T19:52:16.698-03:00  INFO 19712 --- [restartedMain] o.f.c.i.l.VersionPrinter                 : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
+2023-04-25T19:52:16.698-03:00  INFO 19712 --- [restartedMain] o.f.c.i.l.VersionPrinter                 : 
+2023-04-25T19:52:16.707-03:00  INFO 19712 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-04-25T19:52:16.801-03:00  INFO 19712 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1644c83
+2023-04-25T19:52:16.802-03:00  INFO 19712 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-04-25T19:52:16.814-03:00  INFO 19712 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T19:52:16.848-03:00  INFO 19712 --- [restartedMain] o.f.c.i.c.DbValidate                     : Successfully validated 2 migrations (execution time 00:00.020s)
+2023-04-25T19:52:16.883-03:00  INFO 19712 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Current version of schema "public": 02
+2023-04-25T19:52:16.884-03:00  INFO 19712 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2023-04-25T19:52:16.979-03:00  INFO 19712 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-25T19:52:17.009-03:00  INFO 19712 --- [restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-25T19:52:17.166-03:00  INFO 19712 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-04-25T19:52:17.496-03:00  INFO 19712 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-25T19:52:17.501-03:00  INFO 19712 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T19:52:17.922-03:00  INFO 19712 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-04-25T19:52:18.366-03:00  INFO 19712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-25T19:52:18.377-03:00  INFO 19712 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-25T19:52:18.384-03:00  INFO 19712 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-25T19:52:18.385-03:00  INFO 19712 --- [RMI TCP Connection(3)-127.0.0.1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-04-25T19:52:18.388-03:00  INFO 19712 --- [RMI TCP Connection(3)-127.0.0.1] o.s.w.s.DispatcherServlet                : Completed initialization in 3 ms
+2023-04-25T19:52:18.438-03:00  INFO 19712 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-25T19:52:18.451-03:00  INFO 19712 --- [restartedMain] w.c.Application                          : Started Application in 3.436 seconds (process running for 3.88)
+2023-04-25T19:52:19.930-03:00 TRACE 19712 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.mostrarTodas
+2023-04-25T19:52:19.930-03:00 DEBUG 19712 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T19:52:19.930-03:00 DEBUG 19712 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : 	model: {}
+2023-04-25T19:52:20.000-03:00  INFO 19712 --- [http-nio-8080-exec-1] w.c.c.VacinaController                   : Vacinas buscadas no BD: [Vacina [codigo=2, nome=Hepatite B, descricao=Hepatite B, status=ATIVO], Vacina [codigo=3, nome=Pólio, descricao=Poliomielite (paralisia Infantil), status=ATIVO], Vacina [codigo=4, nome=Tetravalente, descricao=Difteria, tétano, coqueluche, meningite e outras infecções por Haemophilus influenzae tipo B, status=ATIVO], Vacina [codigo=5, nome=Rotavírus Humano, descricao=Doenças diarréicas por Rotavírus, status=ATIVO], Vacina [codigo=6, nome=Pneumococos, descricao=Otite, sinusite, pneumonias, meningite causadas pelo Streptococcus pneumoniae, status=ATIVO], Vacina [codigo=7, nome=Meningococo C, descricao=Doença invasiva causada por Neisseria meningitidis do Sorogrupo C, status=ATIVO], Vacina [codigo=8, nome=Febre amarela, descricao=Febre amarela, status=ATIVO], Vacina [codigo=9, nome=Tríplice Viral, descricao=Sarampo, Rubéola e Caxumba, status=ATIVO], Vacina [codigo=10, nome=Tríplice Bacteriana, descricao=Difteria, tétano, coqueluche, status=ATIVO], Vacina [codigo=11, nome=Dupla Adulto, descricao=Difteria e Tétano, status=ATIVO], Vacina [codigo=12, nome=Influenza, descricao=Influenza ou Gripe, status=ATIVO], Vacina [codigo=14, nome=baianos, descricao=veio de araxa, status=ATIVO], Vacina [codigo=16, nome=, descricao=, status=ATIVO], Vacina [codigo=1, nome=BCG-ID, descricao=bolivia, status=ATIVO], Vacina [codigo=13, nome=Sarampo,Veio das planices do volta grande, descricao=null, status=INATIVO]]
+2023-04-25T19:52:20.000-03:00 TRACE 19712 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/vacinas
+2023-04-25T19:52:23.474-03:00 TRACE 19712 --- [http-nio-8080-exec-6] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.abrirEntradaNome
+2023-04-25T19:52:23.474-03:00 TRACE 19712 --- [http-nio-8080-exec-6] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/entradanome
+2023-04-25T19:52:26.120-03:00 TRACE 19712 --- [http-nio-8080-exec-2] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.mostrarTodas
+2023-04-25T19:52:26.120-03:00 DEBUG 19712 --- [http-nio-8080-exec-2] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T19:52:26.120-03:00 DEBUG 19712 --- [http-nio-8080-exec-2] w.c.a.ApplicationLoggingAspect           : 	model: {}
+2023-04-25T19:52:26.133-03:00  INFO 19712 --- [http-nio-8080-exec-2] w.c.c.VacinaController                   : Vacinas buscadas no BD: [Vacina [codigo=2, nome=Hepatite B, descricao=Hepatite B, status=ATIVO], Vacina [codigo=3, nome=Pólio, descricao=Poliomielite (paralisia Infantil), status=ATIVO], Vacina [codigo=4, nome=Tetravalente, descricao=Difteria, tétano, coqueluche, meningite e outras infecções por Haemophilus influenzae tipo B, status=ATIVO], Vacina [codigo=5, nome=Rotavírus Humano, descricao=Doenças diarréicas por Rotavírus, status=ATIVO], Vacina [codigo=6, nome=Pneumococos, descricao=Otite, sinusite, pneumonias, meningite causadas pelo Streptococcus pneumoniae, status=ATIVO], Vacina [codigo=7, nome=Meningococo C, descricao=Doença invasiva causada por Neisseria meningitidis do Sorogrupo C, status=ATIVO], Vacina [codigo=8, nome=Febre amarela, descricao=Febre amarela, status=ATIVO], Vacina [codigo=9, nome=Tríplice Viral, descricao=Sarampo, Rubéola e Caxumba, status=ATIVO], Vacina [codigo=10, nome=Tríplice Bacteriana, descricao=Difteria, tétano, coqueluche, status=ATIVO], Vacina [codigo=11, nome=Dupla Adulto, descricao=Difteria e Tétano, status=ATIVO], Vacina [codigo=12, nome=Influenza, descricao=Influenza ou Gripe, status=ATIVO], Vacina [codigo=14, nome=baianos, descricao=veio de araxa, status=ATIVO], Vacina [codigo=16, nome=, descricao=, status=ATIVO], Vacina [codigo=1, nome=BCG-ID, descricao=bolivia, status=ATIVO], Vacina [codigo=13, nome=Sarampo,Veio das planices do volta grande, descricao=null, status=INATIVO]]
+2023-04-25T19:52:26.133-03:00 TRACE 19712 --- [http-nio-8080-exec-2] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/vacinas
+2023-04-25T19:52:49.838-03:00  INFO 19712 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-25T19:52:49.847-03:00  INFO 19712 --- [Thread-5] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-04-25T19:52:49.849-03:00  INFO 19712 --- [Thread-5] o.a.c.c.C.[.[.[/]                        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-25T19:52:49.861-03:00  INFO 19712 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T19:52:49.864-03:00  INFO 19712 --- [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-04-25T19:52:49.866-03:00  INFO 19712 --- [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2023-04-25T19:52:49.950-03:00  INFO 19712 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 19712 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T19:52:49.951-03:00 DEBUG 19712 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T19:52:49.951-03:00  INFO 19712 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T19:52:50.115-03:00  INFO 19712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T19:52:50.120-03:00  INFO 19712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interfaces.
+2023-04-25T19:52:50.209-03:00  INFO 19712 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T19:52:50.210-03:00  INFO 19712 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T19:52:50.210-03:00  INFO 19712 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T19:52:50.215-03:00  INFO 19712 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T19:52:50.215-03:00  INFO 19712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 263 ms
+2023-04-25T19:52:50.293-03:00  INFO 19712 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Starting...
+2023-04-25T19:52:50.303-03:00  INFO 19712 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@166ffb5a
+2023-04-25T19:52:50.303-03:00  INFO 19712 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Start completed.
+2023-04-25T19:52:50.305-03:00  INFO 19712 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T19:52:50.311-03:00  INFO 19712 --- [restartedMain] o.f.c.i.c.DbValidate                     : Successfully validated 2 migrations (execution time 00:00.003s)
+2023-04-25T19:52:50.324-03:00  INFO 19712 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Current version of schema "public": 02
+2023-04-25T19:52:50.324-03:00  INFO 19712 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2023-04-25T19:52:50.345-03:00  INFO 19712 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-25T19:52:50.351-03:00  INFO 19712 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-04-25T19:52:50.369-03:00  INFO 19712 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-25T19:52:50.370-03:00  INFO 19712 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T19:52:50.542-03:00  INFO 19712 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-04-25T19:52:50.738-03:00  INFO 19712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-25T19:52:50.746-03:00  INFO 19712 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-25T19:52:50.776-03:00  INFO 19712 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-25T19:52:50.782-03:00  INFO 19712 --- [restartedMain] w.c.Application                          : Started Application in 0.871 seconds (process running for 36.211)
+2023-04-25T19:52:50.786-03:00  INFO 19712 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-25T19:52:52.145-03:00  INFO 19712 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-25T19:52:52.150-03:00  INFO 19712 --- [Thread-7] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-04-25T19:52:52.164-03:00  INFO 19712 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T19:52:52.167-03:00  INFO 19712 --- [Thread-7] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown initiated...
+2023-04-25T19:52:52.171-03:00  INFO 19712 --- [Thread-7] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown completed.
+2023-04-25T19:52:52.254-03:00  INFO 19712 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 19712 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T19:52:52.254-03:00 DEBUG 19712 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T19:52:52.254-03:00  INFO 19712 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T19:52:52.383-03:00  INFO 19712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T19:52:52.387-03:00  INFO 19712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2023-04-25T19:52:52.457-03:00  INFO 19712 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T19:52:52.458-03:00  INFO 19712 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T19:52:52.458-03:00  INFO 19712 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T19:52:52.463-03:00  INFO 19712 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T19:52:52.463-03:00  INFO 19712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 208 ms
+2023-04-25T19:52:52.527-03:00  INFO 19712 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Starting...
+2023-04-25T19:52:52.535-03:00  INFO 19712 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@7654fe45
+2023-04-25T19:52:52.536-03:00  INFO 19712 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Start completed.
+2023-04-25T19:52:52.537-03:00  INFO 19712 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T19:52:52.543-03:00  INFO 19712 --- [restartedMain] o.f.c.i.c.DbValidate                     : Successfully validated 2 migrations (execution time 00:00.002s)
+2023-04-25T19:52:52.555-03:00  INFO 19712 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Current version of schema "public": 02
+2023-04-25T19:52:52.555-03:00  INFO 19712 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2023-04-25T19:52:52.572-03:00  INFO 19712 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-25T19:52:52.576-03:00  INFO 19712 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-04-25T19:52:52.594-03:00  INFO 19712 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-25T19:52:52.594-03:00  INFO 19712 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T19:52:52.717-03:00  INFO 19712 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-04-25T19:52:52.836-03:00  INFO 19712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-25T19:52:52.839-03:00  INFO 19712 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-25T19:52:52.852-03:00  INFO 19712 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-25T19:52:52.857-03:00  INFO 19712 --- [restartedMain] w.c.Application                          : Started Application in 0.635 seconds (process running for 38.286)
+2023-04-25T19:52:52.859-03:00  INFO 19712 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-25T19:53:14.978-03:00  INFO 19712 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-25T19:53:14.979-03:00  INFO 19712 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-04-25T19:53:14.982-03:00  INFO 19712 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2023-04-25T19:53:14.987-03:00 TRACE 19712 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.mostrarTodas
+2023-04-25T19:53:14.987-03:00 DEBUG 19712 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T19:53:14.988-03:00 DEBUG 19712 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : 	model: {}
+2023-04-25T19:53:14.999-03:00  INFO 19712 --- [http-nio-8080-exec-1] w.c.c.VacinaController                   : Vacinas buscadas no BD: [Vacina [codigo=2, nome=Hepatite B, descricao=Hepatite B, status=ATIVO], Vacina [codigo=3, nome=Pólio, descricao=Poliomielite (paralisia Infantil), status=ATIVO], Vacina [codigo=4, nome=Tetravalente, descricao=Difteria, tétano, coqueluche, meningite e outras infecções por Haemophilus influenzae tipo B, status=ATIVO], Vacina [codigo=5, nome=Rotavírus Humano, descricao=Doenças diarréicas por Rotavírus, status=ATIVO], Vacina [codigo=6, nome=Pneumococos, descricao=Otite, sinusite, pneumonias, meningite causadas pelo Streptococcus pneumoniae, status=ATIVO], Vacina [codigo=7, nome=Meningococo C, descricao=Doença invasiva causada por Neisseria meningitidis do Sorogrupo C, status=ATIVO], Vacina [codigo=8, nome=Febre amarela, descricao=Febre amarela, status=ATIVO], Vacina [codigo=9, nome=Tríplice Viral, descricao=Sarampo, Rubéola e Caxumba, status=ATIVO], Vacina [codigo=10, nome=Tríplice Bacteriana, descricao=Difteria, tétano, coqueluche, status=ATIVO], Vacina [codigo=11, nome=Dupla Adulto, descricao=Difteria e Tétano, status=ATIVO], Vacina [codigo=12, nome=Influenza, descricao=Influenza ou Gripe, status=ATIVO], Vacina [codigo=14, nome=baianos, descricao=veio de araxa, status=ATIVO], Vacina [codigo=16, nome=, descricao=, status=ATIVO], Vacina [codigo=1, nome=BCG-ID, descricao=bolivia, status=ATIVO], Vacina [codigo=13, nome=Sarampo,Veio das planices do volta grande, descricao=null, status=INATIVO]]
+2023-04-25T19:53:14.999-03:00 TRACE 19712 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/vacinas
+2023-04-25T19:53:25.316-03:00  INFO 19712 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-25T19:53:25.319-03:00  INFO 19712 --- [Thread-11] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-04-25T19:53:25.320-03:00  INFO 19712 --- [Thread-11] o.a.c.c.C.[.[.[/]                        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-25T19:53:25.327-03:00  INFO 19712 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T19:53:25.327-03:00  INFO 19712 --- [Thread-11] c.z.h.HikariDataSource                   : HikariPool-3 - Shutdown initiated...
+2023-04-25T19:53:25.330-03:00  INFO 19712 --- [Thread-11] c.z.h.HikariDataSource                   : HikariPool-3 - Shutdown completed.
+2023-04-25T19:53:25.396-03:00  INFO 19712 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 19712 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T19:53:25.396-03:00 DEBUG 19712 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T19:53:25.396-03:00  INFO 19712 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T19:53:25.499-03:00  INFO 19712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T19:53:25.502-03:00  INFO 19712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interfaces.
+2023-04-25T19:53:25.553-03:00  INFO 19712 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T19:53:25.554-03:00  INFO 19712 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T19:53:25.554-03:00  INFO 19712 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T19:53:25.558-03:00  INFO 19712 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T19:53:25.558-03:00  INFO 19712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 161 ms
+2023-04-25T19:53:25.605-03:00  INFO 19712 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-4 - Starting...
+2023-04-25T19:53:25.614-03:00  INFO 19712 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@4c22aee9
+2023-04-25T19:53:25.614-03:00  INFO 19712 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-4 - Start completed.
+2023-04-25T19:53:25.615-03:00  INFO 19712 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T19:53:25.619-03:00  INFO 19712 --- [restartedMain] o.f.c.i.c.DbValidate                     : Successfully validated 2 migrations (execution time 00:00.001s)
+2023-04-25T19:53:25.629-03:00  INFO 19712 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Current version of schema "public": 02
+2023-04-25T19:53:25.629-03:00  INFO 19712 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2023-04-25T19:53:25.645-03:00  INFO 19712 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-25T19:53:25.648-03:00  INFO 19712 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-04-25T19:53:25.661-03:00  INFO 19712 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-25T19:53:25.661-03:00  INFO 19712 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T19:53:25.780-03:00  INFO 19712 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-04-25T19:53:25.896-03:00  INFO 19712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-25T19:53:25.898-03:00  INFO 19712 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-25T19:53:25.912-03:00  INFO 19712 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-25T19:53:25.916-03:00  INFO 19712 --- [restartedMain] w.c.Application                          : Started Application in 0.547 seconds (process running for 71.345)
+2023-04-25T19:53:25.917-03:00  INFO 19712 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-25T19:53:43.337-03:00  INFO 19712 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-25T19:53:43.342-03:00  INFO 19712 --- [Thread-15] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-04-25T19:53:43.354-03:00  INFO 19712 --- [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T19:53:43.356-03:00  INFO 19712 --- [Thread-15] c.z.h.HikariDataSource                   : HikariPool-4 - Shutdown initiated...
+2023-04-25T19:53:43.365-03:00  INFO 19712 --- [Thread-15] c.z.h.HikariDataSource                   : HikariPool-4 - Shutdown completed.
+2023-04-25T19:53:43.439-03:00  INFO 19712 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 19712 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T19:53:43.439-03:00 DEBUG 19712 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T19:53:43.439-03:00  INFO 19712 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T19:53:43.561-03:00  INFO 19712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T19:53:43.565-03:00  INFO 19712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2023-04-25T19:53:43.625-03:00  INFO 19712 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T19:53:43.625-03:00  INFO 19712 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T19:53:43.625-03:00  INFO 19712 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T19:53:43.630-03:00  INFO 19712 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T19:53:43.630-03:00  INFO 19712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 190 ms
+2023-04-25T19:53:43.687-03:00  INFO 19712 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-5 - Starting...
+2023-04-25T19:53:43.695-03:00  INFO 19712 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@7a1e8406
+2023-04-25T19:53:43.696-03:00  INFO 19712 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-5 - Start completed.
+2023-04-25T19:53:43.697-03:00  INFO 19712 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T19:53:43.703-03:00  INFO 19712 --- [restartedMain] o.f.c.i.c.DbValidate                     : Successfully validated 2 migrations (execution time 00:00.002s)
+2023-04-25T19:53:43.719-03:00  INFO 19712 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Current version of schema "public": 02
+2023-04-25T19:53:43.720-03:00  INFO 19712 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2023-04-25T19:53:43.739-03:00  INFO 19712 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-25T19:53:43.742-03:00  INFO 19712 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-04-25T19:53:43.755-03:00  INFO 19712 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-25T19:53:43.756-03:00  INFO 19712 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T19:53:43.871-03:00  INFO 19712 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-04-25T19:53:43.987-03:00  INFO 19712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-25T19:53:43.989-03:00  INFO 19712 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-25T19:53:44.001-03:00  INFO 19712 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-25T19:53:44.005-03:00  INFO 19712 --- [restartedMain] w.c.Application                          : Started Application in 0.595 seconds (process running for 89.434)
+2023-04-25T19:53:44.006-03:00  INFO 19712 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-25T19:53:53.405-03:00  INFO 19712 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-25T19:53:53.410-03:00  INFO 19712 --- [Thread-19] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-04-25T19:53:53.421-03:00  INFO 19712 --- [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T19:53:53.422-03:00  INFO 19712 --- [Thread-19] c.z.h.HikariDataSource                   : HikariPool-5 - Shutdown initiated...
+2023-04-25T19:53:53.426-03:00  INFO 19712 --- [Thread-19] c.z.h.HikariDataSource                   : HikariPool-5 - Shutdown completed.
+2023-04-25T19:53:53.517-03:00  INFO 19712 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 19712 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T19:53:53.517-03:00 DEBUG 19712 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T19:53:53.517-03:00  INFO 19712 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T19:53:53.610-03:00  INFO 19712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T19:53:53.613-03:00  INFO 19712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interfaces.
+2023-04-25T19:53:53.677-03:00  INFO 19712 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T19:53:53.678-03:00  INFO 19712 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T19:53:53.678-03:00  INFO 19712 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T19:53:53.682-03:00  INFO 19712 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T19:53:53.682-03:00  INFO 19712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 164 ms
+2023-04-25T19:53:53.738-03:00  INFO 19712 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-6 - Starting...
+2023-04-25T19:53:53.747-03:00  INFO 19712 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-6 - Added connection org.postgresql.jdbc.PgConnection@31354dba
+2023-04-25T19:53:53.747-03:00  INFO 19712 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-6 - Start completed.
+2023-04-25T19:53:53.748-03:00  INFO 19712 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T19:53:53.753-03:00  INFO 19712 --- [restartedMain] o.f.c.i.c.DbValidate                     : Successfully validated 2 migrations (execution time 00:00.002s)
+2023-04-25T19:53:53.763-03:00  INFO 19712 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Current version of schema "public": 02
+2023-04-25T19:53:53.764-03:00  INFO 19712 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2023-04-25T19:53:53.781-03:00  INFO 19712 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-25T19:53:53.784-03:00  INFO 19712 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-04-25T19:53:53.796-03:00  INFO 19712 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-25T19:53:53.796-03:00  INFO 19712 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T19:53:53.916-03:00  INFO 19712 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-04-25T19:53:54.062-03:00  INFO 19712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-25T19:53:54.064-03:00  INFO 19712 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-25T19:53:54.075-03:00  INFO 19712 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-25T19:53:54.078-03:00  INFO 19712 --- [restartedMain] w.c.Application                          : Started Application in 0.587 seconds (process running for 99.507)
+2023-04-25T19:53:54.079-03:00  INFO 19712 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-25T19:53:56.470-03:00  INFO 19712 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-25T19:53:56.475-03:00  INFO 19712 --- [Thread-23] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-04-25T19:53:56.486-03:00  INFO 19712 --- [Thread-23] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T19:53:56.487-03:00  INFO 19712 --- [Thread-23] c.z.h.HikariDataSource                   : HikariPool-6 - Shutdown initiated...
+2023-04-25T19:53:56.491-03:00  INFO 19712 --- [Thread-23] c.z.h.HikariDataSource                   : HikariPool-6 - Shutdown completed.
+2023-04-25T19:53:56.581-03:00  INFO 19712 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 19712 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T19:53:56.581-03:00 DEBUG 19712 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T19:53:56.581-03:00  INFO 19712 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T19:53:56.671-03:00  INFO 19712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T19:53:56.675-03:00  INFO 19712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2023-04-25T19:53:56.729-03:00  INFO 19712 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T19:53:56.733-03:00  INFO 19712 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T19:53:56.733-03:00  INFO 19712 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T19:53:56.737-03:00  INFO 19712 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T19:53:56.737-03:00  INFO 19712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 155 ms
+2023-04-25T19:53:56.787-03:00  INFO 19712 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-7 - Starting...
+2023-04-25T19:53:56.796-03:00  INFO 19712 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-7 - Added connection org.postgresql.jdbc.PgConnection@539d6349
+2023-04-25T19:53:56.796-03:00  INFO 19712 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-7 - Start completed.
+2023-04-25T19:53:56.797-03:00  INFO 19712 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T19:53:56.803-03:00  INFO 19712 --- [restartedMain] o.f.c.i.c.DbValidate                     : Successfully validated 2 migrations (execution time 00:00.002s)
+2023-04-25T19:53:56.815-03:00  INFO 19712 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Current version of schema "public": 02
+2023-04-25T19:53:56.816-03:00  INFO 19712 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2023-04-25T19:53:56.836-03:00  INFO 19712 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-25T19:53:56.841-03:00  INFO 19712 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-04-25T19:53:56.855-03:00  INFO 19712 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-25T19:53:56.855-03:00  INFO 19712 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T19:53:56.870-03:00  WARN 19712 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'vacinaController': Unsatisfied dependency expressed through field 'vacinaRepository': Error creating bean with name 'vacinaRepository' defined in web.controlevacinacao.repository.VacinaRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpa.VacinaRepository.fragments#0' while setting bean property 'repositoryFragments'
+2023-04-25T19:53:56.871-03:00  INFO 19712 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T19:53:56.871-03:00  INFO 19712 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-7 - Shutdown initiated...
+2023-04-25T19:53:56.880-03:00  INFO 19712 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-7 - Shutdown completed.
+2023-04-25T19:53:56.880-03:00  INFO 19712 --- [restartedMain] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-04-25T19:53:56.888-03:00  INFO 19712 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-04-25T19:53:56.899-03:00 ERROR 19712 --- [restartedMain] o.s.b.SpringApplication                  : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'vacinaController': Unsatisfied dependency expressed through field 'vacinaRepository': Error creating bean with name 'vacinaRepository' defined in web.controlevacinacao.repository.VacinaRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpa.VacinaRepository.fragments#0' while setting bean property 'repositoryFragments'
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:713) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:693) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:133) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:482) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1416) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:917) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1304) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1293) ~[spring-boot-3.0.5.jar:3.0.5]
+	at web.controlevacinacao.Application.main(Application.java:10) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-3.0.5.jar:3.0.5]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'vacinaRepository' defined in web.controlevacinacao.repository.VacinaRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpa.VacinaRepository.fragments#0' while setting bean property 'repositoryFragments'
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1682) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1417) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:710) ~[spring-beans-6.0.7.jar:6.0.7]
+	... 23 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpa.VacinaRepository.fragments#0': Error creating bean with name 'vacinaQueriesImplFragment': Cannot resolve reference to bean 'vacinaQueriesImpl' while setting constructor argument
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1682) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1417) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:710) ~[spring-beans-6.0.7.jar:6.0.7]
+	... 23 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'vacinaQueriesImplFragment': Cannot resolve reference to bean 'vacinaQueriesImpl' while setting constructor argument
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:691) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:515) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.data.repository.core.support.RepositoryFragmentsFactoryBean.lambda$afterPropertiesSet$0(RepositoryFragmentsFactoryBean.java:68) ~[spring-data-commons-3.0.4.jar:3.0.4]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[?:?]
+	at org.springframework.data.repository.core.support.RepositoryFragmentsFactoryBean.afterPropertiesSet(RepositoryFragmentsFactoryBean.java:69) ~[spring-data-commons-3.0.4.jar:3.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1682) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1417) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:710) ~[spring-beans-6.0.7.jar:6.0.7]
+	... 23 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'vacinaQueriesImpl' defined in file [/home/rosegates/Projetos/daw/controlevacinacao/target/classes/web/controlevacinacao/repository/queries/vacina/VacinaQueriesImpl.class]: Failed to instantiate [web.controlevacinacao.repository.queries.vacina.VacinaQueriesImpl]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1314) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1199) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:691) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:515) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.data.repository.core.support.RepositoryFragmentsFactoryBean.lambda$afterPropertiesSet$0(RepositoryFragmentsFactoryBean.java:68) ~[spring-data-commons-3.0.4.jar:3.0.4]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[?:?]
+	at org.springframework.data.repository.core.support.RepositoryFragmentsFactoryBean.afterPropertiesSet(RepositoryFragmentsFactoryBean.java:69) ~[spring-data-commons-3.0.4.jar:3.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1682) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1417) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:710) ~[spring-beans-6.0.7.jar:6.0.7]
+	... 23 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [web.controlevacinacao.repository.queries.vacina.VacinaQueriesImpl]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1308) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1199) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:691) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:515) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.data.repository.core.support.RepositoryFragmentsFactoryBean.lambda$afterPropertiesSet$0(RepositoryFragmentsFactoryBean.java:68) ~[spring-data-commons-3.0.4.jar:3.0.4]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[?:?]
+	at org.springframework.data.repository.core.support.RepositoryFragmentsFactoryBean.afterPropertiesSet(RepositoryFragmentsFactoryBean.java:69) ~[spring-data-commons-3.0.4.jar:3.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1682) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1417) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:710) ~[spring-beans-6.0.7.jar:6.0.7]
+	... 23 more
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	Syntax error on token ".", * expected after this token
+	Status cannot be resolved to a type
+	The method get(String) from the type Path<Vacina> refers to the missing type Status
+
+	at web.controlevacinacao.repository.queries.vacina.VacinaQueriesImpl.<init>(VacinaQueriesImpl.java:16) ~[classes/:?]
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:484) ~[?:?]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:198) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1308) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1199) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:691) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:515) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.data.repository.core.support.RepositoryFragmentsFactoryBean.lambda$afterPropertiesSet$0(RepositoryFragmentsFactoryBean.java:68) ~[spring-data-commons-3.0.4.jar:3.0.4]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[?:?]
+	at org.springframework.data.repository.core.support.RepositoryFragmentsFactoryBean.afterPropertiesSet(RepositoryFragmentsFactoryBean.java:69) ~[spring-data-commons-3.0.4.jar:3.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1682) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1417) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:710) ~[spring-beans-6.0.7.jar:6.0.7]
+	... 23 more
+
+2023-04-25T19:53:59.366-03:00  INFO 19712 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 19712 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T19:53:59.366-03:00 DEBUG 19712 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T19:53:59.366-03:00  INFO 19712 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T19:53:59.464-03:00  INFO 19712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T19:53:59.467-03:00  INFO 19712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2023-04-25T19:53:59.527-03:00  INFO 19712 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T19:53:59.528-03:00  INFO 19712 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T19:53:59.528-03:00  INFO 19712 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T19:53:59.532-03:00  INFO 19712 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T19:53:59.532-03:00  INFO 19712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 165 ms
+2023-04-25T19:53:59.588-03:00  INFO 19712 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-8 - Starting...
+2023-04-25T19:53:59.596-03:00  INFO 19712 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-8 - Added connection org.postgresql.jdbc.PgConnection@dcc496
+2023-04-25T19:53:59.596-03:00  INFO 19712 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-8 - Start completed.
+2023-04-25T19:53:59.597-03:00  INFO 19712 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T19:53:59.602-03:00  INFO 19712 --- [restartedMain] o.f.c.i.c.DbValidate                     : Successfully validated 2 migrations (execution time 00:00.002s)
+2023-04-25T19:53:59.612-03:00  INFO 19712 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Current version of schema "public": 02
+2023-04-25T19:53:59.613-03:00  INFO 19712 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2023-04-25T19:53:59.627-03:00  INFO 19712 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-25T19:53:59.631-03:00  INFO 19712 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-04-25T19:53:59.642-03:00  INFO 19712 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-25T19:53:59.642-03:00  INFO 19712 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T19:53:59.755-03:00  INFO 19712 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-04-25T19:53:59.889-03:00  INFO 19712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-25T19:53:59.891-03:00  INFO 19712 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-25T19:53:59.904-03:00  INFO 19712 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-25T19:53:59.908-03:00  INFO 19712 --- [restartedMain] w.c.Application                          : Started Application in 0.593 seconds (process running for 105.337)
+2023-04-25T19:53:59.909-03:00  INFO 19712 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-25T19:54:02.367-03:00  INFO 19712 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-25T19:54:02.367-03:00  INFO 19712 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-04-25T19:54:02.370-03:00  INFO 19712 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 3 ms
+2023-04-25T19:54:02.376-03:00 TRACE 19712 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.mostrarTodas
+2023-04-25T19:54:02.377-03:00 DEBUG 19712 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T19:54:02.377-03:00 DEBUG 19712 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : 	model: {}
+2023-04-25T19:54:02.390-03:00  INFO 19712 --- [http-nio-8080-exec-1] w.c.c.VacinaController                   : Vacinas buscadas no BD: [Vacina [codigo=2, nome=Hepatite B, descricao=Hepatite B, status=ATIVO], Vacina [codigo=3, nome=Pólio, descricao=Poliomielite (paralisia Infantil), status=ATIVO], Vacina [codigo=4, nome=Tetravalente, descricao=Difteria, tétano, coqueluche, meningite e outras infecções por Haemophilus influenzae tipo B, status=ATIVO], Vacina [codigo=5, nome=Rotavírus Humano, descricao=Doenças diarréicas por Rotavírus, status=ATIVO], Vacina [codigo=6, nome=Pneumococos, descricao=Otite, sinusite, pneumonias, meningite causadas pelo Streptococcus pneumoniae, status=ATIVO], Vacina [codigo=7, nome=Meningococo C, descricao=Doença invasiva causada por Neisseria meningitidis do Sorogrupo C, status=ATIVO], Vacina [codigo=8, nome=Febre amarela, descricao=Febre amarela, status=ATIVO], Vacina [codigo=9, nome=Tríplice Viral, descricao=Sarampo, Rubéola e Caxumba, status=ATIVO], Vacina [codigo=10, nome=Tríplice Bacteriana, descricao=Difteria, tétano, coqueluche, status=ATIVO], Vacina [codigo=11, nome=Dupla Adulto, descricao=Difteria e Tétano, status=ATIVO], Vacina [codigo=12, nome=Influenza, descricao=Influenza ou Gripe, status=ATIVO], Vacina [codigo=14, nome=baianos, descricao=veio de araxa, status=ATIVO], Vacina [codigo=16, nome=, descricao=, status=ATIVO], Vacina [codigo=1, nome=BCG-ID, descricao=bolivia, status=ATIVO], Vacina [codigo=13, nome=Sarampo,Veio das planices do volta grande, descricao=null, status=INATIVO]]
+2023-04-25T19:54:02.390-03:00 TRACE 19712 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/vacinas
+2023-04-25T19:54:19.329-03:00  INFO 19712 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-25T19:54:19.333-03:00  INFO 19712 --- [Thread-27] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-04-25T19:54:19.333-03:00  INFO 19712 --- [Thread-27] o.a.c.c.C.[.[.[/]                        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-25T19:54:19.340-03:00  INFO 19712 --- [Thread-27] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T19:54:19.341-03:00  INFO 19712 --- [Thread-27] c.z.h.HikariDataSource                   : HikariPool-8 - Shutdown initiated...
+2023-04-25T19:54:19.342-03:00  INFO 19712 --- [Thread-27] c.z.h.HikariDataSource                   : HikariPool-8 - Shutdown completed.
+2023-04-25T19:54:19.428-03:00  INFO 19712 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 19712 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T19:54:19.428-03:00 DEBUG 19712 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T19:54:19.428-03:00  INFO 19712 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T19:54:19.527-03:00  INFO 19712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T19:54:19.529-03:00  INFO 19712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interfaces.
+2023-04-25T19:54:19.582-03:00  INFO 19712 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T19:54:19.583-03:00  INFO 19712 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T19:54:19.583-03:00  INFO 19712 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T19:54:19.587-03:00  INFO 19712 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T19:54:19.587-03:00  INFO 19712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 158 ms
+2023-04-25T19:54:19.640-03:00  INFO 19712 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-9 - Starting...
+2023-04-25T19:54:19.647-03:00  INFO 19712 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-9 - Added connection org.postgresql.jdbc.PgConnection@371c2b7c
+2023-04-25T19:54:19.648-03:00  INFO 19712 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-9 - Start completed.
+2023-04-25T19:54:19.649-03:00  INFO 19712 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T19:54:19.656-03:00  INFO 19712 --- [restartedMain] o.f.c.i.c.DbValidate                     : Successfully validated 2 migrations (execution time 00:00.003s)
+2023-04-25T19:54:19.668-03:00  INFO 19712 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Current version of schema "public": 02
+2023-04-25T19:54:19.669-03:00  INFO 19712 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2023-04-25T19:54:19.689-03:00  INFO 19712 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-25T19:54:19.693-03:00  INFO 19712 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-04-25T19:54:19.706-03:00  INFO 19712 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-25T19:54:19.706-03:00  INFO 19712 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T19:54:19.803-03:00  INFO 19712 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-04-25T19:54:19.922-03:00  INFO 19712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-25T19:54:19.925-03:00  INFO 19712 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-25T19:54:19.939-03:00  INFO 19712 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-25T19:54:19.943-03:00  INFO 19712 --- [restartedMain] w.c.Application                          : Started Application in 0.545 seconds (process running for 125.372)
+2023-04-25T19:54:19.944-03:00  INFO 19712 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-25T19:54:23.327-03:00  INFO 19712 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-25T19:54:23.331-03:00  INFO 19712 --- [Thread-34] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-04-25T19:54:23.342-03:00  INFO 19712 --- [Thread-34] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T19:54:23.344-03:00  INFO 19712 --- [Thread-34] c.z.h.HikariDataSource                   : HikariPool-9 - Shutdown initiated...
+2023-04-25T19:54:23.347-03:00  INFO 19712 --- [Thread-34] c.z.h.HikariDataSource                   : HikariPool-9 - Shutdown completed.
+2023-04-25T19:54:23.429-03:00  INFO 19712 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 19712 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T19:54:23.429-03:00 DEBUG 19712 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T19:54:23.429-03:00  INFO 19712 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T19:54:23.505-03:00  INFO 19712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T19:54:23.508-03:00  INFO 19712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2023-04-25T19:54:23.552-03:00  INFO 19712 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T19:54:23.553-03:00  INFO 19712 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T19:54:23.553-03:00  INFO 19712 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T19:54:23.557-03:00  INFO 19712 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T19:54:23.557-03:00  INFO 19712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 128 ms
+2023-04-25T19:54:23.603-03:00  INFO 19712 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-10 - Starting...
+2023-04-25T19:54:23.612-03:00  INFO 19712 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-10 - Added connection org.postgresql.jdbc.PgConnection@653129d7
+2023-04-25T19:54:23.612-03:00  INFO 19712 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-10 - Start completed.
+2023-04-25T19:54:23.613-03:00  INFO 19712 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T19:54:23.617-03:00  INFO 19712 --- [restartedMain] o.f.c.i.c.DbValidate                     : Successfully validated 2 migrations (execution time 00:00.002s)
+2023-04-25T19:54:23.628-03:00  INFO 19712 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Current version of schema "public": 02
+2023-04-25T19:54:23.629-03:00  INFO 19712 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2023-04-25T19:54:23.644-03:00  INFO 19712 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-25T19:54:23.647-03:00  INFO 19712 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-04-25T19:54:23.658-03:00  INFO 19712 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-25T19:54:23.659-03:00  INFO 19712 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T19:54:23.770-03:00  INFO 19712 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-04-25T19:54:23.885-03:00  INFO 19712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-25T19:54:23.889-03:00  INFO 19712 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-25T19:54:23.899-03:00  INFO 19712 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-25T19:54:23.903-03:00  INFO 19712 --- [restartedMain] w.c.Application                          : Started Application in 0.501 seconds (process running for 129.332)
+2023-04-25T19:54:23.904-03:00  INFO 19712 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-25T19:54:25.290-03:00  INFO 19712 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-25T19:54:25.293-03:00  INFO 19712 --- [Thread-38] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-04-25T19:54:25.300-03:00  INFO 19712 --- [Thread-38] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T19:54:25.301-03:00  INFO 19712 --- [Thread-38] c.z.h.HikariDataSource                   : HikariPool-10 - Shutdown initiated...
+2023-04-25T19:54:25.303-03:00  INFO 19712 --- [Thread-38] c.z.h.HikariDataSource                   : HikariPool-10 - Shutdown completed.
+2023-04-25T19:54:25.397-03:00  INFO 19712 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 19712 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T19:54:25.397-03:00 DEBUG 19712 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T19:54:25.397-03:00  INFO 19712 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T19:54:25.472-03:00  INFO 19712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T19:54:25.475-03:00  INFO 19712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interfaces.
+2023-04-25T19:54:25.529-03:00  INFO 19712 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T19:54:25.529-03:00  INFO 19712 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T19:54:25.529-03:00  INFO 19712 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T19:54:25.533-03:00  INFO 19712 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T19:54:25.533-03:00  INFO 19712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 135 ms
+2023-04-25T19:54:25.586-03:00  INFO 19712 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-11 - Starting...
+2023-04-25T19:54:25.594-03:00  INFO 19712 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-11 - Added connection org.postgresql.jdbc.PgConnection@109bd55e
+2023-04-25T19:54:25.595-03:00  INFO 19712 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-11 - Start completed.
+2023-04-25T19:54:25.596-03:00  INFO 19712 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T19:54:25.600-03:00  INFO 19712 --- [restartedMain] o.f.c.i.c.DbValidate                     : Successfully validated 2 migrations (execution time 00:00.002s)
+2023-04-25T19:54:25.611-03:00  INFO 19712 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Current version of schema "public": 02
+2023-04-25T19:54:25.612-03:00  INFO 19712 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2023-04-25T19:54:25.626-03:00  INFO 19712 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-25T19:54:25.629-03:00  INFO 19712 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-04-25T19:54:25.639-03:00  INFO 19712 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-25T19:54:25.639-03:00  INFO 19712 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T19:54:25.741-03:00  INFO 19712 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-04-25T19:54:25.875-03:00  INFO 19712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-25T19:54:25.878-03:00  INFO 19712 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-25T19:54:25.889-03:00  INFO 19712 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-25T19:54:25.893-03:00  INFO 19712 --- [restartedMain] w.c.Application                          : Started Application in 0.522 seconds (process running for 131.322)
+2023-04-25T19:54:25.894-03:00  INFO 19712 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-25T19:54:26.651-03:00  INFO 19712 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-25T19:54:26.651-03:00  INFO 19712 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-04-25T19:54:26.652-03:00  INFO 19712 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2023-04-25T19:54:26.653-03:00 TRACE 19712 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.mostrarTodas
+2023-04-25T19:54:26.654-03:00 DEBUG 19712 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T19:54:26.654-03:00 DEBUG 19712 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : 	model: {}
+2023-04-25T19:54:26.659-03:00  INFO 19712 --- [http-nio-8080-exec-1] w.c.c.VacinaController                   : Vacinas buscadas no BD: [Vacina [codigo=2, nome=Hepatite B, descricao=Hepatite B, status=ATIVO], Vacina [codigo=3, nome=Pólio, descricao=Poliomielite (paralisia Infantil), status=ATIVO], Vacina [codigo=4, nome=Tetravalente, descricao=Difteria, tétano, coqueluche, meningite e outras infecções por Haemophilus influenzae tipo B, status=ATIVO], Vacina [codigo=5, nome=Rotavírus Humano, descricao=Doenças diarréicas por Rotavírus, status=ATIVO], Vacina [codigo=6, nome=Pneumococos, descricao=Otite, sinusite, pneumonias, meningite causadas pelo Streptococcus pneumoniae, status=ATIVO], Vacina [codigo=7, nome=Meningococo C, descricao=Doença invasiva causada por Neisseria meningitidis do Sorogrupo C, status=ATIVO], Vacina [codigo=8, nome=Febre amarela, descricao=Febre amarela, status=ATIVO], Vacina [codigo=9, nome=Tríplice Viral, descricao=Sarampo, Rubéola e Caxumba, status=ATIVO], Vacina [codigo=10, nome=Tríplice Bacteriana, descricao=Difteria, tétano, coqueluche, status=ATIVO], Vacina [codigo=11, nome=Dupla Adulto, descricao=Difteria e Tétano, status=ATIVO], Vacina [codigo=12, nome=Influenza, descricao=Influenza ou Gripe, status=ATIVO], Vacina [codigo=14, nome=baianos, descricao=veio de araxa, status=ATIVO], Vacina [codigo=16, nome=, descricao=, status=ATIVO], Vacina [codigo=1, nome=BCG-ID, descricao=bolivia, status=ATIVO], Vacina [codigo=13, nome=Sarampo,Veio das planices do volta grande, descricao=null, status=INATIVO]]
+2023-04-25T19:54:26.659-03:00 TRACE 19712 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/vacinas
+2023-04-25T19:54:27.279-03:00  INFO 19712 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-25T19:54:27.283-03:00  INFO 19712 --- [Thread-42] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-04-25T19:54:27.284-03:00  INFO 19712 --- [Thread-42] o.a.c.c.C.[.[.[/]                        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-25T19:54:27.294-03:00  INFO 19712 --- [Thread-42] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T19:54:27.295-03:00  INFO 19712 --- [Thread-42] c.z.h.HikariDataSource                   : HikariPool-11 - Shutdown initiated...
+2023-04-25T19:54:27.302-03:00  INFO 19712 --- [Thread-42] c.z.h.HikariDataSource                   : HikariPool-11 - Shutdown completed.
+2023-04-25T19:54:27.390-03:00  INFO 19712 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 19712 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T19:54:27.390-03:00 DEBUG 19712 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T19:54:27.390-03:00  INFO 19712 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T19:54:27.462-03:00  INFO 19712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T19:54:27.464-03:00  INFO 19712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interfaces.
+2023-04-25T19:54:27.510-03:00  INFO 19712 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T19:54:27.510-03:00  INFO 19712 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T19:54:27.510-03:00  INFO 19712 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T19:54:27.514-03:00  INFO 19712 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T19:54:27.514-03:00  INFO 19712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 123 ms
+2023-04-25T19:54:27.559-03:00  INFO 19712 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-12 - Starting...
+2023-04-25T19:54:27.566-03:00  INFO 19712 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-12 - Added connection org.postgresql.jdbc.PgConnection@ce22d7e
+2023-04-25T19:54:27.567-03:00  INFO 19712 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-12 - Start completed.
+2023-04-25T19:54:27.567-03:00  INFO 19712 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T19:54:27.571-03:00  INFO 19712 --- [restartedMain] o.f.c.i.c.DbValidate                     : Successfully validated 2 migrations (execution time 00:00.002s)
+2023-04-25T19:54:27.581-03:00  INFO 19712 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Current version of schema "public": 02
+2023-04-25T19:54:27.581-03:00  INFO 19712 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2023-04-25T19:54:27.594-03:00  INFO 19712 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-25T19:54:27.597-03:00  INFO 19712 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-04-25T19:54:27.606-03:00  INFO 19712 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-25T19:54:27.607-03:00  INFO 19712 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T19:54:27.702-03:00  INFO 19712 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-04-25T19:54:27.822-03:00  INFO 19712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-25T19:54:27.825-03:00  INFO 19712 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-25T19:54:27.835-03:00  INFO 19712 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-25T19:54:27.838-03:00  INFO 19712 --- [restartedMain] w.c.Application                          : Started Application in 0.47 seconds (process running for 133.267)
+2023-04-25T19:54:27.839-03:00  INFO 19712 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-25T19:54:27.961-03:00  INFO 19712 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-25T19:54:27.961-03:00  INFO 19712 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-04-25T19:54:27.964-03:00  INFO 19712 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2023-04-25T19:54:27.968-03:00 TRACE 19712 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.mostrarTodas
+2023-04-25T19:54:27.970-03:00 DEBUG 19712 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T19:54:27.970-03:00 DEBUG 19712 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : 	model: {}
+2023-04-25T19:54:27.980-03:00  INFO 19712 --- [http-nio-8080-exec-1] w.c.c.VacinaController                   : Vacinas buscadas no BD: [Vacina [codigo=2, nome=Hepatite B, descricao=Hepatite B, status=ATIVO], Vacina [codigo=3, nome=Pólio, descricao=Poliomielite (paralisia Infantil), status=ATIVO], Vacina [codigo=4, nome=Tetravalente, descricao=Difteria, tétano, coqueluche, meningite e outras infecções por Haemophilus influenzae tipo B, status=ATIVO], Vacina [codigo=5, nome=Rotavírus Humano, descricao=Doenças diarréicas por Rotavírus, status=ATIVO], Vacina [codigo=6, nome=Pneumococos, descricao=Otite, sinusite, pneumonias, meningite causadas pelo Streptococcus pneumoniae, status=ATIVO], Vacina [codigo=7, nome=Meningococo C, descricao=Doença invasiva causada por Neisseria meningitidis do Sorogrupo C, status=ATIVO], Vacina [codigo=8, nome=Febre amarela, descricao=Febre amarela, status=ATIVO], Vacina [codigo=9, nome=Tríplice Viral, descricao=Sarampo, Rubéola e Caxumba, status=ATIVO], Vacina [codigo=10, nome=Tríplice Bacteriana, descricao=Difteria, tétano, coqueluche, status=ATIVO], Vacina [codigo=11, nome=Dupla Adulto, descricao=Difteria e Tétano, status=ATIVO], Vacina [codigo=12, nome=Influenza, descricao=Influenza ou Gripe, status=ATIVO], Vacina [codigo=14, nome=baianos, descricao=veio de araxa, status=ATIVO], Vacina [codigo=16, nome=, descricao=, status=ATIVO], Vacina [codigo=1, nome=BCG-ID, descricao=bolivia, status=ATIVO], Vacina [codigo=13, nome=Sarampo,Veio das planices do volta grande, descricao=null, status=INATIVO]]
+2023-04-25T19:54:27.981-03:00 TRACE 19712 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/vacinas
+2023-04-25T19:54:32.004-03:00 TRACE 19712 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.mostrarTodas
+2023-04-25T19:54:32.005-03:00 DEBUG 19712 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T19:54:32.005-03:00 DEBUG 19712 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : 	model: {}
+2023-04-25T19:54:32.014-03:00  INFO 19712 --- [http-nio-8080-exec-7] w.c.c.VacinaController                   : Vacinas buscadas no BD: [Vacina [codigo=2, nome=Hepatite B, descricao=Hepatite B, status=ATIVO], Vacina [codigo=3, nome=Pólio, descricao=Poliomielite (paralisia Infantil), status=ATIVO], Vacina [codigo=4, nome=Tetravalente, descricao=Difteria, tétano, coqueluche, meningite e outras infecções por Haemophilus influenzae tipo B, status=ATIVO], Vacina [codigo=5, nome=Rotavírus Humano, descricao=Doenças diarréicas por Rotavírus, status=ATIVO], Vacina [codigo=6, nome=Pneumococos, descricao=Otite, sinusite, pneumonias, meningite causadas pelo Streptococcus pneumoniae, status=ATIVO], Vacina [codigo=7, nome=Meningococo C, descricao=Doença invasiva causada por Neisseria meningitidis do Sorogrupo C, status=ATIVO], Vacina [codigo=8, nome=Febre amarela, descricao=Febre amarela, status=ATIVO], Vacina [codigo=9, nome=Tríplice Viral, descricao=Sarampo, Rubéola e Caxumba, status=ATIVO], Vacina [codigo=10, nome=Tríplice Bacteriana, descricao=Difteria, tétano, coqueluche, status=ATIVO], Vacina [codigo=11, nome=Dupla Adulto, descricao=Difteria e Tétano, status=ATIVO], Vacina [codigo=12, nome=Influenza, descricao=Influenza ou Gripe, status=ATIVO], Vacina [codigo=14, nome=baianos, descricao=veio de araxa, status=ATIVO], Vacina [codigo=16, nome=, descricao=, status=ATIVO], Vacina [codigo=1, nome=BCG-ID, descricao=bolivia, status=ATIVO], Vacina [codigo=13, nome=Sarampo,Veio das planices do volta grande, descricao=null, status=INATIVO]]
+2023-04-25T19:54:32.015-03:00 TRACE 19712 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/vacinas
+2023-04-25T19:56:14.749-03:00  INFO 19712 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T19:56:14.750-03:00  INFO 19712 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-12 - Shutdown initiated...
+2023-04-25T19:56:14.757-03:00  INFO 19712 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-12 - Shutdown completed.
+2023-04-25T19:56:25.916-03:00  INFO 22332 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 22332 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T19:56:25.923-03:00 DEBUG 22332 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T19:56:25.925-03:00  INFO 22332 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T19:56:26.071-03:00  INFO 22332 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-25T19:56:26.072-03:00  INFO 22332 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-25T19:56:26.616-03:00  INFO 22332 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T19:56:26.649-03:00  INFO 22332 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interfaces.
+2023-04-25T19:56:27.142-03:00  INFO 22332 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T19:56:27.147-03:00  INFO 22332 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T19:56:27.147-03:00  INFO 22332 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T19:56:27.176-03:00  INFO 22332 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T19:56:27.176-03:00  INFO 22332 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1102 ms
+2023-04-25T19:56:27.384-03:00  INFO 22332 --- [restartedMain] o.f.c.i.l.VersionPrinter                 : Flyway Community Edition 9.5.1 by Redgate
+2023-04-25T19:56:27.385-03:00  INFO 22332 --- [restartedMain] o.f.c.i.l.VersionPrinter                 : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
+2023-04-25T19:56:27.385-03:00  INFO 22332 --- [restartedMain] o.f.c.i.l.VersionPrinter                 : 
+2023-04-25T19:56:27.394-03:00  INFO 22332 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-04-25T19:56:27.491-03:00  INFO 22332 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2c46065a
+2023-04-25T19:56:27.491-03:00  INFO 22332 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-04-25T19:56:27.507-03:00  INFO 22332 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T19:56:27.532-03:00  INFO 22332 --- [restartedMain] o.f.c.i.c.DbValidate                     : Successfully validated 2 migrations (execution time 00:00.013s)
+2023-04-25T19:56:27.561-03:00  INFO 22332 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Current version of schema "public": 02
+2023-04-25T19:56:27.562-03:00  INFO 22332 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2023-04-25T19:56:27.632-03:00  INFO 22332 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-25T19:56:27.661-03:00  INFO 22332 --- [restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-25T19:56:27.812-03:00  INFO 22332 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-04-25T19:56:28.140-03:00  INFO 22332 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-25T19:56:28.144-03:00  INFO 22332 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T19:56:28.559-03:00  INFO 22332 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-04-25T19:56:28.952-03:00  INFO 22332 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-25T19:56:28.952-03:00  INFO 22332 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-25T19:56:28.953-03:00  INFO 22332 --- [RMI TCP Connection(2)-127.0.0.1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-04-25T19:56:28.960-03:00  INFO 22332 --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-25T19:56:28.971-03:00  INFO 22332 --- [RMI TCP Connection(2)-127.0.0.1] o.s.w.s.DispatcherServlet                : Completed initialization in 18 ms
+2023-04-25T19:56:29.021-03:00  INFO 22332 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-25T19:56:29.035-03:00  INFO 22332 --- [restartedMain] w.c.Application                          : Started Application in 3.44 seconds (process running for 3.884)
+2023-04-25T19:56:34.427-03:00 TRACE 22332 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.mostrarTodas
+2023-04-25T19:56:34.427-03:00 DEBUG 22332 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T19:56:34.427-03:00 DEBUG 22332 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : 	model: {}
+2023-04-25T19:56:34.490-03:00  INFO 22332 --- [http-nio-8080-exec-1] w.c.c.VacinaController                   : Vacinas buscadas no BD: [Vacina [codigo=2, nome=Hepatite B, descricao=Hepatite B, status=ATIVO], Vacina [codigo=3, nome=Pólio, descricao=Poliomielite (paralisia Infantil), status=ATIVO], Vacina [codigo=4, nome=Tetravalente, descricao=Difteria, tétano, coqueluche, meningite e outras infecções por Haemophilus influenzae tipo B, status=ATIVO], Vacina [codigo=5, nome=Rotavírus Humano, descricao=Doenças diarréicas por Rotavírus, status=ATIVO], Vacina [codigo=6, nome=Pneumococos, descricao=Otite, sinusite, pneumonias, meningite causadas pelo Streptococcus pneumoniae, status=ATIVO], Vacina [codigo=7, nome=Meningococo C, descricao=Doença invasiva causada por Neisseria meningitidis do Sorogrupo C, status=ATIVO], Vacina [codigo=8, nome=Febre amarela, descricao=Febre amarela, status=ATIVO], Vacina [codigo=9, nome=Tríplice Viral, descricao=Sarampo, Rubéola e Caxumba, status=ATIVO], Vacina [codigo=10, nome=Tríplice Bacteriana, descricao=Difteria, tétano, coqueluche, status=ATIVO], Vacina [codigo=11, nome=Dupla Adulto, descricao=Difteria e Tétano, status=ATIVO], Vacina [codigo=12, nome=Influenza, descricao=Influenza ou Gripe, status=ATIVO], Vacina [codigo=14, nome=baianos, descricao=veio de araxa, status=ATIVO], Vacina [codigo=16, nome=, descricao=, status=ATIVO], Vacina [codigo=1, nome=BCG-ID, descricao=bolivia, status=ATIVO], Vacina [codigo=13, nome=Sarampo,Veio das planices do volta grande, descricao=null, status=INATIVO]]
+2023-04-25T19:56:34.490-03:00 TRACE 22332 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/vacinas
+2023-04-25T19:57:28.041-03:00 TRACE 22332 --- [http-nio-8080-exec-6] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.abrirPesquisar
+2023-04-25T19:57:28.041-03:00 TRACE 22332 --- [http-nio-8080-exec-6] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/pesquisar
+2023-04-25T19:57:29.047-03:00 TRACE 22332 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.pesquisar
+2023-04-25T19:57:29.047-03:00 DEBUG 22332 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T19:57:29.047-03:00 DEBUG 22332 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : 	filtro: VacinaFilter [codigo=null, nome=, descricao=]
+2023-04-25T19:57:29.047-03:00 DEBUG 22332 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : 	model: {vacinaFilter=VacinaFilter [codigo=null, nome=, descricao=], org.springframework.validation.BindingResult.vacinaFilter=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2023-04-25T19:57:29.084-03:00 TRACE 22332 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/vacinas
+2023-04-25T19:58:17.029-03:00  INFO 22332 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-25T19:58:17.041-03:00  INFO 22332 --- [Thread-5] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-04-25T19:58:17.044-03:00  INFO 22332 --- [Thread-5] o.a.c.c.C.[.[.[/]                        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-25T19:58:17.068-03:00  INFO 22332 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T19:58:17.073-03:00  INFO 22332 --- [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-04-25T19:58:17.076-03:00  INFO 22332 --- [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2023-04-25T19:58:17.170-03:00  INFO 22332 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 22332 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T19:58:17.171-03:00 DEBUG 22332 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T19:58:17.171-03:00  INFO 22332 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T19:58:17.351-03:00  INFO 22332 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T19:58:17.357-03:00  INFO 22332 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interfaces.
+2023-04-25T19:58:17.444-03:00  INFO 22332 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T19:58:17.445-03:00  INFO 22332 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T19:58:17.445-03:00  INFO 22332 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T19:58:17.451-03:00  INFO 22332 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T19:58:17.451-03:00  INFO 22332 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 279 ms
+2023-04-25T19:58:17.571-03:00  INFO 22332 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Starting...
+2023-04-25T19:58:17.580-03:00  INFO 22332 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@61b6d97c
+2023-04-25T19:58:17.580-03:00  INFO 22332 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Start completed.
+2023-04-25T19:58:17.581-03:00  INFO 22332 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T19:58:17.588-03:00  INFO 22332 --- [restartedMain] o.f.c.i.c.DbValidate                     : Successfully validated 2 migrations (execution time 00:00.003s)
+2023-04-25T19:58:17.600-03:00  INFO 22332 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Current version of schema "public": 02
+2023-04-25T19:58:17.601-03:00  INFO 22332 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2023-04-25T19:58:17.627-03:00  INFO 22332 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-25T19:58:17.633-03:00  INFO 22332 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-04-25T19:58:17.650-03:00  INFO 22332 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-25T19:58:17.650-03:00  INFO 22332 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T19:58:17.660-03:00  WARN 22332 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'vacinaController' defined in file [/home/rosegates/Projetos/daw/controlevacinacao/target/classes/web/controlevacinacao/controller/VacinaController.class]: Failed to instantiate [web.controlevacinacao.controller.VacinaController]: Constructor threw exception
+2023-04-25T19:58:17.660-03:00  INFO 22332 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T19:58:17.661-03:00  INFO 22332 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown initiated...
+2023-04-25T19:58:17.667-03:00  INFO 22332 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown completed.
+2023-04-25T19:58:17.667-03:00  INFO 22332 --- [restartedMain] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-04-25T19:58:17.674-03:00  INFO 22332 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-04-25T19:58:17.686-03:00 ERROR 22332 --- [restartedMain] o.s.b.SpringApplication                  : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'vacinaController' defined in file [/home/rosegates/Projetos/daw/controlevacinacao/target/classes/web/controlevacinacao/controller/VacinaController.class]: Failed to instantiate [web.controlevacinacao.controller.VacinaController]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1314) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1199) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:917) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1304) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1293) ~[spring-boot-3.0.5.jar:3.0.5]
+	at web.controlevacinacao.Application.main(Application.java:10) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-3.0.5.jar:3.0.5]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [web.controlevacinacao.controller.VacinaController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1308) ~[spring-beans-6.0.7.jar:6.0.7]
+	... 20 more
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Unexpected end of comment
+
+	at web.controlevacinacao.controller.VacinaController.<init>(VacinaController.java:35) ~[classes/:?]
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:484) ~[?:?]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:198) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1308) ~[spring-beans-6.0.7.jar:6.0.7]
+	... 20 more
+
+2023-04-25T19:58:26.567-03:00  INFO 22332 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 22332 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T19:58:26.567-03:00 DEBUG 22332 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T19:58:26.567-03:00  INFO 22332 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T19:58:26.725-03:00  INFO 22332 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T19:58:26.729-03:00  INFO 22332 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2023-04-25T19:58:26.814-03:00  INFO 22332 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T19:58:26.815-03:00  INFO 22332 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T19:58:26.815-03:00  INFO 22332 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T19:58:26.821-03:00  INFO 22332 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T19:58:26.821-03:00  INFO 22332 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 252 ms
+2023-04-25T19:58:26.914-03:00  INFO 22332 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Starting...
+2023-04-25T19:58:26.926-03:00  INFO 22332 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@1fd9aa53
+2023-04-25T19:58:26.927-03:00  INFO 22332 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Start completed.
+2023-04-25T19:58:26.929-03:00  INFO 22332 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T19:58:26.943-03:00  INFO 22332 --- [restartedMain] o.f.c.i.c.DbValidate                     : Successfully validated 2 migrations (execution time 00:00.005s)
+2023-04-25T19:58:26.955-03:00  INFO 22332 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Current version of schema "public": 02
+2023-04-25T19:58:26.956-03:00  INFO 22332 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2023-04-25T19:58:26.994-03:00  INFO 22332 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-25T19:58:26.998-03:00  INFO 22332 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-04-25T19:58:27.026-03:00  INFO 22332 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-25T19:58:27.027-03:00  INFO 22332 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T19:58:27.175-03:00  INFO 22332 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-04-25T19:58:27.349-03:00  INFO 22332 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-25T19:58:27.353-03:00  INFO 22332 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-25T19:58:27.369-03:00  INFO 22332 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-25T19:58:27.375-03:00  INFO 22332 --- [restartedMain] w.c.Application                          : Started Application in 0.861 seconds (process running for 122.224)
+2023-04-25T19:58:27.377-03:00  INFO 22332 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-25T19:58:30.849-03:00  INFO 22332 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-25T19:58:30.850-03:00  INFO 22332 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-04-25T19:58:30.852-03:00  INFO 22332 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2023-04-25T19:58:30.855-03:00 TRACE 22332 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Entrou no método: IndexController.index
+2023-04-25T19:58:30.855-03:00 TRACE 22332 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: index
+2023-04-25T19:58:33.540-03:00 TRACE 22332 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.abrirPesquisar
+2023-04-25T19:58:33.541-03:00 TRACE 22332 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/pesquisar
+2023-04-25T19:58:34.467-03:00 TRACE 22332 --- [http-nio-8080-exec-2] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.pesquisar
+2023-04-25T19:58:34.467-03:00 DEBUG 22332 --- [http-nio-8080-exec-2] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T19:58:34.467-03:00 DEBUG 22332 --- [http-nio-8080-exec-2] w.c.a.ApplicationLoggingAspect           : 	filtro: VacinaFilter [codigo=null, nome=, descricao=]
+2023-04-25T19:58:34.467-03:00 DEBUG 22332 --- [http-nio-8080-exec-2] w.c.a.ApplicationLoggingAspect           : 	model: {vacinaFilter=VacinaFilter [codigo=null, nome=, descricao=], org.springframework.validation.BindingResult.vacinaFilter=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2023-04-25T19:58:34.504-03:00 TRACE 22332 --- [http-nio-8080-exec-2] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/vacinas
