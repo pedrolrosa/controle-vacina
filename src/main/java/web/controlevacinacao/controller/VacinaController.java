@@ -103,7 +103,7 @@ public class VacinaController {
         return "vacinas/pesquisar";
     }
 
-    @PostMapping("/pesquisar")
+    @GetMapping("/pesquisar")
     public String pesquisar(VacinaFilter filtro, Model model,
             @PageableDefault(size = 10)
             @SortDefault(sort = "codigo", direction = Sort.Direction.ASC) Pageable pageable,

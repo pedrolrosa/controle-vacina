@@ -58,10 +58,44 @@ public class VacinaQueriesImpl implements VacinaQueries {
 
         List<Vacina> vacinas = typedQuery.getResultList();
 
-        long totalVacinas = PaginacaoUtil.getTotalRegistros(v, predArray, builder, manager);
+        long totalVacinas = getTotalVacinas(filtro);
 
         Page<Vacina> page = new PageImpl<>(vacinas, pageable, totalVacinas);
         return page;
     }
+
+    private Long getTotalVacinas(VacinaFilter filtro) {
+        CriteriaBuilder builder = manager.getCriteriaBuilder();
+        CriteriaQuery<Long> criteriaQuery = builder.createQuery(Long.class);
+        Root<Vacina> v = criteriaQuery.from(Vacina.class);
+        List<Predicate> predicateList = new ArrayList<>();
+
+        if (filtro.getCodigo() != null) {
+            predicateList.add(builder.equal(v.<Long>get("codigo"), filtro.getCodigo()));
+        }
+
+        if (StringUtils.hasText(filtro.getNome())) {
+            predicateList.add(builder.like(
+                    builder.lower(v.<String>get("nome")),
+                    "%" + filtro.getNome().toLowerCase() + "%"));
+        }
+
+        if (StringUtils.hasText(filtro.getDescricao())) {
+            predicateList.add(builder.like(
+                    builder.lower(v.<String>get("descricao")),
+                    "%" + filtro.getDescricao().toLowerCase() + "%"));
+        }
+
+        predicateList.add(builder.equal(v.<Status>get("status"), Status.ATIVO));
+
+        Predicate[] predArray = new Predicate[predicateList.size()];
+        predicateList.toArray(predArray);
+
+        criteriaQuery.select(builder.count(v)).where(predArray);
+
+        return manager.createQuery(criteriaQuery).getSingleResult();
+
+    }
+
 
 }

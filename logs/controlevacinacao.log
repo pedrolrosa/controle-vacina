@@ -26052,3 +26052,618 @@ Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
 2023-04-25T20:28:23.283-03:00  INFO 32413 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-04-25T20:28:23.285-03:00  INFO 32413 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-15 - Shutdown initiated...
 2023-04-25T20:28:23.288-03:00  INFO 32413 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-15 - Shutdown completed.
+2023-04-25T21:34:11.843-03:00  INFO 63064 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 63064 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T21:34:11.848-03:00 DEBUG 63064 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T21:34:11.850-03:00  INFO 63064 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T21:34:12.014-03:00  INFO 63064 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-25T21:34:12.015-03:00  INFO 63064 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-25T21:34:12.550-03:00  INFO 63064 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T21:34:12.584-03:00  INFO 63064 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interfaces.
+2023-04-25T21:34:13.047-03:00  INFO 63064 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T21:34:13.054-03:00  INFO 63064 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T21:34:13.055-03:00  INFO 63064 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T21:34:13.093-03:00  INFO 63064 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T21:34:13.093-03:00  INFO 63064 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1078 ms
+2023-04-25T21:34:13.314-03:00  INFO 63064 --- [restartedMain] o.f.c.i.l.VersionPrinter                 : Flyway Community Edition 9.5.1 by Redgate
+2023-04-25T21:34:13.314-03:00  INFO 63064 --- [restartedMain] o.f.c.i.l.VersionPrinter                 : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
+2023-04-25T21:34:13.314-03:00  INFO 63064 --- [restartedMain] o.f.c.i.l.VersionPrinter                 : 
+2023-04-25T21:34:13.323-03:00  INFO 63064 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-04-25T21:34:13.422-03:00  INFO 63064 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@682f73ec
+2023-04-25T21:34:13.424-03:00  INFO 63064 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-04-25T21:34:13.434-03:00  INFO 63064 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T21:34:13.462-03:00  INFO 63064 --- [restartedMain] o.f.c.i.c.DbValidate                     : Successfully validated 2 migrations (execution time 00:00.015s)
+2023-04-25T21:34:13.494-03:00  INFO 63064 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Current version of schema "public": 02
+2023-04-25T21:34:13.495-03:00  INFO 63064 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2023-04-25T21:34:13.569-03:00  INFO 63064 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-25T21:34:13.595-03:00  INFO 63064 --- [restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-25T21:34:13.755-03:00  INFO 63064 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-04-25T21:34:14.116-03:00  INFO 63064 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-25T21:34:14.121-03:00  INFO 63064 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T21:34:14.567-03:00  INFO 63064 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-04-25T21:34:15.010-03:00  INFO 63064 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-25T21:34:15.010-03:00  INFO 63064 --- [RMI TCP Connection(1)-127.0.0.1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-04-25T21:34:15.046-03:00  INFO 63064 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-25T21:34:15.055-03:00  INFO 63064 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-25T21:34:15.070-03:00  INFO 63064 --- [RMI TCP Connection(1)-127.0.0.1] o.s.w.s.DispatcherServlet                : Completed initialization in 60 ms
+2023-04-25T21:34:15.133-03:00  INFO 63064 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-25T21:34:15.148-03:00  INFO 63064 --- [restartedMain] w.c.Application                          : Started Application in 3.607 seconds (process running for 4.057)
+2023-04-25T21:34:30.488-03:00  INFO 63064 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-04-25T21:34:30.500-03:00  INFO 63064 --- [Thread-5] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-04-25T21:34:30.502-03:00  INFO 63064 --- [Thread-5] o.a.c.c.C.[.[.[/]                        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-25T21:34:30.520-03:00  INFO 63064 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T21:34:30.525-03:00  INFO 63064 --- [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-04-25T21:34:30.531-03:00  INFO 63064 --- [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2023-04-25T21:34:30.614-03:00  INFO 63064 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 63064 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T21:34:30.614-03:00 DEBUG 63064 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T21:34:30.614-03:00  INFO 63064 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T21:34:30.775-03:00  INFO 63064 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T21:34:30.780-03:00  INFO 63064 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interfaces.
+2023-04-25T21:34:30.873-03:00  INFO 63064 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T21:34:30.874-03:00  INFO 63064 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T21:34:30.874-03:00  INFO 63064 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T21:34:30.880-03:00  INFO 63064 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T21:34:30.880-03:00  INFO 63064 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 265 ms
+2023-04-25T21:34:30.961-03:00  INFO 63064 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Starting...
+2023-04-25T21:34:30.972-03:00  INFO 63064 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@4c406135
+2023-04-25T21:34:30.972-03:00  INFO 63064 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Start completed.
+2023-04-25T21:34:30.975-03:00  INFO 63064 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T21:34:30.983-03:00  INFO 63064 --- [restartedMain] o.f.c.i.c.DbValidate                     : Successfully validated 2 migrations (execution time 00:00.003s)
+2023-04-25T21:34:30.996-03:00  INFO 63064 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Current version of schema "public": 02
+2023-04-25T21:34:30.996-03:00  INFO 63064 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2023-04-25T21:34:31.029-03:00  INFO 63064 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-25T21:34:31.034-03:00  INFO 63064 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-04-25T21:34:31.054-03:00  INFO 63064 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-25T21:34:31.054-03:00  INFO 63064 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T21:34:31.206-03:00  INFO 63064 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-04-25T21:34:31.381-03:00  INFO 63064 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-25T21:34:31.385-03:00  INFO 63064 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-25T21:34:31.409-03:00  INFO 63064 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-25T21:34:31.415-03:00  INFO 63064 --- [restartedMain] w.c.Application                          : Started Application in 0.848 seconds (process running for 20.324)
+2023-04-25T21:34:31.417-03:00  INFO 63064 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-25T21:34:37.393-03:00  INFO 63064 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-25T21:34:37.393-03:00  INFO 63064 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-04-25T21:34:37.394-03:00  INFO 63064 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2023-04-25T21:34:37.416-03:00 TRACE 63064 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Entrou no método: IndexController.index
+2023-04-25T21:34:37.416-03:00 TRACE 63064 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: index
+2023-04-25T21:34:41.612-03:00 TRACE 63064 --- [http-nio-8080-exec-6] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.abrirPesquisar
+2023-04-25T21:34:41.612-03:00 TRACE 63064 --- [http-nio-8080-exec-6] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/pesquisar
+2023-04-25T21:34:42.453-03:00 TRACE 63064 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.pesquisar
+2023-04-25T21:34:42.454-03:00 DEBUG 63064 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T21:34:42.454-03:00 DEBUG 63064 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : 	filtro: VacinaFilter [codigo=null, nome=, descricao=]
+2023-04-25T21:34:42.454-03:00 DEBUG 63064 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : 	request: org.apache.catalina.connector.RequestFacade@4f320654
+2023-04-25T21:34:42.454-03:00 DEBUG 63064 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : 	pageable: Page request [number: 0, size 10, sort: codigo: ASC]
+2023-04-25T21:34:42.454-03:00 DEBUG 63064 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : 	model: {vacinaFilter=VacinaFilter [codigo=null, nome=, descricao=], org.springframework.validation.BindingResult.vacinaFilter=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2023-04-25T21:34:42.463-03:00 ERROR 63064 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed: java.lang.Error: Unresolved compilation problem: 
+	The method getTotalRegistros(Root<Vacina>, Predicate[], CriteriaBuilder, EntityManager) is undefined for the type PaginacaoUtil
+] with root cause
+
+java.lang.Error: Unresolved compilation problem: 
+	The method getTotalRegistros(Root<Vacina>, Predicate[], CriteriaBuilder, EntityManager) is undefined for the type PaginacaoUtil
+
+	at web.controlevacinacao.repository.queries.vacina.VacinaQueriesImpl.buscarComFiltro(VacinaQueriesImpl.java:61) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:288) ~[spring-data-commons-3.0.4.jar:3.0.4]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:136) ~[spring-data-commons-3.0.4.jar:3.0.4]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:120) ~[spring-data-commons-3.0.4.jar:3.0.4]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516) ~[spring-data-commons-3.0.4.jar:3.0.4]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285) ~[spring-data-commons-3.0.4.jar:3.0.4]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628) ~[spring-data-commons-3.0.4.jar:3.0.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.7.jar:6.0.7]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168) ~[spring-data-commons-3.0.4.jar:3.0.4]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143) ~[spring-data-commons-3.0.4.jar:3.0.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.7.jar:6.0.7]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:77) ~[spring-data-commons-3.0.4.jar:3.0.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.7.jar:6.0.7]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.0.7.jar:6.0.7]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:391) ~[spring-tx-6.0.7.jar:6.0.7]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.0.7.jar:6.0.7]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.7.jar:6.0.7]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.0.7.jar:6.0.7]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.7.jar:6.0.7]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:163) ~[spring-data-jpa-3.0.4.jar:3.0.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.7.jar:6.0.7]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.0.7.jar:6.0.7]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.7.jar:6.0.7]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:218) ~[spring-aop-6.0.7.jar:6.0.7]
+	at jdk.proxy5.$Proxy168.buscarComFiltro(Unknown Source) ~[?:?]
+	at web.controlevacinacao.controller.VacinaController.pesquisar(VacinaController.java:112) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-6.0.7.jar:6.0.7]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.0.7.jar:6.0.7]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.0.7.jar:6.0.7]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-6.0.7.jar:6.0.7]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-6.0.7.jar:6.0.7]
+	at web.controlevacinacao.aop.ApplicationLoggingAspect.logAroundController(ApplicationLoggingAspect.java:73) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637) ~[spring-aop-6.0.7.jar:6.0.7]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:627) ~[spring-aop-6.0.7.jar:6.0.7]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.0.7.jar:6.0.7]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.7.jar:6.0.7]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-6.0.7.jar:6.0.7]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.0.7.jar:6.0.7]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.7.jar:6.0.7]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-6.0.7.jar:6.0.7]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:702) ~[spring-aop-6.0.7.jar:6.0.7]
+	at web.controlevacinacao.controller.VacinaController$$SpringCGLIB$$0.pesquisar(<generated>) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207) ~[spring-web-6.0.7.jar:6.0.7]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152) ~[spring-web-6.0.7.jar:6.0.7]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:563) ~[tomcat-embed-core-10.1.7.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.7.jar:6.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631) ~[tomcat-embed-core-10.1.7.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.7.jar:6.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.7.jar:6.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.7.jar:6.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.7.jar:6.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109) ~[spring-web-6.0.7.jar:6.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.7.jar:6.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.7.jar:6.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.7.jar:6.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.7.jar:10.1.7]
+	at java.lang.Thread.run(Thread.java:1589) ~[?:?]
+
+2023-04-25T21:34:42.467-03:00 TRACE 63064 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Entrou no método: BasicErrorController.errorHtml
+2023-04-25T21:34:42.467-03:00 DEBUG 63064 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T21:34:42.467-03:00 DEBUG 63064 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : 	request: org.apache.catalina.core.ApplicationHttpRequest@6375c2b5
+2023-04-25T21:34:42.467-03:00 DEBUG 63064 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : 	response: org.apache.catalina.connector.ResponseFacade@597e5f12
+2023-04-25T21:34:42.472-03:00 TRACE 63064 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: error
+2023-04-25T21:34:49.052-03:00  INFO 63064 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T21:34:49.053-03:00  INFO 63064 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown initiated...
+2023-04-25T21:34:49.054-03:00  INFO 63064 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown completed.
+2023-04-25T21:36:45.827-03:00  INFO 64682 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 64682 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T21:36:45.831-03:00 DEBUG 64682 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T21:36:45.832-03:00  INFO 64682 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T21:36:45.982-03:00  INFO 64682 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-25T21:36:45.983-03:00  INFO 64682 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-25T21:36:46.554-03:00  INFO 64682 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T21:36:46.588-03:00  INFO 64682 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interfaces.
+2023-04-25T21:36:47.051-03:00  INFO 64682 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T21:36:47.059-03:00  INFO 64682 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T21:36:47.059-03:00  INFO 64682 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T21:36:47.089-03:00  INFO 64682 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T21:36:47.090-03:00  INFO 64682 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1106 ms
+2023-04-25T21:36:47.311-03:00  INFO 64682 --- [restartedMain] o.f.c.i.l.VersionPrinter                 : Flyway Community Edition 9.5.1 by Redgate
+2023-04-25T21:36:47.311-03:00  INFO 64682 --- [restartedMain] o.f.c.i.l.VersionPrinter                 : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
+2023-04-25T21:36:47.311-03:00  INFO 64682 --- [restartedMain] o.f.c.i.l.VersionPrinter                 : 
+2023-04-25T21:36:47.319-03:00  INFO 64682 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-04-25T21:36:47.410-03:00  INFO 64682 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2c46065a
+2023-04-25T21:36:47.411-03:00  INFO 64682 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-04-25T21:36:47.422-03:00  INFO 64682 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T21:36:47.449-03:00  INFO 64682 --- [restartedMain] o.f.c.i.c.DbValidate                     : Successfully validated 2 migrations (execution time 00:00.015s)
+2023-04-25T21:36:47.480-03:00  INFO 64682 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Current version of schema "public": 02
+2023-04-25T21:36:47.480-03:00  INFO 64682 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2023-04-25T21:36:47.563-03:00  INFO 64682 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-25T21:36:47.594-03:00  INFO 64682 --- [restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-25T21:36:47.767-03:00  INFO 64682 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-04-25T21:36:48.125-03:00  INFO 64682 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-25T21:36:48.130-03:00  INFO 64682 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T21:36:48.546-03:00  INFO 64682 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-04-25T21:36:48.969-03:00  INFO 64682 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-25T21:36:48.980-03:00  INFO 64682 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-25T21:36:49.043-03:00  INFO 64682 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-25T21:36:49.057-03:00  INFO 64682 --- [restartedMain] w.c.Application                          : Started Application in 3.536 seconds (process running for 3.991)
+2023-04-25T21:36:51.895-03:00  INFO 64682 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-25T21:36:51.896-03:00  INFO 64682 --- [RMI TCP Connection(3)-127.0.0.1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-04-25T21:36:51.897-03:00  INFO 64682 --- [RMI TCP Connection(3)-127.0.0.1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2023-04-25T21:36:55.322-03:00 TRACE 64682 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Entrou no método: IndexController.index
+2023-04-25T21:36:55.322-03:00 TRACE 64682 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: index
+2023-04-25T21:36:57.903-03:00 TRACE 64682 --- [http-nio-8080-exec-6] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.abrirPesquisar
+2023-04-25T21:36:57.903-03:00 TRACE 64682 --- [http-nio-8080-exec-6] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/pesquisar
+2023-04-25T21:36:58.629-03:00 TRACE 64682 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.pesquisar
+2023-04-25T21:36:58.629-03:00 DEBUG 64682 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T21:36:58.629-03:00 DEBUG 64682 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : 	filtro: VacinaFilter [codigo=null, nome=, descricao=]
+2023-04-25T21:36:58.629-03:00 DEBUG 64682 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : 	request: org.apache.catalina.connector.RequestFacade@5160ab0e
+2023-04-25T21:36:58.629-03:00 DEBUG 64682 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : 	pageable: Page request [number: 0, size 10, sort: codigo: ASC]
+2023-04-25T21:36:58.629-03:00 DEBUG 64682 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : 	model: {vacinaFilter=VacinaFilter [codigo=null, nome=, descricao=], org.springframework.validation.BindingResult.vacinaFilter=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2023-04-25T21:36:58.643-03:00 DEBUG 64682 --- [http-nio-8080-exec-1] w.c.r.p.PaginacaoUtil                    : Ordenando o resultado da pesquisa por codigo, ASC
+2023-04-25T21:36:58.687-03:00 DEBUG 64682 --- [http-nio-8080-exec-1] w.c.r.p.PaginacaoUtil                    : Filtrando a página 0, registros entre 0 e 10
+2023-04-25T21:36:58.742-03:00 DEBUG 64682 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Removendo os parâmetros vazios da queryString: null
+2023-04-25T21:36:58.742-03:00 DEBUG 64682 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : PageWrapper criado para a requestURL: http://localhost:8080/vacinas/pesquisar?, queryString:  e URL final: http://localhost:8080/vacinas/pesquisar?
+2023-04-25T21:36:58.744-03:00 DEBUG 64682 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Gerando a numeração da paginação para a Página Page 1 of 2 containing web.controlevacinacao.model.Vacina instances e o máximo de páginas na numeração 5
+2023-04-25T21:36:58.744-03:00 DEBUG 64682 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : totalDePaginas: 2, paginaAtual: 1
+2023-04-25T21:36:58.744-03:00 DEBUG 64682 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Números das páginas serão gerados entre 1 e 2
+2023-04-25T21:36:58.744-03:00 TRACE 64682 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/vacinas
+2023-04-25T21:38:51.266-03:00  INFO 64682 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T21:38:51.271-03:00  INFO 64682 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-04-25T21:38:51.276-03:00  INFO 64682 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2023-04-25T21:39:01.231-03:00  INFO 65929 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 65929 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T21:39:01.236-03:00 DEBUG 65929 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T21:39:01.237-03:00  INFO 65929 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T21:39:01.388-03:00  INFO 65929 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-25T21:39:01.389-03:00  INFO 65929 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-25T21:39:01.902-03:00  INFO 65929 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T21:39:01.933-03:00  INFO 65929 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interfaces.
+2023-04-25T21:39:02.370-03:00  INFO 65929 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T21:39:02.377-03:00  INFO 65929 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T21:39:02.377-03:00  INFO 65929 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T21:39:02.405-03:00  INFO 65929 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T21:39:02.405-03:00  INFO 65929 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1016 ms
+2023-04-25T21:39:02.628-03:00  INFO 65929 --- [restartedMain] o.f.c.i.l.VersionPrinter                 : Flyway Community Edition 9.5.1 by Redgate
+2023-04-25T21:39:02.628-03:00  INFO 65929 --- [restartedMain] o.f.c.i.l.VersionPrinter                 : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
+2023-04-25T21:39:02.628-03:00  INFO 65929 --- [restartedMain] o.f.c.i.l.VersionPrinter                 : 
+2023-04-25T21:39:02.638-03:00  INFO 65929 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-04-25T21:39:02.738-03:00  INFO 65929 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2c46065a
+2023-04-25T21:39:02.740-03:00  INFO 65929 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-04-25T21:39:02.750-03:00  INFO 65929 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T21:39:02.777-03:00  INFO 65929 --- [restartedMain] o.f.c.i.c.DbValidate                     : Successfully validated 2 migrations (execution time 00:00.016s)
+2023-04-25T21:39:02.811-03:00  INFO 65929 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Current version of schema "public": 02
+2023-04-25T21:39:02.812-03:00  INFO 65929 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2023-04-25T21:39:02.896-03:00  INFO 65929 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-25T21:39:02.928-03:00  INFO 65929 --- [restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-25T21:39:03.087-03:00  INFO 65929 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-04-25T21:39:03.447-03:00  INFO 65929 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-25T21:39:03.451-03:00  INFO 65929 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T21:39:03.875-03:00  INFO 65929 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-04-25T21:39:04.298-03:00  INFO 65929 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-25T21:39:04.298-03:00  INFO 65929 --- [RMI TCP Connection(3)-127.0.0.1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-04-25T21:39:04.310-03:00  INFO 65929 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-25T21:39:04.318-03:00  INFO 65929 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-25T21:39:04.330-03:00  INFO 65929 --- [RMI TCP Connection(3)-127.0.0.1] o.s.w.s.DispatcherServlet                : Completed initialization in 32 ms
+2023-04-25T21:39:04.380-03:00  INFO 65929 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-25T21:39:04.393-03:00  INFO 65929 --- [restartedMain] w.c.Application                          : Started Application in 3.453 seconds (process running for 3.902)
+2023-04-25T21:39:07.593-03:00 TRACE 65929 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Entrou no método: IndexController.index
+2023-04-25T21:39:07.593-03:00 TRACE 65929 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: index
+2023-04-25T21:39:10.490-03:00 TRACE 65929 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.abrirPesquisar
+2023-04-25T21:39:10.490-03:00 TRACE 65929 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/pesquisar
+2023-04-25T21:39:11.424-03:00 TRACE 65929 --- [http-nio-8080-exec-4] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.pesquisar
+2023-04-25T21:39:11.424-03:00 DEBUG 65929 --- [http-nio-8080-exec-4] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T21:39:11.424-03:00 DEBUG 65929 --- [http-nio-8080-exec-4] w.c.a.ApplicationLoggingAspect           : 	filtro: VacinaFilter [codigo=null, nome=, descricao=]
+2023-04-25T21:39:11.424-03:00 DEBUG 65929 --- [http-nio-8080-exec-4] w.c.a.ApplicationLoggingAspect           : 	request: org.apache.catalina.connector.RequestFacade@1f8b167c
+2023-04-25T21:39:11.424-03:00 DEBUG 65929 --- [http-nio-8080-exec-4] w.c.a.ApplicationLoggingAspect           : 	pageable: Page request [number: 0, size 10, sort: codigo: ASC]
+2023-04-25T21:39:11.424-03:00 DEBUG 65929 --- [http-nio-8080-exec-4] w.c.a.ApplicationLoggingAspect           : 	model: {vacinaFilter=VacinaFilter [codigo=null, nome=, descricao=], org.springframework.validation.BindingResult.vacinaFilter=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2023-04-25T21:39:11.432-03:00 DEBUG 65929 --- [http-nio-8080-exec-4] w.c.r.p.PaginacaoUtil                    : Ordenando o resultado da pesquisa por codigo, ASC
+2023-04-25T21:39:11.479-03:00 DEBUG 65929 --- [http-nio-8080-exec-4] w.c.r.p.PaginacaoUtil                    : Filtrando a página 0, registros entre 0 e 10
+2023-04-25T21:39:11.530-03:00 DEBUG 65929 --- [http-nio-8080-exec-4] w.c.p.PageWrapper                        : Removendo os parâmetros vazios da queryString: null
+2023-04-25T21:39:11.530-03:00 DEBUG 65929 --- [http-nio-8080-exec-4] w.c.p.PageWrapper                        : PageWrapper criado para a requestURL: http://localhost:8080/vacinas/pesquisar?, queryString:  e URL final: http://localhost:8080/vacinas/pesquisar?
+2023-04-25T21:39:11.533-03:00 DEBUG 65929 --- [http-nio-8080-exec-4] w.c.p.PageWrapper                        : Gerando a numeração da paginação para a Página Page 1 of 2 containing web.controlevacinacao.model.Vacina instances e o máximo de páginas na numeração 5
+2023-04-25T21:39:11.533-03:00 DEBUG 65929 --- [http-nio-8080-exec-4] w.c.p.PageWrapper                        : totalDePaginas: 2, paginaAtual: 1
+2023-04-25T21:39:11.533-03:00 DEBUG 65929 --- [http-nio-8080-exec-4] w.c.p.PageWrapper                        : Números das páginas serão gerados entre 1 e 2
+2023-04-25T21:39:11.533-03:00 TRACE 65929 --- [http-nio-8080-exec-4] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/vacinas
+2023-04-25T21:39:11.553-03:00 DEBUG 65929 --- [http-nio-8080-exec-4] w.c.p.PageWrapper                        : Gerando uma nova URL com a ordem da propriedade codigo invertida
+2023-04-25T21:39:11.555-03:00 DEBUG 65929 --- [http-nio-8080-exec-4] w.c.p.PageWrapper                        : Invertendo a direcao da propriedade codigo
+2023-04-25T21:39:11.555-03:00 DEBUG 65929 --- [http-nio-8080-exec-4] w.c.p.PageWrapper                        : Direção final da propriedade codigo: desc
+2023-04-25T21:39:11.555-03:00 DEBUG 65929 --- [http-nio-8080-exec-4] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?sort=codigo,desc
+2023-04-25T21:39:11.558-03:00 DEBUG 65929 --- [http-nio-8080-exec-4] w.c.p.PageWrapper                        : Gerando uma nova URL com a ordem da propriedade nome invertida
+2023-04-25T21:39:11.558-03:00 DEBUG 65929 --- [http-nio-8080-exec-4] w.c.p.PageWrapper                        : Invertendo a direcao da propriedade nome
+2023-04-25T21:39:11.558-03:00 DEBUG 65929 --- [http-nio-8080-exec-4] w.c.p.PageWrapper                        : Direção final da propriedade nome: asc
+2023-04-25T21:39:11.558-03:00 DEBUG 65929 --- [http-nio-8080-exec-4] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?sort=nome,asc
+2023-04-25T21:39:11.573-03:00 DEBUG 65929 --- [http-nio-8080-exec-4] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 0
+2023-04-25T21:39:11.573-03:00 DEBUG 65929 --- [http-nio-8080-exec-4] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=0
+2023-04-25T21:39:11.574-03:00 DEBUG 65929 --- [http-nio-8080-exec-4] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina -1
+2023-04-25T21:39:11.574-03:00 DEBUG 65929 --- [http-nio-8080-exec-4] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=-1
+2023-04-25T21:39:11.578-03:00 DEBUG 65929 --- [http-nio-8080-exec-4] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 0
+2023-04-25T21:39:11.579-03:00 DEBUG 65929 --- [http-nio-8080-exec-4] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=0
+2023-04-25T21:39:11.580-03:00 DEBUG 65929 --- [http-nio-8080-exec-4] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 1
+2023-04-25T21:39:11.580-03:00 DEBUG 65929 --- [http-nio-8080-exec-4] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=1
+2023-04-25T21:39:11.581-03:00 DEBUG 65929 --- [http-nio-8080-exec-4] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 1
+2023-04-25T21:39:11.582-03:00 DEBUG 65929 --- [http-nio-8080-exec-4] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=1
+2023-04-25T21:39:11.582-03:00 DEBUG 65929 --- [http-nio-8080-exec-4] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 1
+2023-04-25T21:39:11.582-03:00 DEBUG 65929 --- [http-nio-8080-exec-4] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=1
+2023-04-25T21:39:13.288-03:00  WARN 65929 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2023-04-25T21:39:13.305-03:00 TRACE 65929 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : Entrou no método: BasicErrorController.errorHtml
+2023-04-25T21:39:13.305-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T21:39:13.305-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : 	request: org.apache.catalina.core.ApplicationHttpRequest@632ac638
+2023-04-25T21:39:13.305-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : 	response: org.apache.catalina.connector.ResponseFacade@515f331b
+2023-04-25T21:39:13.313-03:00 TRACE 65929 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: error
+2023-04-25T21:40:05.835-03:00  INFO 65929 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-25T21:40:05.841-03:00  INFO 65929 --- [Thread-5] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-04-25T21:40:05.842-03:00  INFO 65929 --- [Thread-5] o.a.c.c.C.[.[.[/]                        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-25T21:40:05.850-03:00  INFO 65929 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T21:40:05.853-03:00  INFO 65929 --- [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-04-25T21:40:05.855-03:00  INFO 65929 --- [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2023-04-25T21:40:05.959-03:00  INFO 65929 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 65929 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T21:40:05.960-03:00 DEBUG 65929 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T21:40:05.960-03:00  INFO 65929 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T21:40:06.168-03:00  INFO 65929 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T21:40:06.176-03:00  INFO 65929 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interfaces.
+2023-04-25T21:40:06.266-03:00  INFO 65929 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T21:40:06.266-03:00  INFO 65929 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T21:40:06.267-03:00  INFO 65929 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T21:40:06.272-03:00  INFO 65929 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T21:40:06.272-03:00  INFO 65929 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 311 ms
+2023-04-25T21:40:06.366-03:00  INFO 65929 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Starting...
+2023-04-25T21:40:06.377-03:00  INFO 65929 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@22104665
+2023-04-25T21:40:06.377-03:00  INFO 65929 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Start completed.
+2023-04-25T21:40:06.379-03:00  INFO 65929 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T21:40:06.386-03:00  INFO 65929 --- [restartedMain] o.f.c.i.c.DbValidate                     : Successfully validated 2 migrations (execution time 00:00.003s)
+2023-04-25T21:40:06.401-03:00  INFO 65929 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Current version of schema "public": 02
+2023-04-25T21:40:06.401-03:00  INFO 65929 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2023-04-25T21:40:06.430-03:00  INFO 65929 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-25T21:40:06.435-03:00  INFO 65929 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-04-25T21:40:06.455-03:00  INFO 65929 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-25T21:40:06.455-03:00  INFO 65929 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T21:40:06.626-03:00  INFO 65929 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-04-25T21:40:06.828-03:00  INFO 65929 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-25T21:40:06.832-03:00  INFO 65929 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-25T21:40:06.868-03:00  INFO 65929 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-25T21:40:06.875-03:00  INFO 65929 --- [restartedMain] w.c.Application                          : Started Application in 0.966 seconds (process running for 66.384)
+2023-04-25T21:40:06.878-03:00  INFO 65929 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-25T21:40:48.931-03:00  INFO 65929 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-25T21:40:48.931-03:00  INFO 65929 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-04-25T21:40:48.934-03:00  INFO 65929 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2023-04-25T21:40:48.940-03:00 TRACE 65929 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.abrirPesquisar
+2023-04-25T21:40:48.942-03:00 TRACE 65929 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/pesquisar
+2023-04-25T21:40:50.207-03:00 TRACE 65929 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.pesquisar
+2023-04-25T21:40:50.207-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T21:40:50.207-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : 	filtro: VacinaFilter [codigo=null, nome=, descricao=]
+2023-04-25T21:40:50.207-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : 	request: org.apache.catalina.connector.RequestFacade@5aa3ab52
+2023-04-25T21:40:50.207-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : 	pageable: Page request [number: 0, size 10, sort: codigo: ASC]
+2023-04-25T21:40:50.207-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : 	model: {vacinaFilter=VacinaFilter [codigo=null, nome=, descricao=], org.springframework.validation.BindingResult.vacinaFilter=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2023-04-25T21:40:50.210-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.r.p.PaginacaoUtil                    : Ordenando o resultado da pesquisa por codigo, ASC
+2023-04-25T21:40:50.231-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.r.p.PaginacaoUtil                    : Filtrando a página 0, registros entre 0 e 10
+2023-04-25T21:40:50.237-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Removendo os parâmetros vazios da queryString: codigo=&nome=&descricao=
+2023-04-25T21:40:50.237-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : queryString sem parâmetros vazios: 
+2023-04-25T21:40:50.237-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : PageWrapper criado para a requestURL: http://localhost:8080/vacinas/pesquisar?, queryString:  e URL final: http://localhost:8080/vacinas/pesquisar?
+2023-04-25T21:40:50.238-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Gerando a numeração da paginação para a Página Page 1 of 2 containing web.controlevacinacao.model.Vacina instances e o máximo de páginas na numeração 5
+2023-04-25T21:40:50.238-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : totalDePaginas: 2, paginaAtual: 1
+2023-04-25T21:40:50.238-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Números das páginas serão gerados entre 1 e 2
+2023-04-25T21:40:50.238-03:00 TRACE 65929 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/vacinas
+2023-04-25T21:40:50.248-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Gerando uma nova URL com a ordem da propriedade codigo invertida
+2023-04-25T21:40:50.249-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Invertendo a direcao da propriedade codigo
+2023-04-25T21:40:50.249-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Direção final da propriedade codigo: desc
+2023-04-25T21:40:50.249-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?sort=codigo,desc
+2023-04-25T21:40:50.251-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Gerando uma nova URL com a ordem da propriedade nome invertida
+2023-04-25T21:40:50.251-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Invertendo a direcao da propriedade nome
+2023-04-25T21:40:50.251-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Direção final da propriedade nome: asc
+2023-04-25T21:40:50.251-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?sort=nome,asc
+2023-04-25T21:40:50.261-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 0
+2023-04-25T21:40:50.261-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=0
+2023-04-25T21:40:50.262-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina -1
+2023-04-25T21:40:50.262-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=-1
+2023-04-25T21:40:50.264-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 0
+2023-04-25T21:40:50.264-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=0
+2023-04-25T21:40:50.264-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 1
+2023-04-25T21:40:50.265-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=1
+2023-04-25T21:40:50.266-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 1
+2023-04-25T21:40:50.266-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=1
+2023-04-25T21:40:50.266-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 1
+2023-04-25T21:40:50.267-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=1
+2023-04-25T21:40:51.471-03:00 TRACE 65929 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.pesquisar
+2023-04-25T21:40:51.471-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T21:40:51.471-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : 	filtro: VacinaFilter [codigo=null, nome=null, descricao=null]
+2023-04-25T21:40:51.471-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : 	request: org.apache.catalina.connector.RequestFacade@656442a0
+2023-04-25T21:40:51.471-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : 	pageable: Page request [number: 1, size 10, sort: codigo: ASC]
+2023-04-25T21:40:51.472-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : 	model: {vacinaFilter=VacinaFilter [codigo=null, nome=null, descricao=null], org.springframework.validation.BindingResult.vacinaFilter=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2023-04-25T21:40:51.473-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.r.p.PaginacaoUtil                    : Ordenando o resultado da pesquisa por codigo, ASC
+2023-04-25T21:40:51.473-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.r.p.PaginacaoUtil                    : Filtrando a página 1, registros entre 10 e 20
+2023-04-25T21:40:51.485-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Removendo os parâmetros vazios da queryString: page=1
+2023-04-25T21:40:51.485-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : queryString sem parâmetros vazios: page=1
+2023-04-25T21:40:51.485-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : PageWrapper criado para a requestURL: http://localhost:8080/vacinas/pesquisar?page=1, queryString: page=1 e URL final: http://localhost:8080/vacinas/pesquisar?page=1
+2023-04-25T21:40:51.485-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Gerando a numeração da paginação para a Página Page 2 of 2 containing web.controlevacinacao.model.Vacina instances e o máximo de páginas na numeração 5
+2023-04-25T21:40:51.485-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : totalDePaginas: 2, paginaAtual: 2
+2023-04-25T21:40:51.485-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Números das páginas serão gerados entre 1 e 2
+2023-04-25T21:40:51.485-03:00 TRACE 65929 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/vacinas
+2023-04-25T21:40:51.502-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Gerando uma nova URL com a ordem da propriedade codigo invertida
+2023-04-25T21:40:51.503-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Invertendo a direcao da propriedade codigo
+2023-04-25T21:40:51.503-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Direção final da propriedade codigo: desc
+2023-04-25T21:40:51.503-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=1&sort=codigo,desc
+2023-04-25T21:40:51.506-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Gerando uma nova URL com a ordem da propriedade nome invertida
+2023-04-25T21:40:51.506-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Invertendo a direcao da propriedade nome
+2023-04-25T21:40:51.507-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Direção final da propriedade nome: asc
+2023-04-25T21:40:51.507-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=1&sort=nome,asc
+2023-04-25T21:40:51.512-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 0
+2023-04-25T21:40:51.512-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=0
+2023-04-25T21:40:51.513-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 0
+2023-04-25T21:40:51.513-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=0
+2023-04-25T21:40:51.513-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 0
+2023-04-25T21:40:51.513-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=0
+2023-04-25T21:40:51.514-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 1
+2023-04-25T21:40:51.514-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=1
+2023-04-25T21:40:51.515-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 2
+2023-04-25T21:40:51.515-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=2
+2023-04-25T21:40:51.516-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 1
+2023-04-25T21:40:51.516-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=1
+2023-04-25T21:40:52.973-03:00 TRACE 65929 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.pesquisar
+2023-04-25T21:40:52.973-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T21:40:52.974-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : 	filtro: VacinaFilter [codigo=null, nome=null, descricao=null]
+2023-04-25T21:40:52.974-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : 	request: org.apache.catalina.connector.RequestFacade@5146bc38
+2023-04-25T21:40:52.974-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : 	pageable: Page request [number: 0, size 10, sort: codigo: ASC]
+2023-04-25T21:40:52.974-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : 	model: {vacinaFilter=VacinaFilter [codigo=null, nome=null, descricao=null], org.springframework.validation.BindingResult.vacinaFilter=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2023-04-25T21:40:52.975-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.r.p.PaginacaoUtil                    : Ordenando o resultado da pesquisa por codigo, ASC
+2023-04-25T21:40:52.979-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.r.p.PaginacaoUtil                    : Filtrando a página 0, registros entre 0 e 10
+2023-04-25T21:40:52.993-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Removendo os parâmetros vazios da queryString: page=0
+2023-04-25T21:40:52.993-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : queryString sem parâmetros vazios: page=0
+2023-04-25T21:40:52.993-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : PageWrapper criado para a requestURL: http://localhost:8080/vacinas/pesquisar?page=0, queryString: page=0 e URL final: http://localhost:8080/vacinas/pesquisar?page=0
+2023-04-25T21:40:52.993-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Gerando a numeração da paginação para a Página Page 1 of 2 containing web.controlevacinacao.model.Vacina instances e o máximo de páginas na numeração 5
+2023-04-25T21:40:52.994-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : totalDePaginas: 2, paginaAtual: 1
+2023-04-25T21:40:52.994-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Números das páginas serão gerados entre 1 e 2
+2023-04-25T21:40:52.994-03:00 TRACE 65929 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/vacinas
+2023-04-25T21:40:53.009-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Gerando uma nova URL com a ordem da propriedade codigo invertida
+2023-04-25T21:40:53.010-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Invertendo a direcao da propriedade codigo
+2023-04-25T21:40:53.010-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Direção final da propriedade codigo: desc
+2023-04-25T21:40:53.010-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=0&sort=codigo,desc
+2023-04-25T21:40:53.012-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Gerando uma nova URL com a ordem da propriedade nome invertida
+2023-04-25T21:40:53.012-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Invertendo a direcao da propriedade nome
+2023-04-25T21:40:53.012-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Direção final da propriedade nome: asc
+2023-04-25T21:40:53.012-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=0&sort=nome,asc
+2023-04-25T21:40:53.018-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 0
+2023-04-25T21:40:53.018-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=0
+2023-04-25T21:40:53.019-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina -1
+2023-04-25T21:40:53.019-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=-1
+2023-04-25T21:40:53.020-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 0
+2023-04-25T21:40:53.020-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=0
+2023-04-25T21:40:53.020-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 1
+2023-04-25T21:40:53.020-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=1
+2023-04-25T21:40:53.020-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 1
+2023-04-25T21:40:53.021-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=1
+2023-04-25T21:40:53.021-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 1
+2023-04-25T21:40:53.021-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=1
+2023-04-25T21:40:54.585-03:00 TRACE 65929 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.pesquisar
+2023-04-25T21:40:54.585-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T21:40:54.585-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : 	filtro: VacinaFilter [codigo=null, nome=null, descricao=null]
+2023-04-25T21:40:54.585-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : 	request: org.apache.catalina.connector.RequestFacade@6f37290b
+2023-04-25T21:40:54.585-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : 	pageable: Page request [number: 1, size 10, sort: codigo: ASC]
+2023-04-25T21:40:54.585-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : 	model: {vacinaFilter=VacinaFilter [codigo=null, nome=null, descricao=null], org.springframework.validation.BindingResult.vacinaFilter=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2023-04-25T21:40:54.585-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.r.p.PaginacaoUtil                    : Ordenando o resultado da pesquisa por codigo, ASC
+2023-04-25T21:40:54.586-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.r.p.PaginacaoUtil                    : Filtrando a página 1, registros entre 10 e 20
+2023-04-25T21:40:54.592-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Removendo os parâmetros vazios da queryString: page=1
+2023-04-25T21:40:54.592-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : queryString sem parâmetros vazios: page=1
+2023-04-25T21:40:54.592-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : PageWrapper criado para a requestURL: http://localhost:8080/vacinas/pesquisar?page=1, queryString: page=1 e URL final: http://localhost:8080/vacinas/pesquisar?page=1
+2023-04-25T21:40:54.592-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Gerando a numeração da paginação para a Página Page 2 of 2 containing web.controlevacinacao.model.Vacina instances e o máximo de páginas na numeração 5
+2023-04-25T21:40:54.592-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : totalDePaginas: 2, paginaAtual: 2
+2023-04-25T21:40:54.592-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Números das páginas serão gerados entre 1 e 2
+2023-04-25T21:40:54.592-03:00 TRACE 65929 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/vacinas
+2023-04-25T21:40:54.604-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Gerando uma nova URL com a ordem da propriedade codigo invertida
+2023-04-25T21:40:54.604-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Invertendo a direcao da propriedade codigo
+2023-04-25T21:40:54.604-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Direção final da propriedade codigo: desc
+2023-04-25T21:40:54.604-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=1&sort=codigo,desc
+2023-04-25T21:40:54.605-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Gerando uma nova URL com a ordem da propriedade nome invertida
+2023-04-25T21:40:54.606-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Invertendo a direcao da propriedade nome
+2023-04-25T21:40:54.606-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Direção final da propriedade nome: asc
+2023-04-25T21:40:54.606-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=1&sort=nome,asc
+2023-04-25T21:40:54.610-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 0
+2023-04-25T21:40:54.610-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=0
+2023-04-25T21:40:54.610-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 0
+2023-04-25T21:40:54.610-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=0
+2023-04-25T21:40:54.610-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 0
+2023-04-25T21:40:54.610-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=0
+2023-04-25T21:40:54.610-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 1
+2023-04-25T21:40:54.611-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=1
+2023-04-25T21:40:54.611-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 2
+2023-04-25T21:40:54.611-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=2
+2023-04-25T21:40:54.611-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 1
+2023-04-25T21:40:54.611-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=1
+2023-04-25T21:40:56.428-03:00 TRACE 65929 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.pesquisar
+2023-04-25T21:40:56.428-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T21:40:56.428-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : 	filtro: VacinaFilter [codigo=null, nome=null, descricao=null]
+2023-04-25T21:40:56.428-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : 	request: org.apache.catalina.connector.RequestFacade@409e9c47
+2023-04-25T21:40:56.428-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : 	pageable: Page request [number: 0, size 10, sort: codigo: ASC]
+2023-04-25T21:40:56.428-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : 	model: {vacinaFilter=VacinaFilter [codigo=null, nome=null, descricao=null], org.springframework.validation.BindingResult.vacinaFilter=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2023-04-25T21:40:56.429-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.r.p.PaginacaoUtil                    : Ordenando o resultado da pesquisa por codigo, ASC
+2023-04-25T21:40:56.429-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.r.p.PaginacaoUtil                    : Filtrando a página 0, registros entre 0 e 10
+2023-04-25T21:40:56.437-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Removendo os parâmetros vazios da queryString: page=0
+2023-04-25T21:40:56.437-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : queryString sem parâmetros vazios: page=0
+2023-04-25T21:40:56.437-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : PageWrapper criado para a requestURL: http://localhost:8080/vacinas/pesquisar?page=0, queryString: page=0 e URL final: http://localhost:8080/vacinas/pesquisar?page=0
+2023-04-25T21:40:56.437-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Gerando a numeração da paginação para a Página Page 1 of 2 containing web.controlevacinacao.model.Vacina instances e o máximo de páginas na numeração 5
+2023-04-25T21:40:56.437-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : totalDePaginas: 2, paginaAtual: 1
+2023-04-25T21:40:56.437-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Números das páginas serão gerados entre 1 e 2
+2023-04-25T21:40:56.437-03:00 TRACE 65929 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/vacinas
+2023-04-25T21:40:56.451-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Gerando uma nova URL com a ordem da propriedade codigo invertida
+2023-04-25T21:40:56.451-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Invertendo a direcao da propriedade codigo
+2023-04-25T21:40:56.451-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Direção final da propriedade codigo: desc
+2023-04-25T21:40:56.451-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=0&sort=codigo,desc
+2023-04-25T21:40:56.453-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Gerando uma nova URL com a ordem da propriedade nome invertida
+2023-04-25T21:40:56.453-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Invertendo a direcao da propriedade nome
+2023-04-25T21:40:56.453-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Direção final da propriedade nome: asc
+2023-04-25T21:40:56.453-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=0&sort=nome,asc
+2023-04-25T21:40:56.458-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 0
+2023-04-25T21:40:56.458-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=0
+2023-04-25T21:40:56.459-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina -1
+2023-04-25T21:40:56.459-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=-1
+2023-04-25T21:40:56.460-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 0
+2023-04-25T21:40:56.460-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=0
+2023-04-25T21:40:56.461-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 1
+2023-04-25T21:40:56.461-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=1
+2023-04-25T21:40:56.462-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 1
+2023-04-25T21:40:56.462-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=1
+2023-04-25T21:40:56.462-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 1
+2023-04-25T21:40:56.463-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=1
+2023-04-25T21:40:57.593-03:00 TRACE 65929 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.pesquisar
+2023-04-25T21:40:57.594-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T21:40:57.594-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : 	filtro: VacinaFilter [codigo=null, nome=null, descricao=null]
+2023-04-25T21:40:57.594-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : 	request: org.apache.catalina.connector.RequestFacade@5baf2990
+2023-04-25T21:40:57.594-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : 	pageable: Page request [number: 1, size 10, sort: codigo: ASC]
+2023-04-25T21:40:57.594-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : 	model: {vacinaFilter=VacinaFilter [codigo=null, nome=null, descricao=null], org.springframework.validation.BindingResult.vacinaFilter=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2023-04-25T21:40:57.596-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.r.p.PaginacaoUtil                    : Ordenando o resultado da pesquisa por codigo, ASC
+2023-04-25T21:40:57.598-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.r.p.PaginacaoUtil                    : Filtrando a página 1, registros entre 10 e 20
+2023-04-25T21:40:57.610-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Removendo os parâmetros vazios da queryString: page=1
+2023-04-25T21:40:57.610-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : queryString sem parâmetros vazios: page=1
+2023-04-25T21:40:57.610-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : PageWrapper criado para a requestURL: http://localhost:8080/vacinas/pesquisar?page=1, queryString: page=1 e URL final: http://localhost:8080/vacinas/pesquisar?page=1
+2023-04-25T21:40:57.610-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Gerando a numeração da paginação para a Página Page 2 of 2 containing web.controlevacinacao.model.Vacina instances e o máximo de páginas na numeração 5
+2023-04-25T21:40:57.610-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : totalDePaginas: 2, paginaAtual: 2
+2023-04-25T21:40:57.610-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Números das páginas serão gerados entre 1 e 2
+2023-04-25T21:40:57.610-03:00 TRACE 65929 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/vacinas
+2023-04-25T21:40:57.623-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Gerando uma nova URL com a ordem da propriedade codigo invertida
+2023-04-25T21:40:57.624-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Invertendo a direcao da propriedade codigo
+2023-04-25T21:40:57.624-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Direção final da propriedade codigo: desc
+2023-04-25T21:40:57.624-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=1&sort=codigo,desc
+2023-04-25T21:40:57.625-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Gerando uma nova URL com a ordem da propriedade nome invertida
+2023-04-25T21:40:57.625-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Invertendo a direcao da propriedade nome
+2023-04-25T21:40:57.625-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Direção final da propriedade nome: asc
+2023-04-25T21:40:57.626-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=1&sort=nome,asc
+2023-04-25T21:40:57.630-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 0
+2023-04-25T21:40:57.630-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=0
+2023-04-25T21:40:57.630-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 0
+2023-04-25T21:40:57.630-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=0
+2023-04-25T21:40:57.631-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 0
+2023-04-25T21:40:57.631-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=0
+2023-04-25T21:40:57.631-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 1
+2023-04-25T21:40:57.631-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=1
+2023-04-25T21:40:57.631-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 2
+2023-04-25T21:40:57.631-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=2
+2023-04-25T21:40:57.632-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 1
+2023-04-25T21:40:57.632-03:00 DEBUG 65929 --- [http-nio-8080-exec-1] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=1
+2023-04-25T21:40:58.728-03:00 TRACE 65929 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.pesquisar
+2023-04-25T21:40:58.729-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T21:40:58.729-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : 	filtro: VacinaFilter [codigo=null, nome=null, descricao=null]
+2023-04-25T21:40:58.729-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : 	request: org.apache.catalina.connector.RequestFacade@399a34cf
+2023-04-25T21:40:58.729-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : 	pageable: Page request [number: 0, size 10, sort: codigo: ASC]
+2023-04-25T21:40:58.729-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : 	model: {vacinaFilter=VacinaFilter [codigo=null, nome=null, descricao=null], org.springframework.validation.BindingResult.vacinaFilter=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2023-04-25T21:40:58.730-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.r.p.PaginacaoUtil                    : Ordenando o resultado da pesquisa por codigo, ASC
+2023-04-25T21:40:58.731-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.r.p.PaginacaoUtil                    : Filtrando a página 0, registros entre 0 e 10
+2023-04-25T21:40:58.744-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Removendo os parâmetros vazios da queryString: page=0
+2023-04-25T21:40:58.745-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : queryString sem parâmetros vazios: page=0
+2023-04-25T21:40:58.745-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : PageWrapper criado para a requestURL: http://localhost:8080/vacinas/pesquisar?page=0, queryString: page=0 e URL final: http://localhost:8080/vacinas/pesquisar?page=0
+2023-04-25T21:40:58.745-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Gerando a numeração da paginação para a Página Page 1 of 2 containing web.controlevacinacao.model.Vacina instances e o máximo de páginas na numeração 5
+2023-04-25T21:40:58.746-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : totalDePaginas: 2, paginaAtual: 1
+2023-04-25T21:40:58.746-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Números das páginas serão gerados entre 1 e 2
+2023-04-25T21:40:58.746-03:00 TRACE 65929 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/vacinas
+2023-04-25T21:40:58.761-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Gerando uma nova URL com a ordem da propriedade codigo invertida
+2023-04-25T21:40:58.761-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Invertendo a direcao da propriedade codigo
+2023-04-25T21:40:58.762-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Direção final da propriedade codigo: desc
+2023-04-25T21:40:58.762-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=0&sort=codigo,desc
+2023-04-25T21:40:58.763-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Gerando uma nova URL com a ordem da propriedade nome invertida
+2023-04-25T21:40:58.764-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Invertendo a direcao da propriedade nome
+2023-04-25T21:40:58.764-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Direção final da propriedade nome: asc
+2023-04-25T21:40:58.764-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=0&sort=nome,asc
+2023-04-25T21:40:58.769-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 0
+2023-04-25T21:40:58.769-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=0
+2023-04-25T21:40:58.769-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina -1
+2023-04-25T21:40:58.769-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=-1
+2023-04-25T21:40:58.770-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 0
+2023-04-25T21:40:58.770-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=0
+2023-04-25T21:40:58.770-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 1
+2023-04-25T21:40:58.770-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=1
+2023-04-25T21:40:58.770-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 1
+2023-04-25T21:40:58.770-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=1
+2023-04-25T21:40:58.770-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : Gerando uma nova URL para a pagina 1
+2023-04-25T21:40:58.770-03:00 DEBUG 65929 --- [http-nio-8080-exec-7] w.c.p.PageWrapper                        : URL gerada: http://localhost:8080/vacinas/pesquisar?page=1

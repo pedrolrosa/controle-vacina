@@ -20,7 +20,7 @@
       <!-- conteudo principal -->
       <main class="mt-5 p-4 pt-5">
         <div class="container-fluid">
-          <form th:action="@{/vacinas/pesquisar}" method="POST">
+          <form th:action="@{/vacinas/pesquisar}" method="GET">
             <label for="codigo" class="form-label">Código</label>
             <input id="codigo" class="form-control" name="codigo" type="number" />
             
