@@ -105,7 +105,7 @@ public class VacinaController {
 
     @GetMapping("/pesquisar")
     public String pesquisar(VacinaFilter filtro, Model model,
-            @PageableDefault(size = 10)
+            @PageableDefault(size = 5)
             @SortDefault(sort = "codigo", direction = Sort.Direction.ASC) Pageable pageable,
             HttpServletRequest request){
         
