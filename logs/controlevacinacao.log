@@ -24943,3 +24943,1112 @@ Caused by: java.lang.Error: Unresolved compilation problem:
 2023-04-25T19:58:34.467-03:00 DEBUG 22332 --- [http-nio-8080-exec-2] w.c.a.ApplicationLoggingAspect           : 	filtro: VacinaFilter [codigo=null, nome=, descricao=]
 2023-04-25T19:58:34.467-03:00 DEBUG 22332 --- [http-nio-8080-exec-2] w.c.a.ApplicationLoggingAspect           : 	model: {vacinaFilter=VacinaFilter [codigo=null, nome=, descricao=], org.springframework.validation.BindingResult.vacinaFilter=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
 2023-04-25T19:58:34.504-03:00 TRACE 22332 --- [http-nio-8080-exec-2] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/vacinas
+2023-04-25T20:12:55.706-03:00 TRACE 22332 --- [http-nio-8080-exec-8] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.abrirCadastrar
+2023-04-25T20:12:55.707-03:00 DEBUG 22332 --- [http-nio-8080-exec-8] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T20:12:55.707-03:00 DEBUG 22332 --- [http-nio-8080-exec-8] w.c.a.ApplicationLoggingAspect           : 	vacina: Vacina [codigo=null, nome=null, descricao=null, status=null]
+2023-04-25T20:12:55.707-03:00 DEBUG 22332 --- [http-nio-8080-exec-8] w.c.a.ApplicationLoggingAspect           : 	model: {vacina=Vacina [codigo=null, nome=null, descricao=null, status=null], org.springframework.validation.BindingResult.vacina=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2023-04-25T20:12:55.707-03:00 TRACE 22332 --- [http-nio-8080-exec-8] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/cadastrar
+2023-04-25T20:13:00.264-03:00 TRACE 22332 --- [http-nio-8080-exec-4] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.cadastrar
+2023-04-25T20:13:00.264-03:00 DEBUG 22332 --- [http-nio-8080-exec-4] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T20:13:00.264-03:00 DEBUG 22332 --- [http-nio-8080-exec-4] w.c.a.ApplicationLoggingAspect           : 	vacina: Vacina [codigo=null, nome=ghhghgh, descricao=hghghghg, status=null]
+2023-04-25T20:13:00.267-03:00 TRACE 22332 --- [http-nio-8080-exec-4] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaService.salvar
+2023-04-25T20:13:00.267-03:00 DEBUG 22332 --- [http-nio-8080-exec-4] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T20:13:00.267-03:00 DEBUG 22332 --- [http-nio-8080-exec-4] w.c.a.ApplicationLoggingAspect           : 	vacina: Vacina [codigo=null, nome=ghhghgh, descricao=hghghghg, status=null]
+2023-04-25T20:13:00.288-03:00 TRACE 22332 --- [http-nio-8080-exec-4] w.c.a.ApplicationLoggingAspect           : Retornando: null
+2023-04-25T20:13:00.298-03:00 TRACE 22332 --- [http-nio-8080-exec-4] w.c.a.ApplicationLoggingAspect           : Redirecionando para a URL: /vacinas/cadastrook
+2023-04-25T20:13:00.305-03:00 TRACE 22332 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.mostrarMensagemCadastroOK
+2023-04-25T20:13:00.305-03:00 DEBUG 22332 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T20:13:00.305-03:00 DEBUG 22332 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : 	model: {}
+2023-04-25T20:13:00.305-03:00 TRACE 22332 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: mostrarmensagem
+2023-04-25T20:13:03.331-03:00 TRACE 22332 --- [http-nio-8080-exec-3] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.abrirPesquisar
+2023-04-25T20:13:03.332-03:00 TRACE 22332 --- [http-nio-8080-exec-3] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/pesquisar
+2023-04-25T20:13:04.311-03:00 TRACE 22332 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.pesquisar
+2023-04-25T20:13:04.311-03:00 DEBUG 22332 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T20:13:04.312-03:00 DEBUG 22332 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : 	filtro: VacinaFilter [codigo=null, nome=, descricao=]
+2023-04-25T20:13:04.312-03:00 DEBUG 22332 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : 	model: {vacinaFilter=VacinaFilter [codigo=null, nome=, descricao=], org.springframework.validation.BindingResult.vacinaFilter=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2023-04-25T20:13:04.324-03:00 TRACE 22332 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/vacinas
+2023-04-25T20:15:52.210-03:00  INFO 22332 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-25T20:15:52.213-03:00  INFO 22332 --- [Thread-7] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-04-25T20:15:52.213-03:00  INFO 22332 --- [Thread-7] o.a.c.c.C.[.[.[/]                        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-25T20:15:52.221-03:00  INFO 22332 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T20:15:52.223-03:00  INFO 22332 --- [Thread-7] c.z.h.HikariDataSource                   : HikariPool-3 - Shutdown initiated...
+2023-04-25T20:15:52.226-03:00  INFO 22332 --- [Thread-7] c.z.h.HikariDataSource                   : HikariPool-3 - Shutdown completed.
+2023-04-25T20:15:52.315-03:00  INFO 22332 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 22332 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T20:15:52.315-03:00 DEBUG 22332 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T20:15:52.315-03:00  INFO 22332 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T20:15:52.429-03:00  INFO 22332 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T20:15:52.434-03:00  INFO 22332 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2023-04-25T20:15:52.499-03:00  INFO 22332 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T20:15:52.500-03:00  INFO 22332 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T20:15:52.500-03:00  INFO 22332 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T20:15:52.505-03:00  INFO 22332 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T20:15:52.505-03:00  INFO 22332 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 189 ms
+2023-04-25T20:15:52.556-03:00  INFO 22332 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-4 - Starting...
+2023-04-25T20:15:52.564-03:00  INFO 22332 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@271679ac
+2023-04-25T20:15:52.564-03:00  INFO 22332 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-4 - Start completed.
+2023-04-25T20:15:52.565-03:00  INFO 22332 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T20:15:52.571-03:00  INFO 22332 --- [restartedMain] o.f.c.i.c.DbValidate                     : Successfully validated 2 migrations (execution time 00:00.002s)
+2023-04-25T20:15:52.582-03:00  INFO 22332 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Current version of schema "public": 02
+2023-04-25T20:15:52.583-03:00  INFO 22332 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2023-04-25T20:15:52.603-03:00  INFO 22332 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-25T20:15:52.607-03:00  INFO 22332 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-04-25T20:15:52.622-03:00  INFO 22332 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-25T20:15:52.622-03:00  INFO 22332 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T20:15:52.761-03:00  INFO 22332 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-04-25T20:15:52.877-03:00  INFO 22332 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-25T20:15:52.880-03:00  INFO 22332 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-25T20:15:52.909-03:00  INFO 22332 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-25T20:15:52.913-03:00  INFO 22332 --- [restartedMain] w.c.Application                          : Started Application in 0.634 seconds (process running for 1167.762)
+2023-04-25T20:15:52.916-03:00  INFO 22332 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-25T20:15:54.280-03:00  INFO 22332 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-25T20:15:54.282-03:00  INFO 22332 --- [Thread-14] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-04-25T20:15:54.286-03:00  INFO 22332 --- [Thread-14] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T20:15:54.286-03:00  INFO 22332 --- [Thread-14] c.z.h.HikariDataSource                   : HikariPool-4 - Shutdown initiated...
+2023-04-25T20:15:54.288-03:00  INFO 22332 --- [Thread-14] c.z.h.HikariDataSource                   : HikariPool-4 - Shutdown completed.
+2023-04-25T20:15:54.368-03:00  INFO 22332 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 22332 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T20:15:54.369-03:00 DEBUG 22332 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T20:15:54.369-03:00  INFO 22332 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T20:15:54.476-03:00  INFO 22332 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T20:15:54.480-03:00  INFO 22332 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2023-04-25T20:15:54.558-03:00  INFO 22332 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T20:15:54.558-03:00  INFO 22332 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T20:15:54.558-03:00  INFO 22332 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T20:15:54.562-03:00  INFO 22332 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T20:15:54.562-03:00  INFO 22332 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 192 ms
+2023-04-25T20:15:54.625-03:00  INFO 22332 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-5 - Starting...
+2023-04-25T20:15:54.639-03:00  INFO 22332 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@178a4da
+2023-04-25T20:15:54.640-03:00  INFO 22332 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-5 - Start completed.
+2023-04-25T20:15:54.641-03:00  INFO 22332 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T20:15:54.647-03:00  INFO 22332 --- [restartedMain] o.f.c.i.c.DbValidate                     : Successfully validated 2 migrations (execution time 00:00.002s)
+2023-04-25T20:15:54.660-03:00  INFO 22332 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Current version of schema "public": 02
+2023-04-25T20:15:54.661-03:00  INFO 22332 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2023-04-25T20:15:54.680-03:00  INFO 22332 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-25T20:15:54.683-03:00  INFO 22332 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-04-25T20:15:54.703-03:00  INFO 22332 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-25T20:15:54.703-03:00  INFO 22332 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T20:15:54.839-03:00  INFO 22332 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-04-25T20:15:55.001-03:00  INFO 22332 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-25T20:15:55.005-03:00  INFO 22332 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-25T20:15:55.016-03:00  INFO 22332 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-25T20:15:55.021-03:00  INFO 22332 --- [restartedMain] w.c.Application                          : Started Application in 0.688 seconds (process running for 1169.869)
+2023-04-25T20:15:55.023-03:00  INFO 22332 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-25T20:15:59.414-03:00  INFO 22332 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-25T20:15:59.418-03:00  INFO 22332 --- [Thread-18] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-04-25T20:15:59.431-03:00  INFO 22332 --- [Thread-18] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T20:15:59.433-03:00  INFO 22332 --- [Thread-18] c.z.h.HikariDataSource                   : HikariPool-5 - Shutdown initiated...
+2023-04-25T20:15:59.436-03:00  INFO 22332 --- [Thread-18] c.z.h.HikariDataSource                   : HikariPool-5 - Shutdown completed.
+2023-04-25T20:15:59.533-03:00  INFO 22332 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 22332 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T20:15:59.533-03:00 DEBUG 22332 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T20:15:59.533-03:00  INFO 22332 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T20:15:59.656-03:00  INFO 22332 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T20:15:59.663-03:00  INFO 22332 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+2023-04-25T20:15:59.741-03:00  INFO 22332 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T20:15:59.742-03:00  INFO 22332 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T20:15:59.742-03:00  INFO 22332 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T20:15:59.746-03:00  INFO 22332 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T20:15:59.746-03:00  INFO 22332 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 212 ms
+2023-04-25T20:15:59.809-03:00  INFO 22332 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-6 - Starting...
+2023-04-25T20:15:59.818-03:00  INFO 22332 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-6 - Added connection org.postgresql.jdbc.PgConnection@72e16025
+2023-04-25T20:15:59.818-03:00  INFO 22332 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-6 - Start completed.
+2023-04-25T20:15:59.819-03:00  INFO 22332 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T20:15:59.825-03:00  INFO 22332 --- [restartedMain] o.f.c.i.c.DbValidate                     : Successfully validated 2 migrations (execution time 00:00.003s)
+2023-04-25T20:15:59.837-03:00  INFO 22332 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Current version of schema "public": 02
+2023-04-25T20:15:59.837-03:00  INFO 22332 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2023-04-25T20:15:59.856-03:00  INFO 22332 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-25T20:15:59.860-03:00  INFO 22332 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-04-25T20:15:59.871-03:00  INFO 22332 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-25T20:15:59.871-03:00  INFO 22332 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T20:15:59.994-03:00  INFO 22332 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-04-25T20:16:00.134-03:00  INFO 22332 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-25T20:16:00.137-03:00  INFO 22332 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-25T20:16:00.169-03:00  INFO 22332 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-25T20:16:00.174-03:00  INFO 22332 --- [restartedMain] w.c.Application                          : Started Application in 0.675 seconds (process running for 1175.022)
+2023-04-25T20:16:00.175-03:00  INFO 22332 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-25T20:16:01.541-03:00  INFO 22332 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-25T20:16:01.547-03:00  INFO 22332 --- [Thread-22] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-04-25T20:16:01.560-03:00  INFO 22332 --- [Thread-22] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T20:16:01.561-03:00  INFO 22332 --- [Thread-22] c.z.h.HikariDataSource                   : HikariPool-6 - Shutdown initiated...
+2023-04-25T20:16:01.567-03:00  INFO 22332 --- [Thread-22] c.z.h.HikariDataSource                   : HikariPool-6 - Shutdown completed.
+2023-04-25T20:16:01.649-03:00  INFO 22332 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 22332 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T20:16:01.649-03:00 DEBUG 22332 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T20:16:01.649-03:00  INFO 22332 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T20:16:01.733-03:00  INFO 22332 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T20:16:01.736-03:00  INFO 22332 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2023-04-25T20:16:01.813-03:00  INFO 22332 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T20:16:01.813-03:00  INFO 22332 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T20:16:01.814-03:00  INFO 22332 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T20:16:01.818-03:00  INFO 22332 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T20:16:01.818-03:00  INFO 22332 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 168 ms
+2023-04-25T20:16:01.873-03:00  INFO 22332 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-7 - Starting...
+2023-04-25T20:16:01.881-03:00  INFO 22332 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-7 - Added connection org.postgresql.jdbc.PgConnection@51e893bf
+2023-04-25T20:16:01.881-03:00  INFO 22332 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-7 - Start completed.
+2023-04-25T20:16:01.882-03:00  INFO 22332 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T20:16:01.887-03:00  INFO 22332 --- [restartedMain] o.f.c.i.c.DbValidate                     : Successfully validated 2 migrations (execution time 00:00.002s)
+2023-04-25T20:16:01.896-03:00  INFO 22332 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Current version of schema "public": 02
+2023-04-25T20:16:01.896-03:00  INFO 22332 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2023-04-25T20:16:01.909-03:00  INFO 22332 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-25T20:16:01.914-03:00  INFO 22332 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-04-25T20:16:01.925-03:00  INFO 22332 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-25T20:16:01.926-03:00  INFO 22332 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T20:16:02.034-03:00  INFO 22332 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-04-25T20:16:02.157-03:00  INFO 22332 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-25T20:16:02.159-03:00  INFO 22332 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-25T20:16:02.171-03:00  INFO 22332 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-25T20:16:02.174-03:00  INFO 22332 --- [restartedMain] w.c.Application                          : Started Application in 0.55 seconds (process running for 1177.023)
+2023-04-25T20:16:02.175-03:00  INFO 22332 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-25T20:16:03.712-03:00  INFO 22332 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-25T20:16:03.712-03:00  INFO 22332 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-04-25T20:16:03.715-03:00  INFO 22332 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 3 ms
+2023-04-25T20:16:03.720-03:00 TRACE 22332 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.abrirCadastrar
+2023-04-25T20:16:03.721-03:00 DEBUG 22332 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T20:16:03.721-03:00 DEBUG 22332 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : 	vacina: Vacina [codigo=null, nome=null, descricao=null, status=null]
+2023-04-25T20:16:03.721-03:00 DEBUG 22332 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : 	model: {vacina=Vacina [codigo=null, nome=null, descricao=null, status=null], org.springframework.validation.BindingResult.vacina=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2023-04-25T20:16:03.721-03:00 TRACE 22332 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/cadastrar
+2023-04-25T20:16:12.086-03:00 TRACE 22332 --- [http-nio-8080-exec-6] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.cadastrar
+2023-04-25T20:16:12.086-03:00 DEBUG 22332 --- [http-nio-8080-exec-6] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T20:16:12.086-03:00 DEBUG 22332 --- [http-nio-8080-exec-6] w.c.a.ApplicationLoggingAspect           : 	vacina: Vacina [codigo=null, nome=teste, descricao=23413, status=null]
+2023-04-25T20:16:12.087-03:00 TRACE 22332 --- [http-nio-8080-exec-6] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaService.salvar
+2023-04-25T20:16:12.087-03:00 DEBUG 22332 --- [http-nio-8080-exec-6] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T20:16:12.087-03:00 DEBUG 22332 --- [http-nio-8080-exec-6] w.c.a.ApplicationLoggingAspect           : 	vacina: Vacina [codigo=null, nome=teste, descricao=23413, status=ATIVO]
+2023-04-25T20:16:12.089-03:00 TRACE 22332 --- [http-nio-8080-exec-6] w.c.a.ApplicationLoggingAspect           : Retornando: null
+2023-04-25T20:16:12.091-03:00 TRACE 22332 --- [http-nio-8080-exec-6] w.c.a.ApplicationLoggingAspect           : Redirecionando para a URL: /vacinas/cadastrook
+2023-04-25T20:16:12.098-03:00 TRACE 22332 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.mostrarMensagemCadastroOK
+2023-04-25T20:16:12.098-03:00 DEBUG 22332 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T20:16:12.098-03:00 DEBUG 22332 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : 	model: {}
+2023-04-25T20:16:12.098-03:00 TRACE 22332 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: mostrarmensagem
+2023-04-25T20:16:14.693-03:00 TRACE 22332 --- [http-nio-8080-exec-3] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.abrirPesquisar
+2023-04-25T20:16:14.693-03:00 TRACE 22332 --- [http-nio-8080-exec-3] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/pesquisar
+2023-04-25T20:16:16.631-03:00 TRACE 22332 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.pesquisar
+2023-04-25T20:16:16.632-03:00 DEBUG 22332 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T20:16:16.632-03:00 DEBUG 22332 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : 	filtro: VacinaFilter [codigo=null, nome=, descricao=]
+2023-04-25T20:16:16.632-03:00 DEBUG 22332 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : 	model: {vacinaFilter=VacinaFilter [codigo=null, nome=, descricao=], org.springframework.validation.BindingResult.vacinaFilter=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2023-04-25T20:16:16.670-03:00 TRACE 22332 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/vacinas
+2023-04-25T20:17:20.726-03:00  INFO 22332 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-25T20:17:20.729-03:00  INFO 22332 --- [Thread-26] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-04-25T20:17:20.729-03:00  INFO 22332 --- [Thread-26] o.a.c.c.C.[.[.[/]                        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-25T20:17:20.734-03:00  INFO 22332 --- [Thread-26] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T20:17:20.734-03:00  INFO 22332 --- [Thread-26] c.z.h.HikariDataSource                   : HikariPool-7 - Shutdown initiated...
+2023-04-25T20:17:20.736-03:00  INFO 22332 --- [Thread-26] c.z.h.HikariDataSource                   : HikariPool-7 - Shutdown completed.
+2023-04-25T20:17:20.815-03:00  INFO 22332 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 22332 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T20:17:20.815-03:00 DEBUG 22332 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T20:17:20.815-03:00  INFO 22332 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T20:17:20.893-03:00  INFO 22332 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T20:17:20.896-03:00  INFO 22332 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2023-04-25T20:17:20.943-03:00  INFO 22332 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T20:17:20.943-03:00  INFO 22332 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T20:17:20.944-03:00  INFO 22332 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T20:17:20.947-03:00  INFO 22332 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T20:17:20.947-03:00  INFO 22332 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 131 ms
+2023-04-25T20:17:21.001-03:00  INFO 22332 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-8 - Starting...
+2023-04-25T20:17:21.009-03:00  INFO 22332 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-8 - Added connection org.postgresql.jdbc.PgConnection@5cbe59eb
+2023-04-25T20:17:21.009-03:00  INFO 22332 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-8 - Start completed.
+2023-04-25T20:17:21.010-03:00  INFO 22332 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T20:17:21.015-03:00  INFO 22332 --- [restartedMain] o.f.c.i.c.DbValidate                     : Successfully validated 2 migrations (execution time 00:00.002s)
+2023-04-25T20:17:21.025-03:00  INFO 22332 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Current version of schema "public": 02
+2023-04-25T20:17:21.026-03:00  INFO 22332 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2023-04-25T20:17:21.040-03:00  INFO 22332 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-25T20:17:21.043-03:00  INFO 22332 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-04-25T20:17:21.053-03:00  INFO 22332 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-25T20:17:21.054-03:00  INFO 22332 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T20:17:21.153-03:00  INFO 22332 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-04-25T20:17:21.274-03:00  INFO 22332 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-25T20:17:21.276-03:00  INFO 22332 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-25T20:17:21.286-03:00  INFO 22332 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-25T20:17:21.290-03:00  INFO 22332 --- [restartedMain] w.c.Application                          : Started Application in 0.499 seconds (process running for 1256.138)
+2023-04-25T20:17:21.290-03:00  INFO 22332 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-25T20:19:17.792-03:00  INFO 22332 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T20:19:17.794-03:00  INFO 22332 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-8 - Shutdown initiated...
+2023-04-25T20:19:17.800-03:00  INFO 22332 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-8 - Shutdown completed.
+2023-04-25T20:19:24.204-03:00  INFO 32413 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 32413 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T20:19:24.208-03:00 DEBUG 32413 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T20:19:24.210-03:00  INFO 32413 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T20:19:24.357-03:00  INFO 32413 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-25T20:19:24.358-03:00  INFO 32413 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-25T20:19:24.906-03:00  INFO 32413 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T20:19:24.939-03:00  INFO 32413 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interfaces.
+2023-04-25T20:19:25.429-03:00  INFO 32413 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T20:19:25.435-03:00  INFO 32413 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T20:19:25.435-03:00  INFO 32413 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T20:19:25.463-03:00  INFO 32413 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T20:19:25.463-03:00  INFO 32413 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1105 ms
+2023-04-25T20:19:25.698-03:00  INFO 32413 --- [restartedMain] o.f.c.i.l.VersionPrinter                 : Flyway Community Edition 9.5.1 by Redgate
+2023-04-25T20:19:25.699-03:00  INFO 32413 --- [restartedMain] o.f.c.i.l.VersionPrinter                 : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
+2023-04-25T20:19:25.699-03:00  INFO 32413 --- [restartedMain] o.f.c.i.l.VersionPrinter                 : 
+2023-04-25T20:19:25.707-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-04-25T20:19:25.805-03:00  INFO 32413 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5440618a
+2023-04-25T20:19:25.805-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-04-25T20:19:25.820-03:00  INFO 32413 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T20:19:25.849-03:00  INFO 32413 --- [restartedMain] o.f.c.i.c.DbValidate                     : Successfully validated 2 migrations (execution time 00:00.018s)
+2023-04-25T20:19:25.876-03:00  INFO 32413 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Current version of schema "public": 02
+2023-04-25T20:19:25.877-03:00  INFO 32413 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2023-04-25T20:19:25.951-03:00  INFO 32413 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-25T20:19:25.978-03:00  INFO 32413 --- [restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-25T20:19:26.132-03:00  INFO 32413 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-04-25T20:19:26.511-03:00  INFO 32413 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-25T20:19:26.516-03:00  INFO 32413 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T20:19:26.960-03:00  INFO 32413 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-04-25T20:19:27.420-03:00  INFO 32413 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-25T20:19:27.428-03:00  INFO 32413 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-25T20:19:27.479-03:00  INFO 32413 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-25T20:19:27.492-03:00  INFO 32413 --- [restartedMain] w.c.Application                          : Started Application in 3.59 seconds (process running for 4.033)
+2023-04-25T20:19:30.294-03:00  INFO 32413 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-25T20:19:30.295-03:00  INFO 32413 --- [RMI TCP Connection(3)-127.0.0.1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-04-25T20:19:30.296-03:00  INFO 32413 --- [RMI TCP Connection(3)-127.0.0.1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2023-04-25T20:19:34.965-03:00 TRACE 32413 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Entrou no método: IndexController.index
+2023-04-25T20:19:34.965-03:00 TRACE 32413 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: index
+2023-04-25T20:19:38.193-03:00 TRACE 32413 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.abrirCadastrar
+2023-04-25T20:19:38.193-03:00 DEBUG 32413 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T20:19:38.193-03:00 DEBUG 32413 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : 	vacina: Vacina [codigo=null, nome=null, descricao=null, status=null]
+2023-04-25T20:19:38.193-03:00 DEBUG 32413 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : 	model: {vacina=Vacina [codigo=null, nome=null, descricao=null, status=null], org.springframework.validation.BindingResult.vacina=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2023-04-25T20:19:38.193-03:00 TRACE 32413 --- [http-nio-8080-exec-7] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/cadastrar
+2023-04-25T20:19:43.085-03:00 TRACE 32413 --- [http-nio-8080-exec-5] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.cadastrar
+2023-04-25T20:19:43.085-03:00 DEBUG 32413 --- [http-nio-8080-exec-5] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T20:19:43.085-03:00 DEBUG 32413 --- [http-nio-8080-exec-5] w.c.a.ApplicationLoggingAspect           : 	vacina: Vacina [codigo=null, nome=fe, descricao=21s, status=null]
+2023-04-25T20:19:43.097-03:00 TRACE 32413 --- [http-nio-8080-exec-5] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaService.salvar
+2023-04-25T20:19:43.098-03:00 DEBUG 32413 --- [http-nio-8080-exec-5] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T20:19:43.098-03:00 DEBUG 32413 --- [http-nio-8080-exec-5] w.c.a.ApplicationLoggingAspect           : 	vacina: Vacina [codigo=null, nome=fe, descricao=21s, status=null]
+2023-04-25T20:19:43.126-03:00 TRACE 32413 --- [http-nio-8080-exec-5] w.c.a.ApplicationLoggingAspect           : Retornando: null
+2023-04-25T20:19:43.135-03:00 TRACE 32413 --- [http-nio-8080-exec-5] w.c.a.ApplicationLoggingAspect           : Redirecionando para a URL: /vacinas/cadastrook
+2023-04-25T20:19:43.143-03:00 TRACE 32413 --- [http-nio-8080-exec-4] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.mostrarMensagemCadastroOK
+2023-04-25T20:19:43.143-03:00 DEBUG 32413 --- [http-nio-8080-exec-4] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T20:19:43.143-03:00 DEBUG 32413 --- [http-nio-8080-exec-4] w.c.a.ApplicationLoggingAspect           : 	model: {}
+2023-04-25T20:19:43.143-03:00 TRACE 32413 --- [http-nio-8080-exec-4] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: mostrarmensagem
+2023-04-25T20:19:45.962-03:00 TRACE 32413 --- [http-nio-8080-exec-9] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.abrirPesquisar
+2023-04-25T20:19:45.962-03:00 TRACE 32413 --- [http-nio-8080-exec-9] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/pesquisar
+2023-04-25T20:19:46.908-03:00 TRACE 32413 --- [http-nio-8080-exec-4] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.pesquisar
+2023-04-25T20:19:46.908-03:00 DEBUG 32413 --- [http-nio-8080-exec-4] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T20:19:46.908-03:00 DEBUG 32413 --- [http-nio-8080-exec-4] w.c.a.ApplicationLoggingAspect           : 	filtro: VacinaFilter [codigo=null, nome=, descricao=]
+2023-04-25T20:19:46.909-03:00 DEBUG 32413 --- [http-nio-8080-exec-4] w.c.a.ApplicationLoggingAspect           : 	model: {vacinaFilter=VacinaFilter [codigo=null, nome=, descricao=], org.springframework.validation.BindingResult.vacinaFilter=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2023-04-25T20:19:47.011-03:00 TRACE 32413 --- [http-nio-8080-exec-4] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/vacinas
+2023-04-25T20:23:42.425-03:00  INFO 32413 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-25T20:23:42.437-03:00  INFO 32413 --- [Thread-5] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-04-25T20:23:42.439-03:00  INFO 32413 --- [Thread-5] o.a.c.c.C.[.[.[/]                        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-25T20:23:42.459-03:00  INFO 32413 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T20:23:42.463-03:00  INFO 32413 --- [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-04-25T20:23:42.468-03:00  INFO 32413 --- [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2023-04-25T20:23:42.547-03:00  INFO 32413 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 32413 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T20:23:42.547-03:00 DEBUG 32413 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T20:23:42.547-03:00  INFO 32413 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T20:23:42.689-03:00  INFO 32413 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T20:23:42.693-03:00  INFO 32413 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2023-04-25T20:23:42.781-03:00  INFO 32413 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T20:23:42.782-03:00  INFO 32413 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T20:23:42.782-03:00  INFO 32413 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T20:23:42.788-03:00  INFO 32413 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T20:23:42.788-03:00  INFO 32413 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 240 ms
+2023-04-25T20:23:42.863-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Starting...
+2023-04-25T20:23:42.872-03:00  INFO 32413 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@469ef4b
+2023-04-25T20:23:42.872-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Start completed.
+2023-04-25T20:23:42.873-03:00  INFO 32413 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T20:23:42.881-03:00  WARN 32413 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Validate failed: Migrations have failed validation
+Migration checksum mismatch for migration version 02
+-> Applied to database : 1977092408
+-> Resolved locally    : -1712342628
+Either revert the changes to the migration, or run repair to update the schema history.
+Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
+2023-04-25T20:23:42.881-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown initiated...
+2023-04-25T20:23:42.882-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown completed.
+2023-04-25T20:23:42.882-03:00  INFO 32413 --- [restartedMain] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-04-25T20:23:42.890-03:00  INFO 32413 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-04-25T20:23:42.900-03:00 ERROR 32413 --- [restartedMain] o.s.b.SpringApplication                  : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Validate failed: Migrations have failed validation
+Migration checksum mismatch for migration version 02
+-> Applied to database : 1977092408
+-> Resolved locally    : -1712342628
+Either revert the changes to the migration, or run repair to update the schema history.
+Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1132) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:907) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1304) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1293) ~[spring-boot-3.0.5.jar:3.0.5]
+	at web.controlevacinacao.Application.main(Application.java:10) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-3.0.5.jar:3.0.5]
+Caused by: org.flywaydb.core.api.exception.FlywayValidateException: Validate failed: Migrations have failed validation
+Migration checksum mismatch for migration version 02
+-> Applied to database : 1977092408
+-> Resolved locally    : -1712342628
+Either revert the changes to the migration, or run repair to update the schema history.
+Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
+	at org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:134) ~[flyway-core-9.5.1.jar:?]
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:204) ~[flyway-core-9.5.1.jar:?]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:128) ~[flyway-core-9.5.1.jar:?]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) ~[spring-boot-autoconfigure-3.0.5.jar:3.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.7.jar:6.0.7]
+	... 21 more
+
+2023-04-25T20:23:44.373-03:00  INFO 32413 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 32413 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T20:23:44.374-03:00 DEBUG 32413 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T20:23:44.374-03:00  INFO 32413 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T20:23:44.500-03:00  INFO 32413 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T20:23:44.505-03:00  INFO 32413 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interfaces.
+2023-04-25T20:23:44.591-03:00  INFO 32413 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T20:23:44.592-03:00  INFO 32413 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T20:23:44.592-03:00  INFO 32413 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T20:23:44.597-03:00  INFO 32413 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T20:23:44.597-03:00  INFO 32413 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 222 ms
+2023-04-25T20:23:44.666-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Starting...
+2023-04-25T20:23:44.678-03:00  INFO 32413 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@4ea7806e
+2023-04-25T20:23:44.678-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Start completed.
+2023-04-25T20:23:44.679-03:00  INFO 32413 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T20:23:44.687-03:00  WARN 32413 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Validate failed: Migrations have failed validation
+Migration checksum mismatch for migration version 02
+-> Applied to database : 1977092408
+-> Resolved locally    : -1712342628
+Either revert the changes to the migration, or run repair to update the schema history.
+Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
+2023-04-25T20:23:44.687-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Shutdown initiated...
+2023-04-25T20:23:44.688-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Shutdown completed.
+2023-04-25T20:23:44.689-03:00  INFO 32413 --- [restartedMain] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-04-25T20:23:44.695-03:00  INFO 32413 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-04-25T20:23:44.696-03:00 ERROR 32413 --- [restartedMain] o.s.b.SpringApplication                  : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Validate failed: Migrations have failed validation
+Migration checksum mismatch for migration version 02
+-> Applied to database : 1977092408
+-> Resolved locally    : -1712342628
+Either revert the changes to the migration, or run repair to update the schema history.
+Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1132) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:907) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1304) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1293) ~[spring-boot-3.0.5.jar:3.0.5]
+	at web.controlevacinacao.Application.main(Application.java:10) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-3.0.5.jar:3.0.5]
+Caused by: org.flywaydb.core.api.exception.FlywayValidateException: Validate failed: Migrations have failed validation
+Migration checksum mismatch for migration version 02
+-> Applied to database : 1977092408
+-> Resolved locally    : -1712342628
+Either revert the changes to the migration, or run repair to update the schema history.
+Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
+	at org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:134) ~[flyway-core-9.5.1.jar:?]
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:204) ~[flyway-core-9.5.1.jar:?]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:128) ~[flyway-core-9.5.1.jar:?]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) ~[spring-boot-autoconfigure-3.0.5.jar:3.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.7.jar:6.0.7]
+	... 21 more
+
+2023-04-25T20:23:50.164-03:00  INFO 32413 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 32413 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T20:23:50.164-03:00 DEBUG 32413 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T20:23:50.164-03:00  INFO 32413 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T20:23:50.271-03:00  INFO 32413 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T20:23:50.275-03:00  INFO 32413 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2023-04-25T20:23:50.340-03:00  INFO 32413 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T20:23:50.340-03:00  INFO 32413 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T20:23:50.340-03:00  INFO 32413 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T20:23:50.350-03:00  INFO 32413 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T20:23:50.350-03:00  INFO 32413 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 185 ms
+2023-04-25T20:23:50.413-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-4 - Starting...
+2023-04-25T20:23:50.420-03:00  INFO 32413 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@47874831
+2023-04-25T20:23:50.421-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-4 - Start completed.
+2023-04-25T20:23:50.422-03:00  INFO 32413 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T20:23:50.428-03:00  WARN 32413 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Validate failed: Migrations have failed validation
+Migration checksum mismatch for migration version 02
+-> Applied to database : 1977092408
+-> Resolved locally    : 954416778
+Either revert the changes to the migration, or run repair to update the schema history.
+Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
+2023-04-25T20:23:50.428-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-4 - Shutdown initiated...
+2023-04-25T20:23:50.428-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-4 - Shutdown completed.
+2023-04-25T20:23:50.429-03:00  INFO 32413 --- [restartedMain] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-04-25T20:23:50.433-03:00  INFO 32413 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-04-25T20:23:50.434-03:00 ERROR 32413 --- [restartedMain] o.s.b.SpringApplication                  : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Validate failed: Migrations have failed validation
+Migration checksum mismatch for migration version 02
+-> Applied to database : 1977092408
+-> Resolved locally    : 954416778
+Either revert the changes to the migration, or run repair to update the schema history.
+Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1132) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:907) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1304) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1293) ~[spring-boot-3.0.5.jar:3.0.5]
+	at web.controlevacinacao.Application.main(Application.java:10) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-3.0.5.jar:3.0.5]
+Caused by: org.flywaydb.core.api.exception.FlywayValidateException: Validate failed: Migrations have failed validation
+Migration checksum mismatch for migration version 02
+-> Applied to database : 1977092408
+-> Resolved locally    : 954416778
+Either revert the changes to the migration, or run repair to update the schema history.
+Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
+	at org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:134) ~[flyway-core-9.5.1.jar:?]
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:204) ~[flyway-core-9.5.1.jar:?]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:128) ~[flyway-core-9.5.1.jar:?]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) ~[spring-boot-autoconfigure-3.0.5.jar:3.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.7.jar:6.0.7]
+	... 21 more
+
+2023-04-25T20:23:52.899-03:00  INFO 32413 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 32413 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T20:23:52.900-03:00 DEBUG 32413 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T20:23:52.900-03:00  INFO 32413 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T20:23:53.019-03:00  INFO 32413 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T20:23:53.023-03:00  INFO 32413 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2023-04-25T20:23:53.094-03:00  INFO 32413 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T20:23:53.095-03:00  INFO 32413 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T20:23:53.095-03:00  INFO 32413 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T20:23:53.100-03:00  INFO 32413 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T20:23:53.100-03:00  INFO 32413 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 200 ms
+2023-04-25T20:23:53.151-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-5 - Starting...
+2023-04-25T20:23:53.160-03:00  INFO 32413 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@35beecf6
+2023-04-25T20:23:53.161-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-5 - Start completed.
+2023-04-25T20:23:53.162-03:00  INFO 32413 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T20:23:53.167-03:00  INFO 32413 --- [restartedMain] o.f.c.i.c.DbValidate                     : Successfully validated 2 migrations (execution time 00:00.002s)
+2023-04-25T20:23:53.179-03:00  INFO 32413 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Current version of schema "public": 02
+2023-04-25T20:23:53.180-03:00  INFO 32413 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2023-04-25T20:23:53.196-03:00  INFO 32413 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-25T20:23:53.200-03:00  INFO 32413 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-04-25T20:23:53.215-03:00  INFO 32413 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-25T20:23:53.215-03:00  INFO 32413 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T20:23:53.336-03:00  INFO 32413 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-04-25T20:23:53.466-03:00  INFO 32413 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-25T20:23:53.469-03:00  INFO 32413 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-25T20:23:53.482-03:00  INFO 32413 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-25T20:23:53.485-03:00  INFO 32413 --- [restartedMain] w.c.Application                          : Started Application in 0.638 seconds (process running for 270.027)
+2023-04-25T20:23:53.487-03:00  INFO 32413 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-25T20:23:56.877-03:00  INFO 32413 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-25T20:23:56.881-03:00  INFO 32413 --- [Thread-7] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-04-25T20:23:56.896-03:00  INFO 32413 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T20:23:56.898-03:00  INFO 32413 --- [Thread-7] c.z.h.HikariDataSource                   : HikariPool-5 - Shutdown initiated...
+2023-04-25T20:23:56.907-03:00  INFO 32413 --- [Thread-7] c.z.h.HikariDataSource                   : HikariPool-5 - Shutdown completed.
+2023-04-25T20:23:56.989-03:00  INFO 32413 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 32413 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T20:23:56.989-03:00 DEBUG 32413 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T20:23:56.989-03:00  INFO 32413 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T20:23:57.095-03:00  INFO 32413 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T20:23:57.100-03:00  INFO 32413 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interfaces.
+2023-04-25T20:23:57.175-03:00  INFO 32413 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T20:23:57.176-03:00  INFO 32413 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T20:23:57.176-03:00  INFO 32413 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T20:23:57.180-03:00  INFO 32413 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T20:23:57.180-03:00  INFO 32413 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 190 ms
+2023-04-25T20:23:57.247-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-6 - Starting...
+2023-04-25T20:23:57.256-03:00  INFO 32413 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-6 - Added connection org.postgresql.jdbc.PgConnection@5ddcfc39
+2023-04-25T20:23:57.256-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-6 - Start completed.
+2023-04-25T20:23:57.257-03:00  INFO 32413 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T20:23:57.267-03:00  WARN 32413 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Validate failed: Migrations have failed validation
+Migration checksum mismatch for migration version 02
+-> Applied to database : 1977092408
+-> Resolved locally    : -1137440288
+Either revert the changes to the migration, or run repair to update the schema history.
+Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
+2023-04-25T20:23:57.267-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-6 - Shutdown initiated...
+2023-04-25T20:23:57.268-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-6 - Shutdown completed.
+2023-04-25T20:23:57.268-03:00  INFO 32413 --- [restartedMain] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-04-25T20:23:57.273-03:00  INFO 32413 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-04-25T20:23:57.274-03:00 ERROR 32413 --- [restartedMain] o.s.b.SpringApplication                  : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Validate failed: Migrations have failed validation
+Migration checksum mismatch for migration version 02
+-> Applied to database : 1977092408
+-> Resolved locally    : -1137440288
+Either revert the changes to the migration, or run repair to update the schema history.
+Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1132) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:907) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1304) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1293) ~[spring-boot-3.0.5.jar:3.0.5]
+	at web.controlevacinacao.Application.main(Application.java:10) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-3.0.5.jar:3.0.5]
+Caused by: org.flywaydb.core.api.exception.FlywayValidateException: Validate failed: Migrations have failed validation
+Migration checksum mismatch for migration version 02
+-> Applied to database : 1977092408
+-> Resolved locally    : -1137440288
+Either revert the changes to the migration, or run repair to update the schema history.
+Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
+	at org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:134) ~[flyway-core-9.5.1.jar:?]
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:204) ~[flyway-core-9.5.1.jar:?]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:128) ~[flyway-core-9.5.1.jar:?]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) ~[spring-boot-autoconfigure-3.0.5.jar:3.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.7.jar:6.0.7]
+	... 21 more
+
+2023-04-25T20:23:59.742-03:00  INFO 32413 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 32413 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T20:23:59.742-03:00 DEBUG 32413 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T20:23:59.742-03:00  INFO 32413 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T20:23:59.843-03:00  INFO 32413 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T20:23:59.846-03:00  INFO 32413 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interfaces.
+2023-04-25T20:23:59.908-03:00  INFO 32413 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T20:23:59.909-03:00  INFO 32413 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T20:23:59.909-03:00  INFO 32413 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T20:23:59.913-03:00  INFO 32413 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T20:23:59.913-03:00  INFO 32413 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 170 ms
+2023-04-25T20:23:59.971-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-7 - Starting...
+2023-04-25T20:23:59.979-03:00  INFO 32413 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-7 - Added connection org.postgresql.jdbc.PgConnection@5c9b457e
+2023-04-25T20:23:59.979-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-7 - Start completed.
+2023-04-25T20:23:59.980-03:00  INFO 32413 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T20:23:59.987-03:00  WARN 32413 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Validate failed: Migrations have failed validation
+Migration checksum mismatch for migration version 02
+-> Applied to database : 1977092408
+-> Resolved locally    : 1199531891
+Either revert the changes to the migration, or run repair to update the schema history.
+Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
+2023-04-25T20:23:59.987-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-7 - Shutdown initiated...
+2023-04-25T20:23:59.987-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-7 - Shutdown completed.
+2023-04-25T20:23:59.988-03:00  INFO 32413 --- [restartedMain] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-04-25T20:23:59.993-03:00  INFO 32413 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-04-25T20:23:59.994-03:00 ERROR 32413 --- [restartedMain] o.s.b.SpringApplication                  : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Validate failed: Migrations have failed validation
+Migration checksum mismatch for migration version 02
+-> Applied to database : 1977092408
+-> Resolved locally    : 1199531891
+Either revert the changes to the migration, or run repair to update the schema history.
+Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1132) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:907) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1304) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1293) ~[spring-boot-3.0.5.jar:3.0.5]
+	at web.controlevacinacao.Application.main(Application.java:10) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-3.0.5.jar:3.0.5]
+Caused by: org.flywaydb.core.api.exception.FlywayValidateException: Validate failed: Migrations have failed validation
+Migration checksum mismatch for migration version 02
+-> Applied to database : 1977092408
+-> Resolved locally    : 1199531891
+Either revert the changes to the migration, or run repair to update the schema history.
+Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
+	at org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:134) ~[flyway-core-9.5.1.jar:?]
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:204) ~[flyway-core-9.5.1.jar:?]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:128) ~[flyway-core-9.5.1.jar:?]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) ~[spring-boot-autoconfigure-3.0.5.jar:3.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.7.jar:6.0.7]
+	... 21 more
+
+2023-04-25T20:24:06.467-03:00  INFO 32413 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 32413 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T20:24:06.468-03:00 DEBUG 32413 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T20:24:06.468-03:00  INFO 32413 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T20:24:06.565-03:00  INFO 32413 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T20:24:06.569-03:00  INFO 32413 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2023-04-25T20:24:06.636-03:00  INFO 32413 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T20:24:06.637-03:00  INFO 32413 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T20:24:06.637-03:00  INFO 32413 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T20:24:06.641-03:00  INFO 32413 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T20:24:06.641-03:00  INFO 32413 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 173 ms
+2023-04-25T20:24:06.702-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-8 - Starting...
+2023-04-25T20:24:06.711-03:00  INFO 32413 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-8 - Added connection org.postgresql.jdbc.PgConnection@321dde84
+2023-04-25T20:24:06.711-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-8 - Start completed.
+2023-04-25T20:24:06.712-03:00  INFO 32413 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T20:24:06.718-03:00  WARN 32413 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Validate failed: Migrations have failed validation
+Migration checksum mismatch for migration version 02
+-> Applied to database : 1977092408
+-> Resolved locally    : -1137440288
+Either revert the changes to the migration, or run repair to update the schema history.
+Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
+2023-04-25T20:24:06.718-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-8 - Shutdown initiated...
+2023-04-25T20:24:06.719-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-8 - Shutdown completed.
+2023-04-25T20:24:06.719-03:00  INFO 32413 --- [restartedMain] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-04-25T20:24:06.723-03:00  INFO 32413 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-04-25T20:24:06.725-03:00 ERROR 32413 --- [restartedMain] o.s.b.SpringApplication                  : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Validate failed: Migrations have failed validation
+Migration checksum mismatch for migration version 02
+-> Applied to database : 1977092408
+-> Resolved locally    : -1137440288
+Either revert the changes to the migration, or run repair to update the schema history.
+Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1132) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:907) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1304) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1293) ~[spring-boot-3.0.5.jar:3.0.5]
+	at web.controlevacinacao.Application.main(Application.java:10) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-3.0.5.jar:3.0.5]
+Caused by: org.flywaydb.core.api.exception.FlywayValidateException: Validate failed: Migrations have failed validation
+Migration checksum mismatch for migration version 02
+-> Applied to database : 1977092408
+-> Resolved locally    : -1137440288
+Either revert the changes to the migration, or run repair to update the schema history.
+Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
+	at org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:134) ~[flyway-core-9.5.1.jar:?]
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:204) ~[flyway-core-9.5.1.jar:?]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:128) ~[flyway-core-9.5.1.jar:?]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) ~[spring-boot-autoconfigure-3.0.5.jar:3.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.7.jar:6.0.7]
+	... 21 more
+
+2023-04-25T20:24:09.190-03:00  INFO 32413 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 32413 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T20:24:09.190-03:00 DEBUG 32413 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T20:24:09.190-03:00  INFO 32413 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T20:24:09.284-03:00  INFO 32413 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T20:24:09.287-03:00  INFO 32413 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interfaces.
+2023-04-25T20:24:09.340-03:00  INFO 32413 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T20:24:09.340-03:00  INFO 32413 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T20:24:09.340-03:00  INFO 32413 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T20:24:09.344-03:00  INFO 32413 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T20:24:09.344-03:00  INFO 32413 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 153 ms
+2023-04-25T20:24:09.399-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-9 - Starting...
+2023-04-25T20:24:09.406-03:00  INFO 32413 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-9 - Added connection org.postgresql.jdbc.PgConnection@55243405
+2023-04-25T20:24:09.406-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-9 - Start completed.
+2023-04-25T20:24:09.407-03:00  INFO 32413 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T20:24:09.413-03:00  INFO 32413 --- [restartedMain] o.f.c.i.c.DbValidate                     : Successfully validated 2 migrations (execution time 00:00.002s)
+2023-04-25T20:24:09.424-03:00  INFO 32413 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Current version of schema "public": 02
+2023-04-25T20:24:09.424-03:00  INFO 32413 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2023-04-25T20:24:09.437-03:00  INFO 32413 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-25T20:24:09.440-03:00  INFO 32413 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-04-25T20:24:09.454-03:00  INFO 32413 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-25T20:24:09.454-03:00  INFO 32413 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T20:24:09.565-03:00  INFO 32413 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-04-25T20:24:09.683-03:00  INFO 32413 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-25T20:24:09.686-03:00  INFO 32413 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-25T20:24:09.697-03:00  INFO 32413 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-25T20:24:09.701-03:00  INFO 32413 --- [restartedMain] w.c.Application                          : Started Application in 0.562 seconds (process running for 286.242)
+2023-04-25T20:24:09.702-03:00  INFO 32413 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-25T20:24:20.112-03:00  INFO 32413 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-25T20:24:20.114-03:00  INFO 32413 --- [Thread-20] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-04-25T20:24:20.120-03:00  INFO 32413 --- [Thread-20] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T20:24:20.120-03:00  INFO 32413 --- [Thread-20] c.z.h.HikariDataSource                   : HikariPool-9 - Shutdown initiated...
+2023-04-25T20:24:20.122-03:00  INFO 32413 --- [Thread-20] c.z.h.HikariDataSource                   : HikariPool-9 - Shutdown completed.
+2023-04-25T20:24:20.197-03:00  INFO 32413 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 32413 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T20:24:20.198-03:00 DEBUG 32413 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T20:24:20.198-03:00  INFO 32413 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T20:24:20.275-03:00  INFO 32413 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T20:24:20.278-03:00  INFO 32413 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interfaces.
+2023-04-25T20:24:20.335-03:00  INFO 32413 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T20:24:20.335-03:00  INFO 32413 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T20:24:20.335-03:00  INFO 32413 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T20:24:20.338-03:00  INFO 32413 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T20:24:20.338-03:00  INFO 32413 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 140 ms
+2023-04-25T20:24:20.387-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-10 - Starting...
+2023-04-25T20:24:20.396-03:00  INFO 32413 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-10 - Added connection org.postgresql.jdbc.PgConnection@1ca70b67
+2023-04-25T20:24:20.397-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-10 - Start completed.
+2023-04-25T20:24:20.398-03:00  INFO 32413 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T20:24:20.403-03:00  WARN 32413 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Validate failed: Migrations have failed validation
+Migration checksum mismatch for migration version 02
+-> Applied to database : 1977092408
+-> Resolved locally    : -104316935
+Either revert the changes to the migration, or run repair to update the schema history.
+Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
+2023-04-25T20:24:20.403-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-10 - Shutdown initiated...
+2023-04-25T20:24:20.403-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-10 - Shutdown completed.
+2023-04-25T20:24:20.404-03:00  INFO 32413 --- [restartedMain] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-04-25T20:24:20.410-03:00  INFO 32413 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-04-25T20:24:20.411-03:00 ERROR 32413 --- [restartedMain] o.s.b.SpringApplication                  : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Validate failed: Migrations have failed validation
+Migration checksum mismatch for migration version 02
+-> Applied to database : 1977092408
+-> Resolved locally    : -104316935
+Either revert the changes to the migration, or run repair to update the schema history.
+Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1132) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:907) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1304) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1293) ~[spring-boot-3.0.5.jar:3.0.5]
+	at web.controlevacinacao.Application.main(Application.java:10) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-3.0.5.jar:3.0.5]
+Caused by: org.flywaydb.core.api.exception.FlywayValidateException: Validate failed: Migrations have failed validation
+Migration checksum mismatch for migration version 02
+-> Applied to database : 1977092408
+-> Resolved locally    : -104316935
+Either revert the changes to the migration, or run repair to update the schema history.
+Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
+	at org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:134) ~[flyway-core-9.5.1.jar:?]
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:204) ~[flyway-core-9.5.1.jar:?]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:128) ~[flyway-core-9.5.1.jar:?]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) ~[spring-boot-autoconfigure-3.0.5.jar:3.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.7.jar:6.0.7]
+	... 21 more
+
+2023-04-25T20:24:21.858-03:00  INFO 32413 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 32413 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T20:24:21.858-03:00 DEBUG 32413 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T20:24:21.858-03:00  INFO 32413 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T20:24:21.939-03:00  INFO 32413 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T20:24:21.941-03:00  INFO 32413 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interfaces.
+2023-04-25T20:24:21.992-03:00  INFO 32413 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T20:24:21.992-03:00  INFO 32413 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T20:24:21.992-03:00  INFO 32413 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T20:24:21.996-03:00  INFO 32413 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T20:24:21.996-03:00  INFO 32413 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 137 ms
+2023-04-25T20:24:22.045-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-11 - Starting...
+2023-04-25T20:24:22.053-03:00  INFO 32413 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-11 - Added connection org.postgresql.jdbc.PgConnection@34e44726
+2023-04-25T20:24:22.053-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-11 - Start completed.
+2023-04-25T20:24:22.054-03:00  INFO 32413 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T20:24:22.059-03:00  WARN 32413 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Validate failed: Migrations have failed validation
+Migration checksum mismatch for migration version 02
+-> Applied to database : 1977092408
+-> Resolved locally    : -104316935
+Either revert the changes to the migration, or run repair to update the schema history.
+Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
+2023-04-25T20:24:22.059-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-11 - Shutdown initiated...
+2023-04-25T20:24:22.060-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-11 - Shutdown completed.
+2023-04-25T20:24:22.060-03:00  INFO 32413 --- [restartedMain] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-04-25T20:24:22.066-03:00  INFO 32413 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-04-25T20:24:22.067-03:00 ERROR 32413 --- [restartedMain] o.s.b.SpringApplication                  : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Validate failed: Migrations have failed validation
+Migration checksum mismatch for migration version 02
+-> Applied to database : 1977092408
+-> Resolved locally    : -104316935
+Either revert the changes to the migration, or run repair to update the schema history.
+Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1132) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:907) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1304) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1293) ~[spring-boot-3.0.5.jar:3.0.5]
+	at web.controlevacinacao.Application.main(Application.java:10) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-3.0.5.jar:3.0.5]
+Caused by: org.flywaydb.core.api.exception.FlywayValidateException: Validate failed: Migrations have failed validation
+Migration checksum mismatch for migration version 02
+-> Applied to database : 1977092408
+-> Resolved locally    : -104316935
+Either revert the changes to the migration, or run repair to update the schema history.
+Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
+	at org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:134) ~[flyway-core-9.5.1.jar:?]
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:204) ~[flyway-core-9.5.1.jar:?]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:128) ~[flyway-core-9.5.1.jar:?]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) ~[spring-boot-autoconfigure-3.0.5.jar:3.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.7.jar:6.0.7]
+	... 21 more
+
+2023-04-25T20:24:24.524-03:00  INFO 32413 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 32413 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T20:24:24.524-03:00 DEBUG 32413 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T20:24:24.524-03:00  INFO 32413 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T20:24:24.607-03:00  INFO 32413 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T20:24:24.610-03:00  INFO 32413 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2023-04-25T20:24:24.664-03:00  INFO 32413 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T20:24:24.665-03:00  INFO 32413 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T20:24:24.665-03:00  INFO 32413 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T20:24:24.668-03:00  INFO 32413 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T20:24:24.669-03:00  INFO 32413 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 144 ms
+2023-04-25T20:24:24.730-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-12 - Starting...
+2023-04-25T20:24:24.738-03:00  INFO 32413 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-12 - Added connection org.postgresql.jdbc.PgConnection@a8084d7
+2023-04-25T20:24:24.739-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-12 - Start completed.
+2023-04-25T20:24:24.739-03:00  INFO 32413 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T20:24:24.745-03:00  WARN 32413 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Validate failed: Migrations have failed validation
+Migration checksum mismatch for migration version 02
+-> Applied to database : 1977092408
+-> Resolved locally    : 1683616405
+Either revert the changes to the migration, or run repair to update the schema history.
+Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
+2023-04-25T20:24:24.745-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-12 - Shutdown initiated...
+2023-04-25T20:24:24.746-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-12 - Shutdown completed.
+2023-04-25T20:24:24.746-03:00  INFO 32413 --- [restartedMain] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-04-25T20:24:24.751-03:00  INFO 32413 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-04-25T20:24:24.752-03:00 ERROR 32413 --- [restartedMain] o.s.b.SpringApplication                  : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Validate failed: Migrations have failed validation
+Migration checksum mismatch for migration version 02
+-> Applied to database : 1977092408
+-> Resolved locally    : 1683616405
+Either revert the changes to the migration, or run repair to update the schema history.
+Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1132) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:907) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1304) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1293) ~[spring-boot-3.0.5.jar:3.0.5]
+	at web.controlevacinacao.Application.main(Application.java:10) ~[classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-3.0.5.jar:3.0.5]
+Caused by: org.flywaydb.core.api.exception.FlywayValidateException: Validate failed: Migrations have failed validation
+Migration checksum mismatch for migration version 02
+-> Applied to database : 1977092408
+-> Resolved locally    : 1683616405
+Either revert the changes to the migration, or run repair to update the schema history.
+Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
+	at org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:134) ~[flyway-core-9.5.1.jar:?]
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:204) ~[flyway-core-9.5.1.jar:?]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:128) ~[flyway-core-9.5.1.jar:?]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) ~[spring-boot-autoconfigure-3.0.5.jar:3.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.7.jar:6.0.7]
+	... 21 more
+
+2023-04-25T20:24:26.200-03:00  INFO 32413 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 32413 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T20:24:26.200-03:00 DEBUG 32413 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T20:24:26.200-03:00  INFO 32413 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T20:24:26.272-03:00  INFO 32413 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T20:24:26.275-03:00  INFO 32413 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interfaces.
+2023-04-25T20:24:26.322-03:00  INFO 32413 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T20:24:26.323-03:00  INFO 32413 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T20:24:26.323-03:00  INFO 32413 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T20:24:26.326-03:00  INFO 32413 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T20:24:26.326-03:00  INFO 32413 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 125 ms
+2023-04-25T20:24:26.374-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-13 - Starting...
+2023-04-25T20:24:26.384-03:00  INFO 32413 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-13 - Added connection org.postgresql.jdbc.PgConnection@1205d04b
+2023-04-25T20:24:26.384-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-13 - Start completed.
+2023-04-25T20:24:26.385-03:00  INFO 32413 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T20:24:26.389-03:00  INFO 32413 --- [restartedMain] o.f.c.i.c.DbValidate                     : Successfully validated 2 migrations (execution time 00:00.002s)
+2023-04-25T20:24:26.400-03:00  INFO 32413 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Current version of schema "public": 02
+2023-04-25T20:24:26.401-03:00  INFO 32413 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2023-04-25T20:24:26.422-03:00  INFO 32413 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-25T20:24:26.426-03:00  INFO 32413 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-04-25T20:24:26.439-03:00  INFO 32413 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-25T20:24:26.439-03:00  INFO 32413 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T20:24:26.542-03:00  INFO 32413 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-04-25T20:24:26.657-03:00  INFO 32413 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-25T20:24:26.659-03:00  INFO 32413 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-25T20:24:26.672-03:00  INFO 32413 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-25T20:24:26.675-03:00  INFO 32413 --- [restartedMain] w.c.Application                          : Started Application in 0.514 seconds (process running for 303.217)
+2023-04-25T20:24:26.677-03:00  INFO 32413 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-25T20:24:40.236-03:00  INFO 32413 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-25T20:24:40.236-03:00  INFO 32413 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-04-25T20:24:40.238-03:00  INFO 32413 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2023-04-25T20:24:40.241-03:00 TRACE 32413 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.pesquisar
+2023-04-25T20:24:40.241-03:00 DEBUG 32413 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T20:24:40.241-03:00 DEBUG 32413 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : 	filtro: VacinaFilter [codigo=null, nome=, descricao=]
+2023-04-25T20:24:40.241-03:00 DEBUG 32413 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : 	model: {vacinaFilter=VacinaFilter [codigo=null, nome=, descricao=], org.springframework.validation.BindingResult.vacinaFilter=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2023-04-25T20:24:40.263-03:00 TRACE 32413 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/vacinas
+2023-04-25T20:26:07.285-03:00  INFO 32413 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-25T20:26:07.286-03:00  INFO 32413 --- [Thread-33] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-04-25T20:26:07.287-03:00  INFO 32413 --- [Thread-33] o.a.c.c.C.[.[.[/]                        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-25T20:26:07.290-03:00  INFO 32413 --- [Thread-33] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T20:26:07.291-03:00  INFO 32413 --- [Thread-33] c.z.h.HikariDataSource                   : HikariPool-13 - Shutdown initiated...
+2023-04-25T20:26:07.292-03:00  INFO 32413 --- [Thread-33] c.z.h.HikariDataSource                   : HikariPool-13 - Shutdown completed.
+2023-04-25T20:26:07.369-03:00  INFO 32413 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 32413 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T20:26:07.369-03:00 DEBUG 32413 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T20:26:07.369-03:00  INFO 32413 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T20:26:07.458-03:00  INFO 32413 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T20:26:07.464-03:00  INFO 32413 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interfaces.
+2023-04-25T20:26:07.522-03:00  INFO 32413 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T20:26:07.523-03:00  INFO 32413 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T20:26:07.523-03:00  INFO 32413 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T20:26:07.526-03:00  INFO 32413 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T20:26:07.526-03:00  INFO 32413 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 156 ms
+2023-04-25T20:26:07.575-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-14 - Starting...
+2023-04-25T20:26:07.584-03:00  INFO 32413 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-14 - Added connection org.postgresql.jdbc.PgConnection@7989bb0
+2023-04-25T20:26:07.584-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-14 - Start completed.
+2023-04-25T20:26:07.585-03:00  INFO 32413 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T20:26:07.590-03:00  INFO 32413 --- [restartedMain] o.f.c.i.c.DbValidate                     : Successfully validated 2 migrations (execution time 00:00.002s)
+2023-04-25T20:26:07.601-03:00  INFO 32413 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Current version of schema "public": 02
+2023-04-25T20:26:07.601-03:00  INFO 32413 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2023-04-25T20:26:07.618-03:00  INFO 32413 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-25T20:26:07.622-03:00  INFO 32413 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-04-25T20:26:07.635-03:00  INFO 32413 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-25T20:26:07.635-03:00  INFO 32413 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T20:26:07.768-03:00  INFO 32413 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-04-25T20:26:07.890-03:00  INFO 32413 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-25T20:26:07.893-03:00  INFO 32413 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-25T20:26:07.904-03:00  INFO 32413 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-25T20:26:07.908-03:00  INFO 32413 --- [restartedMain] w.c.Application                          : Started Application in 0.562 seconds (process running for 404.449)
+2023-04-25T20:26:07.909-03:00  INFO 32413 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-25T20:26:09.293-03:00  INFO 32413 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-25T20:26:09.295-03:00  INFO 32413 --- [Thread-46] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-04-25T20:26:09.298-03:00  INFO 32413 --- [Thread-46] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T20:26:09.299-03:00  INFO 32413 --- [Thread-46] c.z.h.HikariDataSource                   : HikariPool-14 - Shutdown initiated...
+2023-04-25T20:26:09.300-03:00  INFO 32413 --- [Thread-46] c.z.h.HikariDataSource                   : HikariPool-14 - Shutdown completed.
+2023-04-25T20:26:09.376-03:00  INFO 32413 --- [restartedMain] w.c.Application                          : Starting Application using Java 19.0.2 with PID 32413 (/home/rosegates/Projetos/daw/controlevacinacao/target/classes started by rosegates in /home/rosegates/Projetos/daw/controlevacinacao)
+2023-04-25T20:26:09.376-03:00 DEBUG 32413 --- [restartedMain] w.c.Application                          : Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-25T20:26:09.376-03:00  INFO 32413 --- [restartedMain] w.c.Application                          : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T20:26:09.449-03:00  INFO 32413 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T20:26:09.451-03:00  INFO 32413 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interfaces.
+2023-04-25T20:26:09.499-03:00  INFO 32413 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T20:26:09.499-03:00  INFO 32413 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-04-25T20:26:09.499-03:00  INFO 32413 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-25T20:26:09.503-03:00  INFO 32413 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-04-25T20:26:09.503-03:00  INFO 32413 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 127 ms
+2023-04-25T20:26:09.548-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-15 - Starting...
+2023-04-25T20:26:09.556-03:00  INFO 32413 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-15 - Added connection org.postgresql.jdbc.PgConnection@70183421
+2023-04-25T20:26:09.556-03:00  INFO 32413 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-15 - Start completed.
+2023-04-25T20:26:09.556-03:00  INFO 32413 --- [restartedMain] o.f.c.i.d.b.BaseDatabaseType             : Database: jdbc:postgresql://localhost:5432/controlevacinacao (PostgreSQL 15.1)
+2023-04-25T20:26:09.561-03:00  INFO 32413 --- [restartedMain] o.f.c.i.c.DbValidate                     : Successfully validated 2 migrations (execution time 00:00.002s)
+2023-04-25T20:26:09.571-03:00  INFO 32413 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Current version of schema "public": 02
+2023-04-25T20:26:09.571-03:00  INFO 32413 --- [restartedMain] o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2023-04-25T20:26:09.583-03:00  INFO 32413 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-25T20:26:09.586-03:00  INFO 32413 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-04-25T20:26:09.596-03:00  INFO 32413 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-25T20:26:09.597-03:00  INFO 32413 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T20:26:09.708-03:00  INFO 32413 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-04-25T20:26:09.816-03:00  INFO 32413 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-25T20:26:09.818-03:00  INFO 32413 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-25T20:26:09.828-03:00  INFO 32413 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-25T20:26:09.832-03:00  INFO 32413 --- [restartedMain] w.c.Application                          : Started Application in 0.479 seconds (process running for 406.373)
+2023-04-25T20:26:09.833-03:00  INFO 32413 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-25T20:27:00.326-03:00  INFO 32413 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-25T20:27:00.327-03:00  INFO 32413 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-04-25T20:27:00.329-03:00  INFO 32413 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2023-04-25T20:27:00.334-03:00 TRACE 32413 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Entrou no método: IndexController.index
+2023-04-25T20:27:00.334-03:00 TRACE 32413 --- [http-nio-8080-exec-1] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: index
+2023-04-25T20:27:03.188-03:00 TRACE 32413 --- [http-nio-8080-exec-6] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.abrirCadastrar
+2023-04-25T20:27:03.188-03:00 DEBUG 32413 --- [http-nio-8080-exec-6] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T20:27:03.188-03:00 DEBUG 32413 --- [http-nio-8080-exec-6] w.c.a.ApplicationLoggingAspect           : 	vacina: Vacina [codigo=null, nome=null, descricao=null, status=ATIVO]
+2023-04-25T20:27:03.188-03:00 DEBUG 32413 --- [http-nio-8080-exec-6] w.c.a.ApplicationLoggingAspect           : 	model: {vacina=Vacina [codigo=null, nome=null, descricao=null, status=ATIVO], org.springframework.validation.BindingResult.vacina=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2023-04-25T20:27:03.189-03:00 TRACE 32413 --- [http-nio-8080-exec-6] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/cadastrar
+2023-04-25T20:27:07.458-03:00 TRACE 32413 --- [http-nio-8080-exec-2] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.cadastrar
+2023-04-25T20:27:07.458-03:00 DEBUG 32413 --- [http-nio-8080-exec-2] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T20:27:07.458-03:00 DEBUG 32413 --- [http-nio-8080-exec-2] w.c.a.ApplicationLoggingAspect           : 	vacina: Vacina [codigo=null, nome=321, descricao=123, status=ATIVO]
+2023-04-25T20:27:07.459-03:00 TRACE 32413 --- [http-nio-8080-exec-2] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaService.salvar
+2023-04-25T20:27:07.459-03:00 DEBUG 32413 --- [http-nio-8080-exec-2] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T20:27:07.459-03:00 DEBUG 32413 --- [http-nio-8080-exec-2] w.c.a.ApplicationLoggingAspect           : 	vacina: Vacina [codigo=null, nome=321, descricao=123, status=ATIVO]
+2023-04-25T20:27:07.460-03:00 TRACE 32413 --- [http-nio-8080-exec-2] w.c.a.ApplicationLoggingAspect           : Retornando: null
+2023-04-25T20:27:07.463-03:00 TRACE 32413 --- [http-nio-8080-exec-2] w.c.a.ApplicationLoggingAspect           : Redirecionando para a URL: /vacinas/cadastrook
+2023-04-25T20:27:07.469-03:00 TRACE 32413 --- [http-nio-8080-exec-4] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.mostrarMensagemCadastroOK
+2023-04-25T20:27:07.469-03:00 DEBUG 32413 --- [http-nio-8080-exec-4] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T20:27:07.469-03:00 DEBUG 32413 --- [http-nio-8080-exec-4] w.c.a.ApplicationLoggingAspect           : 	model: {}
+2023-04-25T20:27:07.469-03:00 TRACE 32413 --- [http-nio-8080-exec-4] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: mostrarmensagem
+2023-04-25T20:27:10.219-03:00 TRACE 32413 --- [http-nio-8080-exec-8] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.abrirPesquisar
+2023-04-25T20:27:10.219-03:00 TRACE 32413 --- [http-nio-8080-exec-8] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/pesquisar
+2023-04-25T20:27:11.017-03:00 TRACE 32413 --- [http-nio-8080-exec-4] w.c.a.ApplicationLoggingAspect           : Entrou no método: VacinaController.pesquisar
+2023-04-25T20:27:11.017-03:00 DEBUG 32413 --- [http-nio-8080-exec-4] w.c.a.ApplicationLoggingAspect           : Parâmetros recebidos:
+2023-04-25T20:27:11.017-03:00 DEBUG 32413 --- [http-nio-8080-exec-4] w.c.a.ApplicationLoggingAspect           : 	filtro: VacinaFilter [codigo=null, nome=, descricao=]
+2023-04-25T20:27:11.017-03:00 DEBUG 32413 --- [http-nio-8080-exec-4] w.c.a.ApplicationLoggingAspect           : 	model: {vacinaFilter=VacinaFilter [codigo=null, nome=, descricao=], org.springframework.validation.BindingResult.vacinaFilter=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2023-04-25T20:27:11.055-03:00 TRACE 32413 --- [http-nio-8080-exec-4] w.c.a.ApplicationLoggingAspect           : Encaminhando para a view: vacinas/vacinas
+2023-04-25T20:28:23.283-03:00  INFO 32413 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T20:28:23.285-03:00  INFO 32413 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-15 - Shutdown initiated...
+2023-04-25T20:28:23.288-03:00  INFO 32413 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-15 - Shutdown completed.

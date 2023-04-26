@@ -3,6 +3,9 @@ package web.controlevacinacao.repository.queries.vacina;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
+import org.springframework.data.domain.Pageable;
 import org.springframework.util.StringUtils;
 
 import jakarta.persistence.EntityManager;
@@ -12,17 +15,18 @@ import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.persistence.criteria.CriteriaQuery;
 import jakarta.persistence.criteria.Predicate;
 import jakarta.persistence.criteria.Root;
-import web.controlevacinacao.model.Vacina;
 import web.controlevacinacao.model.Status;
+import web.controlevacinacao.model.Vacina;
 import web.controlevacinacao.model.filter.VacinaFilter;
+import web.controlevacinacao.repository.pagination.PaginacaoUtil;
 
-public class VacinaQueriesImpl implements VacinaQueries{
+public class VacinaQueriesImpl implements VacinaQueries {
 
     @PersistenceContext
     private EntityManager manager;
 
     @Override
-    public List<Vacina> buscarComFiltro(VacinaFilter filtro) {
+    public Page<Vacina> buscarComFiltro(VacinaFilter filtro, Pageable pageable) {
         CriteriaBuilder builder = manager.getCriteriaBuilder();
         CriteriaQuery<Vacina> criteriaQuery = builder.createQuery(Vacina.class);
         Root<Vacina> v = criteriaQuery.from(Vacina.class);
@@ -30,17 +34,14 @@ public class VacinaQueriesImpl implements VacinaQueries{
         List<Predicate> predicateList = new ArrayList<>();
 
         if (filtro.getCodigo() != null) {
-            predicateList.add(builder.equal(v.<String>get("codigo"),
-                    filtro.getCodigo()));
+            predicateList.add(builder.equal(v.<Long>get("codigo"), filtro.getCodigo()));
         }
         if (StringUtils.hasText(filtro.getNome())) {
-            predicateList.add(builder.like(
-                    builder.lower(v.<String>get("nome")),
+            predicateList.add(builder.like(builder.lower(v.<String>get("nome")),
                     "%" + filtro.getNome().toLowerCase() + "%"));
         }
         if (StringUtils.hasText(filtro.getDescricao())) {
-            predicateList.add(builder.like(
-                    builder.lower(v.<String>get("descricao")),
+            predicateList.add(builder.like(builder.lower(v.<String>get("descricao")),
                     "%" + filtro.getDescricao().toLowerCase() + "%"));
         }
 
@@ -50,11 +51,17 @@ public class VacinaQueriesImpl implements VacinaQueries{
         predicateList.toArray(predArray);
 
         criteriaQuery.select(v).where(predArray);
+        PaginacaoUtil.prepararOrdem(v, criteriaQuery, builder, pageable);
+
         typedQuery = manager.createQuery(criteriaQuery);
+        PaginacaoUtil.prepararIntervalo(typedQuery, pageable);
 
         List<Vacina> vacinas = typedQuery.getResultList();
 
-        return vacinas;
+        long totalVacinas = PaginacaoUtil.getTotalRegistros(v, predArray, builder, manager);
+
+        Page<Vacina> page = new PageImpl<>(vacinas, pageable, totalVacinas);
+        return page;
     }
-    
+
 }

@@ -1,23 +1,28 @@
 package web.controlevacinacao.controller;
 
-import java.util.List;
 import java.util.Optional;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.web.PageableDefault;
+import org.springframework.data.web.SortDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import jakarta.servlet.http.HttpServletRequest;
 import web.controlevacinacao.model.Status;
 import web.controlevacinacao.model.Vacina;
 import web.controlevacinacao.model.filter.VacinaFilter;
+import web.controlevacinacao.pagination.PageWrapper;
 import web.controlevacinacao.repository.VacinaRepository;
 import web.controlevacinacao.service.VacinaService;
-import org.springframework.web.bind.annotation.RequestBody;
 
 
 @Controller
@@ -99,11 +104,16 @@ public class VacinaController {
     }
 
     @PostMapping("/pesquisar")
-    public String pesquisar(VacinaFilter filtro, Model model){
+    public String pesquisar(VacinaFilter filtro, Model model,
+            @PageableDefault(size = 10)
+            @SortDefault(sort = "codigo", direction = Sort.Direction.ASC) Pageable pageable,
+            HttpServletRequest request){
         
-        List<Vacina> vacinas = vacinaRepository.buscarComFiltro(filtro);
-        if(!vacinas.isEmpty()){
-            model.addAttribute("vacinas", vacinas);
+        Page<Vacina> pagina = vacinaRepository.buscarComFiltro(filtro, pageable);
+        if(!pagina.isEmpty()){
+            PageWrapper<Vacina> paginaWrapper = new PageWrapper<>(pagina, request);
+            model.addAttribute("pagina", paginaWrapper);
+            
             return "vacinas/vacinas";
         } else {
             model.addAttribute("mensagem", "Nenhuma vacina com estas informações");
@@ -121,6 +131,7 @@ public class VacinaController {
 
     @PostMapping("/cadastrar")
     public String cadastrar(Vacina vacina) {
+        //vacina.setStatus(Status.ATIVO);
         vacinaService.salvar(vacina);
         return"redirect:/vacinas/cadastrook";
     }
