@@ -1,9 +1,10 @@
 CREATE TABLE public.pessoa
 (
-    codigo bigserial NOT NULL,
+    codigo serial NOT NULL,
     nome text,
     cpf text,
-    data_nascimento timestamp,
-    profissao text, 
+    data_nascimento date,
+    codigo_profissao text,
+    status text DEFAULT 'ATIVO',
     PRIMARY KEY (codigo)
 );

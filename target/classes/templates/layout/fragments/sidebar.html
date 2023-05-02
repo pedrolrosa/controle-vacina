@@ -101,7 +101,7 @@
 						<div class="collapse" id="lotes" th:classappend="${opcao == 'lotes'} ? show">
 							<ul class="navbar-nav ps-3">
 								<li>
-									<a href="#" class="nav-link px-3">
+									<a th:href="@{/lotes/cadastrar}" class="nav-link px-3">
 										<span class="me-2">
 											<i class="bi bi-plus-square text-white"></i>
 										</span>
@@ -109,7 +109,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="#" class="nav-link px-3">
+									<a th:href="@{/lotes/abrirpesquisar}" class="nav-link px-3">
 										<span class="me-2">
 											<i class="bi bi-search text-white"></i>
 										</span>

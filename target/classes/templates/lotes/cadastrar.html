@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html
+  lang="pt-BR"
+  layout:decorate="~{layout/layoutpadrao}"
+  xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.thymeleaf.org"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title th:text="${titulo}"></title>
+  </head>
+  <body>
+    <div layout:fragment="conteudo">
+      <div th:replace="~{layout/fragments/sidebar :: sidebar(opcao='lotes')}"></div>
+
+      <!-- conteudo principal -->
+      <main class="mt-5 p-4 pt-5">
+        <div class="container-fluid">
+          <form th:action="@{${url}}" method="POST">
+            
+            <input type="hidden" th:field="${lote.codigo}">
+
+            <label for="validade" class="form-label">Validade</label>
+            <input th:field="${lote.validade}" class="form-control" type="date" />
+
+            <label for="nroDosesDoLote" class="form-label">Número de Doses do Lote</label>
+            <input th:field="${lote.nroDosesDoLote}" class="form-control" type="number" />
+
+            <label for="nroDosesAtual" class="form-label">Número de Doses Atual</label>
+            <input th:field="${lote.nroDosesAtual}" class="form-control" type="number" />
+
+            <label for="vacina" class="form-label mt-3">Vacina</label>
+            <select th:field="${lote.vacina}" class="form-select">
+              <option th:each="vacina : ${vacinas}" 
+                      th:value="${vacina.codigo}" 
+                      th:text="${vacina.nome}">
+              </option>
+            </select>
+
+            <input th:value="${textoBotao}" class="btn btn-primary mt-3" type="submit" />
+          </form>
+        </div>
+      </main>
+      <!-- !conteudo principal -->
+    </div>
+
+    <!-- Nao usamos
+	<th:block layout:fragment="scripts">
+		<script src="../static/js/index.js" th:src="@{/js/index.js}"></script>
+	</th:block> -->
+  </body>
+</html>
