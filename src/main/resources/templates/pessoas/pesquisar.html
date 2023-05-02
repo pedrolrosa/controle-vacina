@@ -15,14 +15,27 @@
   </head>
   <body>
     <div layout:fragment="conteudo">
-      <div th:replace="~{layout/fragments/sidebar :: sidebar(opcao='vacinas')}"></div>
+      <div th:replace="~{layout/fragments/sidebar :: sidebar(opcao='pessoas')}"></div>
 
       <!-- conteudo principal -->
       <main class="mt-5 p-4 pt-5">
         <div class="container-fluid">
-          <form th:action="@{/vacinas/buscar}" method="POST">
+          <form th:action="@{/pessoas/pesquisar}" method="GET">
             <label for="codigo" class="form-label">Código</label>
             <input id="codigo" class="form-control" name="codigo" type="number" />
+            
+            <label for="nome" class="form-label">Nome</label>
+            <input id="nome" class="form-control" name="nome" type="text" />
+            
+            <label for="cpf" class="form-label">Cpf</label>
+            <input id="cpf" class="form-control" name="cpf" type="text" />
+
+            <label for="dataNascimento" class="form-label">Data de Nascimento</label>
+            <input id="dataNascimento" class="form-control" name="dataNascimento" type="text" />
+
+            <label for="profissao" class="form-label">Profissao</label>
+            <input id="profissao" class="form-control" name="profissao" type="text" />
+
             <input class="btn btn-primary mt-3" type="submit" value="Buscar" />
           </form>
         </div>
