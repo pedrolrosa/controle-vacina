@@ -35,26 +35,28 @@ public class PessoaController {
 
     @GetMapping("/cadastrar")
     public String abrirCadastrar(Pessoa pessoa, Model model) {
-        model.addAttribute("titulo","Cadastrar Pessoa");
+        model.addAttribute("titulo", "Cadastrar Pessoa");
         model.addAttribute("url", "/pessoas/cadastrar");
-        model.addAttribute("textoBotao","Cadastrar");
+        model.addAttribute("textoBotao", "Cadastrar");
         return "pessoas/cadastrar";
     }
 
     @PostMapping("/cadastrar")
     public String cadastrar(Pessoa pessoa) {
+        // pessoa.setStatus(Status.ATIVO);
         pessoaService.salvar(pessoa);
-        return"redirect:/pessoas/cadastrook";
+        return "redirect:/pessoas/cadastrook";
     }
 
     @GetMapping("/cadastrook")
-    public String mostrarMensagemCadastroOK(Model model){
-        model.addAttribute("mensagem", "Salvo com sucesso");
+    public String mostrarMensagemCadastroOK(Model model) {
+        model.addAttribute("mensagem", "Pessoa cadastrada com sucesso");
+        model.addAttribute("opcao", "pessoas");
         return "mostrarmensagem";
     }
 
     @GetMapping("/abrirpesquisar")
-    public String abrirPesquisar(){
+    public String abrirPesquisar() {
         return "pessoas/pesquisar";
     }
 
@@ -62,16 +64,15 @@ public class PessoaController {
     public String pesquisar(PessoaFilter filtro, Model model,
             @PageableDefault(size = 5)
             @SortDefault(sort = "codigo", direction = Sort.Direction.ASC) Pageable pageable,
-            HttpServletRequest request){
-        
+            HttpServletRequest request) {
         Page<Pessoa> pagina = pessoaRepository.buscarComFiltro(filtro, pageable);
-        if(!pagina.isEmpty()){
+        if (!pagina.isEmpty()) {
             PageWrapper<Pessoa> paginaWrapper = new PageWrapper<>(pagina, request);
-            model.addAttribute("pagina", paginaWrapper);
-            
+	        model.addAttribute("pagina", paginaWrapper);
             return "pessoas/pessoas";
         } else {
-            model.addAttribute("mensagem", "Nenhuma pessoa com estas informações");
+            model.addAttribute("mensagem", "Não foram encontradas pessoas com esse filtro");
+            model.addAttribute("opcao", "pessoas");
             return "mostrarmensagem";
         }
     }
@@ -93,25 +94,26 @@ public class PessoaController {
     @GetMapping("/alteracaook")
     public String mostrarMensagemAlteracaoOK(Model model) {
         model.addAttribute("mensagem", "Pessoa alterada com sucesso");
+        model.addAttribute("opcao", "pessoas");
         return "mostrarmensagem";
     }
 
     @PostMapping("/abrirremover")
-    public String abrirRemover(Pessoa pessoa){
+    public String abrirRemover(Pessoa pessoa) {
         return "pessoas/confirmarremocao";
     }
-    
+
     @PostMapping("/remover")
-    public String remover(Long codigo, Model model){
+    public String remover(Long codigo, Model model) {
         Optional<Pessoa> optPessoa = pessoaRepository.findById(codigo);
-        if(optPessoa.isPresent()){
+        if (optPessoa.isPresent()) {
             Pessoa pessoa = optPessoa.get();
             pessoa.setStatus(Status.INATIVO);
             pessoaService.salvar(pessoa);
-
             return "redirect:/pessoas/remocaook";
         } else {
-            model.addAttribute("mensagem", "nenhuma pessoa foi encontrada com este codigo");
+            model.addAttribute("mensagem", "Não foi encontrada Pessoa com esse código");
+            model.addAttribute("opcao", "pessoas");
             return "mostrarmensagem";
         }
     }
@@ -119,6 +121,7 @@ public class PessoaController {
     @GetMapping("/remocaook")
     public String mostrarMensagemRemocaoOK(Model model) {
         model.addAttribute("mensagem", "Pessoa removida com sucesso");
+        model.addAttribute("opcao", "pessoas");
         return "mostrarmensagem";
     }
 }
