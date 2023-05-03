@@ -1,6 +1,7 @@
 package web.controlevacinacao.repository.queries.pessoa;
 
 import java.sql.Date;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -45,10 +46,15 @@ public class PessoaQueriesImpl implements PessoaQueries {
             predicateList.add(builder.like(builder.lower(v.<String>get("cpf")),
                     "%" + filtro.getCpf().toLowerCase() + "%"));
         }
-		if (StringUtils.hasText(filtro.getDataInicio().toString()) && StringUtils.hasText(filtro.getDataFim().toString())){
-			predicateList.add(builder.between(
-					v.<Date>get("dataNascimento"), 
-					filtro.getDataInicio(), filtro.getDataFim()));
+		if (filtro.getDataInicio() != null){
+			predicateList.add(builder.greaterThan(
+					v.<LocalDate>get("dataNascimento"), 
+					filtro.getDataInicio()));
+		}
+        if (filtro.getDataFim() != null){
+			predicateList.add(builder.lessThan(
+					v.<LocalDate>get("dataNascimento"), 
+					filtro.getDataFim()));
 		}
 		if (StringUtils.hasText(filtro.getProfissao())) {
             predicateList.add(builder.like(builder.lower(v.<String>get("profissao")),
@@ -93,9 +99,9 @@ public class PessoaQueriesImpl implements PessoaQueries {
             predicateList.add(builder.like(builder.lower(v.<String>get("cpf")),
                     "%" + filtro.getCpf().toLowerCase() + "%"));
         }
-		if (StringUtils.hasText(filtro.getDataInicio().toString()) && StringUtils.hasText(filtro.getDataFim().toString())){
+		if (filtro.getDataInicio() != null && filtro.getDataFim() != null ){
 			predicateList.add(builder.between(
-					v.<Date>get("dataNascimento"), 
+					v.<LocalDate>get("dataNascimento"), 
 					filtro.getDataInicio(), filtro.getDataFim()));
 		}
 		if (StringUtils.hasText(filtro.getProfissao())) {

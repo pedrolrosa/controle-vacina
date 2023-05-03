@@ -114,8 +114,6 @@ public class PessoaController {
             model.addAttribute("mensagem", "nenhuma pessoa foi encontrada com este codigo");
             return "mostrarmensagem";
         }
-
-        
     }
 
     @GetMapping("/remocaook")

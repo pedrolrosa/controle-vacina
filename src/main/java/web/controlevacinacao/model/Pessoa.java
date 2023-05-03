@@ -2,6 +2,7 @@ package web.controlevacinacao.model;
 
 import java.io.Serializable;
 import java.sql.Date;
+import java.time.LocalDate;
 import java.util.Objects;
 
 import jakarta.persistence.Column;
@@ -27,7 +28,8 @@ public class Pessoa implements Serializable {
 	private String nome;
 	private String cpf;
 	@Column(name = "data_nascimento")
-	private Date dataNascimento;
+	private LocalDate dataNascimento;
+	@Column(name = "codigo_profissao")
 	private String profissao;
 	@Enumerated(EnumType.STRING)
 	private Status status = Status.ATIVO;
@@ -56,11 +58,11 @@ public class Pessoa implements Serializable {
 		this.cpf = cpf;
 	}
 
-	public Date getDataNascimento() {
+	public LocalDate getDataNascimento() {
 		return dataNascimento;
 	}
 
-	public void setDataNascimento(Date dataNascimento) {
+	public void setDataNascimento(LocalDate dataNascimento) {
 		this.dataNascimento = dataNascimento;
 	}
 

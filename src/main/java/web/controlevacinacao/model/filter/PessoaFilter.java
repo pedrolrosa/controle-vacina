@@ -1,14 +1,14 @@
 package web.controlevacinacao.model.filter;
 
-import java.sql.Date;
+import java.time.LocalDate;
 
 public class PessoaFilter {
 
 	private Long codigo;
 	private String nome;
 	private String cpf;
-	private Date dataInicio;
-    private Date dataFim;
+	private LocalDate dataInicio = LocalDate.of(1900, 01, 01);
+    private LocalDate dataFim = LocalDate.of(1900, 01, 01);
 	private String profissao;
     
     public Long getCodigo() {
@@ -28,17 +28,17 @@ public class PessoaFilter {
     }
     public void setCpf(String cpf) {
         this.cpf = cpf;
-    }
-    public Date getDataInicio() {
+    }    
+    public LocalDate getDataInicio() {
         return dataInicio;
     }
-    public void setDataInicio(Date dataInicio) {
+    public void setDataInicio(LocalDate dataInicio) {
         this.dataInicio = dataInicio;
     }
-    public Date getDataFim() {
+    public LocalDate getDataFim() {
         return dataFim;
     }
-    public void setDataFim(Date dataFim) {
+    public void setDataFim(LocalDate dataFim) {
         this.dataFim = dataFim;
     }
     public String getProfissao() {

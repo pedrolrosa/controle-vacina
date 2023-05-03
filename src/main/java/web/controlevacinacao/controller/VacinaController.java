@@ -115,6 +115,7 @@ public class VacinaController {
             return "vacinas/vacinas";
         } else {
             model.addAttribute("mensagem", "Nenhuma vacina com estas informações");
+            model.addAttribute("opcao", "vacinas");
             return "mostrarmensagem";
         }
     }
@@ -137,6 +138,7 @@ public class VacinaController {
     @GetMapping("/cadastrook")
     public String mostrarMensagemCadastroOK(Model model){
         model.addAttribute("mensagem", "Salvo com sucesso");
+        model.addAttribute("opcao", "vacinas");
         return "mostrarmensagem";
     }
 
@@ -157,6 +159,7 @@ public class VacinaController {
     @GetMapping("/alteracaook")
     public String mostrarMensagemAlteracaoOK(Model model) {
         model.addAttribute("mensagem", "Vacina alterada com sucesso");
+        model.addAttribute("opcao", "vacinas");
         return "mostrarmensagem";
     }
 
@@ -176,6 +179,7 @@ public class VacinaController {
             return "redirect:/vacinas/remocaook";
         } else {
             model.addAttribute("mensagem", "nenhuma vacina foi encontrada com este codigo");
+            model.addAttribute("opcao", "vacinas");
             return "mostrarmensagem";
         }
 
@@ -185,6 +189,7 @@ public class VacinaController {
     @GetMapping("/remocaook")
     public String mostrarMensagemRemocaoOK(Model model) {
         model.addAttribute("mensagem", "Vacina removida com sucesso");
+        model.addAttribute("opcao", "vacinas");
         return "mostrarmensagem";
     }
 
