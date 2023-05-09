@@ -27,7 +27,7 @@
             <p th:text="'Nome               : ' + ${pessoa.nome}"></p>
             <p th:text="'Cpf                : ' + ${pessoa.cpf}"></p>
             <p th:text="'Data de nascimento : ' + ${pessoa.dataNascimento}"></p>
-            <p th:text="'Profissão          : ' + ${pessoa.profissoa}"></p>
+            <p th:text="'Profissão          : ' + ${pessoa.profissao}"></p>
 
             <form th:action="@{/pessoas/remover}" method="POST">
                 <input type="hidden" th:field="${pessoa.codigo}">
