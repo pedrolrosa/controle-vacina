@@ -11,16 +11,16 @@ import web.controlevacinacao.repository.VacinaRepository;
 public class VacinaService {
     
     @Autowired
-    private VacinaRepository repository;
+    private VacinaRepository vacinaRepository;
 
     @Transactional
-    public void salvar(Vacina vacina){
-        repository.save(vacina);
+    public void salvar(Vacina vacina) {
+        vacinaRepository.save(vacina);
     }
 
     @Transactional
-    public void remover(Long id){
-        repository.deleteById(id);
+    public void remover(Long codigo) {
+        vacinaRepository.deleteById(codigo);
     }
 
 }

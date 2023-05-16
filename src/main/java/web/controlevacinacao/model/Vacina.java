@@ -10,6 +10,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.SequenceGenerator;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotBlank;
 
 @Entity
 @Table(name="vacina")
@@ -21,7 +22,9 @@ public class Vacina implements Serializable {
 	@SequenceGenerator(name="gerador5", sequenceName="vacina_codigo_seq", allocationSize=1)
 	@GeneratedValue(generator="gerador5", strategy = GenerationType.SEQUENCE)
 	private Long codigo;
+	@NotBlank(message = "O nome da vacina é obrigatório")
 	private String nome;
+	@NotBlank(message = "A descrição da vacina é obrigatória")
 	private String descricao;
 	@Enumerated(EnumType.STRING)
 	private Status status = Status.ATIVO;
@@ -85,7 +88,7 @@ public class Vacina implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Vacina [codigo=" + codigo + ", nome=" + nome + ", descricao=" + descricao + ", status=" + status + "]";
+		return "codigo: " + codigo + "\nnome: " + nome + "\ndescricao: " + descricao + "\nstatus: " + status;
 	}
 
 }

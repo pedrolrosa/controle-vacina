@@ -42,27 +42,27 @@ public class LoteQueriesImpl implements LoteQueries {
             predicateList.add(builder.greaterThanOrEqualTo(
                  l.<LocalDate>get("validade"), filtro.getValidadeInicial()));
         }
-        if (filtro.getValidadeFim() != null) {
+        if (filtro.getValidadeFinal() != null) {
             predicateList.add(builder.lessThanOrEqualTo(
-                 l.<LocalDate>get("validade"), filtro.getValidadeFim()));
+                 l.<LocalDate>get("validade"), filtro.getValidadeFinal()));
         }
 
         if (filtro.getNroDosesDoLoteInicial() != null) {
             predicateList.add(builder.greaterThanOrEqualTo(
                  l.<Integer>get("nroDosesDoLote"), filtro.getNroDosesDoLoteInicial()));
         }
-        if (filtro.getNroDosesDoLoteFim() != null) {
+        if (filtro.getNroDosesDoLoteFinal() != null) {
             predicateList.add(builder.lessThanOrEqualTo(
-                 l.<Integer>get("nroDosesDoLote"), filtro.getNroDosesDoLoteFim()));
+                 l.<Integer>get("nroDosesDoLote"), filtro.getNroDosesDoLoteFinal()));
         }
 
         if (filtro.getNroDosesAtualInicial() != null) {
             predicateList.add(builder.greaterThanOrEqualTo(
                  l.<Integer>get("nroDosesAtual"), filtro.getNroDosesAtualInicial()));
         }
-        if (filtro.getNroDosesAtualFim() != null) {
+        if (filtro.getNroDosesAtualFinal() != null) {
             predicateList.add(builder.lessThanOrEqualTo(
-                 l.<Integer>get("nroDosesAtual"), filtro.getNroDosesAtualFim()));
+                 l.<Integer>get("nroDosesAtual"), filtro.getNroDosesAtualFinal()));
         }
 
         if (filtro.getNomeVacina() != null) {
@@ -106,27 +106,27 @@ public class LoteQueriesImpl implements LoteQueries {
             predicateList.add(builder.greaterThanOrEqualTo(
                  l.<LocalDate>get("validade"), filtro.getValidadeInicial()));
         }
-        if (filtro.getValidadeFim() != null) {
+        if (filtro.getValidadeFinal() != null) {
             predicateList.add(builder.lessThanOrEqualTo(
-                 l.<LocalDate>get("validade"), filtro.getValidadeFim()));
+                 l.<LocalDate>get("validade"), filtro.getValidadeFinal()));
         }
 
         if (filtro.getNroDosesDoLoteInicial() != null) {
             predicateList.add(builder.greaterThanOrEqualTo(
                  l.<Integer>get("nroDosesDoLote"), filtro.getNroDosesDoLoteInicial()));
         }
-        if (filtro.getNroDosesDoLoteFim() != null) {
+        if (filtro.getNroDosesDoLoteFinal() != null) {
             predicateList.add(builder.lessThanOrEqualTo(
-                 l.<Integer>get("nroDosesDoLote"), filtro.getNroDosesDoLoteFim()));
+                 l.<Integer>get("nroDosesDoLote"), filtro.getNroDosesDoLoteFinal()));
         }
 
         if (filtro.getNroDosesAtualInicial() != null) {
             predicateList.add(builder.greaterThanOrEqualTo(
                  l.<Integer>get("nroDosesAtual"), filtro.getNroDosesAtualInicial()));
         }
-        if (filtro.getNroDosesAtualFim() != null) {
+        if (filtro.getNroDosesAtualFinal() != null) {
             predicateList.add(builder.lessThanOrEqualTo(
-                 l.<Integer>get("nroDosesAtual"), filtro.getNroDosesAtualFim()));
+                 l.<Integer>get("nroDosesAtual"), filtro.getNroDosesAtualFinal()));
         }
 
         if (filtro.getNomeVacina() != null) {

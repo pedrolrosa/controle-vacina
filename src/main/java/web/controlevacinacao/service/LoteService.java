@@ -2,8 +2,8 @@ package web.controlevacinacao.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
-import jakarta.transaction.Transactional;
 import web.controlevacinacao.model.Lote;
 import web.controlevacinacao.repository.LoteRepository;
 
@@ -11,16 +11,16 @@ import web.controlevacinacao.repository.LoteRepository;
 public class LoteService {
     
     @Autowired
-    private LoteRepository repository;
+    private LoteRepository loteRepository;
 
     @Transactional
-    public void salvar(Lote lote){
-        repository.save(lote);
+    public void salvar(Lote lote) {
+        loteRepository.save(lote);
     }
 
     @Transactional
-    public void remover(Long id){
-        repository.deleteById(id);
+    public void remover(Long codigo) {
+        loteRepository.deleteById(codigo);
     }
 
 }

@@ -30,6 +30,13 @@
 			<AppenderRef ref="Console" />
 			<AppenderRef ref="File" />
 		</AsyncLogger>
+		<!-- Log SQL statements -->
+		<AsyncLogger name="org.hibernate.SQL" level="debug" additivity="false">
+			<AppenderRef ref="Console"/>
+		</AsyncLogger>
+		<!-- <AsyncLogger name="org.hibernate.type.descriptor.sql" level="trace" additivity="false">
+			<AppenderRef ref="Console"/>
+		</AsyncLogger> -->
         <AsyncLogger name="org.apache.catalina.startup.DigesterFactory" level="error" />
 		<AsyncLogger name="org.apache.catalina.util.LifecycleBase" level="error" />
 		<AsyncLogger name="org.apache.coyote.http11.Http11NioProtocol" level="warn" />
@@ -42,13 +49,5 @@
 			<AppenderRef ref="Console" />
 			<AppenderRef ref="File" />
 		</AsyncRoot>
-
-		<!-- Log SQL statements -->
-		<AsyncLogger name="org.hibernate.SQL" level="debug" additivity="false">
-			<AppenderRef ref="Console"/>
-		</AsyncLogger>
-		<!-- <AsyncLogger name="org.hibernate.type.descriptor.sql" level="trace" additivity="false">
-			<AppenderRef ref="Console"/>
-		</AsyncLogger> -->
 	</Loggers>
 </Configuration>

@@ -17,23 +17,35 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.SequenceGenerator;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Positive;
+import jakarta.validation.constraints.PositiveOrZero;
+import web.controlevacinacao.validation.IntegerAttributesRelation;
+import web.controlevacinacao.validation.util.AttributesRelation;
 
 @Entity
 @Table(name = "lote")
 @DynamicUpdate
+@IntegerAttributesRelation(attribute1 = "nroDosesDoLote", attribute2 = "nroDosesAtual", relation = AttributesRelation.GREATEROREQUAL)
 public class Lote implements Serializable {
 
-	private static final long serialVersionUID = -3935828642122652510L;
-	
+	private static final long serialVersionUID = 1L;
+
 	@Id
-	@SequenceGenerator(name="gerador4", sequenceName="lote_codigo_seq", allocationSize=1)
-	@GeneratedValue(generator="gerador4", strategy = GenerationType.SEQUENCE)
+	@SequenceGenerator(name = "gerador4", sequenceName = "lote_codigo_seq", allocationSize = 1)
+	@GeneratedValue(generator = "gerador4", strategy = GenerationType.SEQUENCE)
 	private Long codigo;
+	@NotNull(message = "A validade do lote é obrigatória")
 	private LocalDate validade;
+	@NotNull(message = "O nro de doses do lote é obrigatório")
+	@Positive(message = "O nro de doses do lote tem que ser maior que 0")
 	@Column(name = "nro_doses_do_lote")
-	private int nroDosesDoLote;
+	private Integer nroDosesDoLote;
+	@NotNull(message = "O nro de doses atual é obrigatório")
+	@PositiveOrZero(message = "O nro de doses atual não pode ser negativo")
 	@Column(name = "nro_doses_atual")
-	private int nroDosesAtual;
+	private Integer nroDosesAtual;
+	@NotNull(message = "A vacina é obrigatória")
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "codigo_vacina")
 	private Vacina vacina;
@@ -56,19 +68,19 @@ public class Lote implements Serializable {
 		this.validade = validade;
 	}
 
-	public int getNroDosesDoLote() {
+	public Integer getNroDosesDoLote() {
 		return nroDosesDoLote;
 	}
 
-	public void setNroDosesDoLote(int nroDosesDoLote) {
+	public void setNroDosesDoLote(Integer nroDosesDoLote) {
 		this.nroDosesDoLote = nroDosesDoLote;
 	}
 
-	public int getNroDosesAtual() {
+	public Integer getNroDosesAtual() {
 		return nroDosesAtual;
 	}
 
-	public void setNroDosesAtual(int nroDosesAtual) {
+	public void setNroDosesAtual(Integer nroDosesAtual) {
 		this.nroDosesAtual = nroDosesAtual;
 	}
 

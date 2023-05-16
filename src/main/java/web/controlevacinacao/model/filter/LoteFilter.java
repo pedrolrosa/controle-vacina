@@ -3,19 +3,15 @@ package web.controlevacinacao.model.filter;
 import java.time.LocalDate;
 
 public class LoteFilter {
-    
+
     private Long codigo;
-
-	private LocalDate validadeInicial;
-    private LocalDate validadeFim;
-
+    private LocalDate validadeInicial;
+    private LocalDate validadeFinal;
     private Integer nroDosesDoLoteInicial;
-    private Integer nroDosesDoLoteFim;
-
+    private Integer nroDosesDoLoteFinal;
     private Integer nroDosesAtualInicial;
-    private Integer nroDosesAtualFim;
-
-	private String nomeVacina;
+    private Integer nroDosesAtualFinal;
+    private String nomeVacina;
 
     public Long getCodigo() {
         return codigo;
@@ -33,12 +29,12 @@ public class LoteFilter {
         this.validadeInicial = validadeInicial;
     }
 
-    public LocalDate getValidadeFim() {
-        return validadeFim;
+    public LocalDate getValidadeFinal() {
+        return validadeFinal;
     }
 
-    public void setValidadeFim(LocalDate validadeFim) {
-        this.validadeFim = validadeFim;
+    public void setValidadeFinal(LocalDate validadeFinal) {
+        this.validadeFinal = validadeFinal;
     }
 
     public Integer getNroDosesDoLoteInicial() {
@@ -49,12 +45,12 @@ public class LoteFilter {
         this.nroDosesDoLoteInicial = nroDosesDoLoteInicial;
     }
 
-    public Integer getNroDosesDoLoteFim() {
-        return nroDosesDoLoteFim;
+    public Integer getNroDosesDoLoteFinal() {
+        return nroDosesDoLoteFinal;
     }
 
-    public void setNroDosesDoLoteFim(Integer nroDosesDoLoteFim) {
-        this.nroDosesDoLoteFim = nroDosesDoLoteFim;
+    public void setNroDosesDoLoteFinal(Integer nroDosesDoLoteFinal) {
+        this.nroDosesDoLoteFinal = nroDosesDoLoteFinal;
     }
 
     public Integer getNroDosesAtualInicial() {
@@ -65,12 +61,12 @@ public class LoteFilter {
         this.nroDosesAtualInicial = nroDosesAtualInicial;
     }
 
-    public Integer getNroDosesAtualFim() {
-        return nroDosesAtualFim;
+    public Integer getNroDosesAtualFinal() {
+        return nroDosesAtualFinal;
     }
 
-    public void setNroDosesAtualFim(Integer nroDosesAtualFim) {
-        this.nroDosesAtualFim = nroDosesAtualFim;
+    public void setNroDosesAtualFinal(Integer nroDosesAtualFinal) {
+        this.nroDosesAtualFinal = nroDosesAtualFinal;
     }
 
     public String getNomeVacina() {
@@ -83,10 +79,10 @@ public class LoteFilter {
 
     @Override
     public String toString() {
-        return "LoteFilter [codigo=" + codigo + ", validadeInicial=" + validadeInicial + ", validadeFim=" + validadeFim
-                + ", nroDosesDoLoteInicial=" + nroDosesDoLoteInicial + ", nroDosesDoLoteFim=" + nroDosesDoLoteFim
-                + ", nroDosesAtualInicial=" + nroDosesAtualInicial + ", nroDosesAtualFim=" + nroDosesAtualFim
-                + ", nomeVacina=" + nomeVacina + "]";
+        return "codigo: " + codigo + "\nvalidadeInicial: " + validadeInicial + "\nvalidadeFinal: " + validadeFinal
+                + "\nnroDosesDoLoteInicial: " + nroDosesDoLoteInicial + "\nnroDosesDoLoteFinal: " + nroDosesDoLoteFinal
+                + "\nnroDosesAtualInicial: " + nroDosesAtualInicial + "\nnroDosesAtualFinal: " + nroDosesAtualFinal
+                + "\nnomeVacina: " + nomeVacina;
     }
 
 }

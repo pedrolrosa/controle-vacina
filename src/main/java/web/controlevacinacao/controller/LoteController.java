@@ -13,11 +13,13 @@ import org.springframework.data.web.PageableDefault;
 import org.springframework.data.web.SortDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import jakarta.servlet.http.HttpServletRequest;
+import jakarta.validation.Valid;
 import web.controlevacinacao.model.Lote;
 import web.controlevacinacao.model.Status;
 import web.controlevacinacao.model.Vacina;
@@ -31,7 +33,7 @@ import web.controlevacinacao.service.LoteService;
 @RequestMapping("/lotes")
 public class LoteController {
 
-    // private static final Logger logger = LoggerFactory.getLogger(LoteController.class);
+    private static final Logger logger = LoggerFactory.getLogger(LoteController.class);
 
     @Autowired
     private VacinaRepository vacinaRepository;
@@ -52,9 +54,13 @@ public class LoteController {
     }
 
     @PostMapping("/cadastrar")
-    public String cadastrar(Lote lote) {
-        loteService.salvar(lote);
-        return "redirect:/lotes/cadastrook";
+    public String cadastrar(@Valid Lote lote, BindingResult resultado, Model model) {
+        if (resultado.hasErrors()) {
+            return abrirCadastrar(lote, model);
+        } else {
+            loteService.salvar(lote);
+            return "redirect:/lotes/cadastrook";
+        }
     }
 
     @GetMapping("/cadastrook")
@@ -77,13 +83,12 @@ public class LoteController {
 
     @GetMapping("/pesquisar")
     public String pesquisar(LoteFilter filtro, Model model,
-            @PageableDefault(size = 5)
-            @SortDefault(sort = "codigo", direction = Sort.Direction.ASC) Pageable pageable,
+            @PageableDefault(size = 5) @SortDefault(sort = "codigo", direction = Sort.Direction.ASC) Pageable pageable,
             HttpServletRequest request) {
         Page<Lote> pagina = loteRepository.buscarComFiltro(filtro, pageable);
         if (!pagina.isEmpty()) {
             PageWrapper<Lote> paginaWrapper = new PageWrapper<>(pagina, request);
-	        model.addAttribute("pagina", paginaWrapper);
+            model.addAttribute("pagina", paginaWrapper);
             return "lotes/lotes";
         } else {
             model.addAttribute("mensagem", "Não foram encontrados lotes com esse filtro");
@@ -102,9 +107,13 @@ public class LoteController {
     }
 
     @PostMapping("/alterar")
-    public String alterar(Lote lote) {
-        loteService.salvar(lote);
-        return "redirect:/lotes/alteracaook";
+    public String alterar(@Valid Lote lote, BindingResult resultado, Model model) {
+        if (resultado.hasErrors()) {
+            return abrirAlterar(lote, model);
+        } else {
+            loteService.salvar(lote);
+            return "redirect:/lotes/alteracaook";
+        }
     }
 
     @GetMapping("/alteracaook")

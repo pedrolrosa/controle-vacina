@@ -9,9 +9,9 @@ import web.controlevacinacao.model.Vacina;
 import web.controlevacinacao.repository.queries.vacina.VacinaQueries;
 
 public interface VacinaRepository extends JpaRepository<Vacina, Long>, VacinaQueries {
-
-    List<Vacina> findByNomeContainingIgnoreCase(String nome);
+    
+    List<Vacina> findByNomeContainingIgnoreCase (String nome);
 
     List<Vacina> findByStatus(Status status);
-    
+
 }

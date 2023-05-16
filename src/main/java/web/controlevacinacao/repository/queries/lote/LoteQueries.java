@@ -10,5 +10,4 @@ public interface LoteQueries {
     
     Page<Lote> buscarComFiltro(LoteFilter filtro, Pageable pageable);
 
-
 }
