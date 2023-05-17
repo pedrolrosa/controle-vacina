@@ -73,6 +73,8 @@ public class LoteController {
     @GetMapping("/abrirpesquisar")
     public String abrirPesquisar(Model model) {
         colocarVacinasNoModel(model);
+        model.addAttribute("uso", "lotes");
+        model.addAttribute("url", "/lotes/pesquisar");
         return "lotes/pesquisar";
     }
 
@@ -89,6 +91,8 @@ public class LoteController {
         if (!pagina.isEmpty()) {
             PageWrapper<Lote> paginaWrapper = new PageWrapper<>(pagina, request);
             model.addAttribute("pagina", paginaWrapper);
+            model.addAttribute("uso", "lotes");
+
             return "lotes/lotes";
         } else {
             model.addAttribute("mensagem", "Não foram encontrados lotes com esse filtro");

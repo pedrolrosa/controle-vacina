@@ -10,4 +10,6 @@ public interface LoteQueries {
     
     Page<Lote> buscarComFiltro(LoteFilter filtro, Pageable pageable);
 
+    Lote buscarComVacina(Long codigo);
+
 }

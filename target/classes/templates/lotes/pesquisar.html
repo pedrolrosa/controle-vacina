@@ -8,13 +8,14 @@
 <body>
 	<div layout:fragment="conteudo">
 
-		<div th:replace="~{layout/fragments/sidebar :: sidebar(opcao='lotes')}"></div>
+		<div th:replace="~{layout/fragments/sidebar :: sidebar(opcao=${uso})}"></div>
 
 		<!-- conteudo principal -->
 		<main class="mt-5 p-4 pt-5">
 			<div class="container-fluid">
 
-                <form th:action="@{/lotes/pesquisar}" method="GET">
+                <form th:action="@{${url}}" method="GET">
+
                     <label for="codigo" class="form-label">Código</label>
                     <input type="number" id="codigo" name="codigo" class="form-control">
                     

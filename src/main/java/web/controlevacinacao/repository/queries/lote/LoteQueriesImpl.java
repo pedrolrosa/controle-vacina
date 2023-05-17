@@ -148,4 +148,15 @@ public class LoteQueriesImpl implements LoteQueries {
 
     }
 
+    @Override
+    public Lote buscarComVacina(Long codigo){
+        String jpql = "select l from Lote l join fetch l.vacina where l.codigo = :codigo";
+        TypedQuery<Lote> query = manager.createQuery(jpql, Lote.class);
+        query.setParameter("codigo", codigo);
+        Lote lote = query.getSingleResult();
+
+        return lote;
+
+    }
+
 }
